@@ -1,12 +1,338 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="utf-8" />
+	<title>Constantin Chumachenko - web-developer CV</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+	<!-- favicon -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    
+	<div class="main-page">
+		<div class="mp-item cv-view">
+			<div class="cv cv-scroll" data-mcs-theme="minimal-dark">
+				<div class="cv-wrap">	
+					
+					<div class="cv-header">
+						<div class="cv-header__avatar">
+							<img src="img/avatar.jpg" alt="">
+						</div>
+						<div class="cv-header__info">
+							<div class="name">Константин Чумаченко</div>
+							<div class="position">Front-end developer, HTML-coder</div>
+						</div>
+						<ul class="contacts cv-header__contacts">
+							<li>
+								<i class="fas fa-envelope"></i>
+								<a href="mailto:constantinechumachenko@gmail.com">constantinechumachenko@gmail.com</a>
+							</li>
+							<li>
+								<i class="fas fa-phone-square"></i>
+								<a href="tel:+48735457466">+48735457466</a>
+							</li>
+							<li>
+								<i class="fas fa-phone-square"></i>
+								<a href="tel:+380991173531">+380991173531</a>
+							</li>
+							<li>
+								<i class="fab fa-skype"></i>
+								<a href="skype:ch.const">ch.const</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="cv__content">
+
+						<div class="content-section">
+							<div class="content-header">
+								<ul class="lang">
+									<li>
+										<a href="index.html" class="active">RU</a>
+									</li>
+									/
+									<li>
+										<a href="">EN</a>
+									</li>
+								</ul>
+								<span>Обновлено: <b>25.05.2018</b></span>
+							</div>
+						</div>
+						<div class="content-section">
+							<div class="content-section__title">Обо мне:</div>
+							Меня зовут
+							<b>Константин Чумаченко</b>, мне <b> <span id="age"></span> года</b>, я <b>из Украины</b>, живу в Киеве.
+							<!-- <a class="mbtn">Узнать больше..</a> -->
+						</div>
+
+						<div class="content-section more-info-box">
+							<div class="more-info">
+								<div><i class="fas fa-bicycle"></i> <span>Спорт</span></div>
+								<div><i class="fas fa-book"></i> <span>Книги</span></div>
+								<div><i class="fas fa-code"></i> <span>Код</span></div>
+							</div>
+							В свободное время хожу в тренажерный зал, читаю книги, постоянно изючаю что-то новое в сфере веб разработки. В данный момент укрепляю свои знания в JavaScript, а так же изучаю react.js.
+						</div>
+
+
+						<div class="content-section">
+							<div class="content-section__title">Опыт работы:</div>
+							<b>С 2016 года </b> по <b>текущее время</b> я <b>фрилансер</b>. <br><b>Программирую веб-интерфейсы</b>. Так же создаю <b>проэкты под
+							ключ</b>.
+						</div>
+						<div class="content-section">
+							<div class="content-section__title">Образование:</div>
+							 <b>Харьковский национальный университет имени В. Н. Каразина</b><br>
+							 Информационная безопасность
+						</div>
+						<div class="content-section">
+							<div class="content-section__title">Языки:</div>
+							<ul class="list">
+								<li>Русский - Родной</li>
+								<li>Английский - Средний</li>
+								<li>Польский - Элементарный</li>
+							</ul>
+						</div>
+						<div class="content-section">
+							<div class="content-section__title">Навыки и приложения:</div>
+							<ul class="list">
+								<li>HTML 5(pug)</li>
+								<li>CSS 3(scss, stylus, less)</li>
+								<li>JavaScript</li>
+								<li>Jquery</li>
+								<li>BEM naming</li>
+								<li>Bootstrap(3, 4)</li>
+								<li>Gulp</li>
+								<li>Adobe photoshop</li>
+								<li>Adobe illustrator</li>
+							</ul>
+						</div>
+						<div class="content-section buttons">
+							<a class="button" href="Front-end_Constantin_chumachenko_CV.docx">Скачать резюме</a>
+							<a class="button" href="mailto:constantinechumachenko@gmail.com">Написать мне</a>
+							<button class="button viewPortfolio hidden-md hidden-lg">Portfolio</button>
+						</div>
+						<div class="content-section">
+							<p class="ps">Открыт для предложений, работаю с заказчиками на прямую, со студиями и другими фрилансерами.
+							Пишите на
+							<a href="mailto:constantinechumachenko@gmail.com">почту</a> или в
+							<a href="skype:ch.const">скайп</a>. <br>
+							Буду рад совместной работе</p>
+						</div>
+					</div>
+
+					<div class="cv-footer">
+						<ul class="social-network">
+							<li>
+								<a target="_blanck" href="https://vk.com/constantin.smith">
+									<i class="fab fa-github"></i>
+								</a>
+							</li>
+							<li>
+								<a target="_blanck" href="https://www.linkedin.com/in/constantin-chumachenko-402989151/?locale=en_US">
+									<i class="fab fa-linkedin"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		<div class="mp-item cases-view">
+			<div class="cases cases-scroll" data-mcs-theme="minimal-dark">
+				
+
+
+				<button class="back-to-cv">Back to CV</button>
+
+
+				<div class="cases-wrap">
+					<a href="http://c66202ja.beget.tech/public_html/Velo/index.html" target="_blank" class="cases-item">
+						<img src="img/25.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Geri Rack</span>
+						</div>
+					</a>
+					<a href="http://c66202ja.beget.tech/public_html/superopt/index.html" target="_blank" class="cases-item">
+						<img src="img/24.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Optovichok</span>
+						</div>
+					</a>
+					<a href="project/OSOFT/index.html" target="_blank" class="cases-item">
+						<img src="img/1.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span style="color: red;">Neborosoft</span>
+						</div>
+					</a>
+					<a href="project/Bankrotstvo/index.html" target="_blank" class="cases-item">
+						<img src="img/2.jpg" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Bankrotstvo</span>
+						</div>
+					</a>
+					<a href="project/Perevozki/index.html" target="_blank" class="cases-item">
+						<img src="img/3.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Perevozki</span>
+						</div>
+					</a>
+					<a href="project/insta-face/index.html" target="_blank" class="cases-item">
+						<img src="img/4.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>insta-face</span>
+						</div>
+					</a>
+					<a href="project/Nixys.ru/index.html" target="_blank" class="cases-item">
+						<img src="img/5.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Nixys</span>
+						</div>
+					</a>
+					<a href="project/TS/index.html" target="_blank" class="cases-item">
+						<img src="img/6.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Ts</span>
+						</div>
+					</a>
+					<a href="project/desp/index.html" target="_blank" class="cases-item">
+						<img src="img/7.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>DeepSpace</span>
+						</div>
+					</a>
+					<a href="project/hairdressing/index.html" target="_blank" class="cases-item">
+						<img src="img/8.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Hairdressing</span>
+						</div>
+					</a>
+					<a href="project/photo/index.html" target="_blank" class="cases-item">
+						<img src="img/9.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Photo</span>
+						</div>
+					</a>
+					<a href="project/Apelsina/index.html" target="_blank" class="cases-item">
+						<img src="img/10.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Apelsina</span>
+						</div>
+					</a>
+					<a href="project/asg/index.html" target="_blank" class="cases-item">
+						<img src="img/11.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span style="color:red;">ASG</span>
+						</div>
+					</a>
+					<a href="project/avto/index.html" target="_blank" class="cases-item">
+						<img src="img/12.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>avto</span>
+						</div>
+					</a>
+					<a href="project/Barber/index.html" target="_blank" class="cases-item">
+						<img src="img/13.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>Barber</span>
+						</div>
+					</a>
+					<a href="project/crystal/index.html" target="_blank" class="cases-item">
+						<img src="img/14.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span style="color:red;">Crystal</span>
+						</div>
+					</a>
+					<a href="project/Dance/index.html" target="_blank" class="cases-item">
+						<img src="img/15.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span style="color:red;">Dance</span>
+						</div>
+					</a>
+					<a href="project/fps/index.html" target="_blank" class="cases-item">
+						<img src="img/16.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>fps</span>
+						</div>
+					</a>
+					<a href="project/K-flex/index.html" target="_blank" class="cases-item">
+						<img src="img/17.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>K-flex</span>
+						</div>
+					</a>
+					<a href="project/K-FLEX_pe/index.html" target="_blank" class="cases-item">
+						<img src="img/18.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>K-flex pe</span>
+						</div>
+					</a>
+					<a href="project/lola/index.html" target="_blank" class="cases-item">
+						<img src="img/19.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>lola</span>
+						</div>
+					</a>
+					<a href="project/K-flex-event/index.html" target="_blank" class="cases-item">
+						<img src="img/20.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>K-flex-event</span>
+						</div>
+					</a>
+					<a href="project/tech-psd/index.html" target="_blank" class="cases-item">
+						<img src="img/21.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span style="color:red;">tech</span>
+						</div>
+					</a>
+					<a href="project/teogroup/01.html" target="_blank" class="cases-item">
+						<img src="img/22.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>teogroup</span>
+						</div>
+					</a>
+					<a href="project/upmix_additives/index.html" target="_blank" class="cases-item">
+						<img src="img/23.png" alt="" class="ci-img">
+						<div class="cases-item-overflow">
+							<span>upmix</span>
+						</div>
+					</a>
+
+
+					
+
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="js/common.js"></script>
+
+
 </body>
 </html>

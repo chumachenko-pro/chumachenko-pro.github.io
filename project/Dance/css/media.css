@@ -1,0 +1,136 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	/*.topline-mnu ul li {
+    margin-right: 4%;
+	}
+	.content_btn {
+	margin: 30px auto;
+	}
+	header {
+	background-position: center left;
+	}
+	.cl-container {
+    	width: 100%;
+  	}
+    .cl-container h1 {
+    	text-align: center;
+    }
+    .bottom_form {
+    	margin: 0 auto;
+    }*/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+/*.header-content-text {
+	margin: 0 auto;
+}
+.value-item {
+	margin: 50px auto 0;
+}
+.form_btn {
+	float: none;
+	margin: 65px auto;
+}*/
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+/*.ht_1 {
+	font-size: 100px;
+}
+.ei_3 {
+	margin-top: 100px;
+}
+.issues_right:before  {
+	display: none;
+}
+.que {
+	max-width: 100%;
+}
+.issues_btn {
+	float: none;
+	margin: 50px auto;
+}*/
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+/*.ht_1 {
+	font-size: 65px;
+}
+.ht_2 {
+	font-size: 27px;
+}
+.ht_3 {
+	font-size: 16px;
+}
+.ht_4 {
+	width: 285px;
+	font-size: ;
+}
+.guests_btn_right,
+.guests_btn_left {
+	bottom: 29%;
+}
+.expectations-item {
+	width: 270px;
+}
+.cp-block {
+	width: 100%;
+	margin: 340px auto 0;
+}
+.putName,
+.putPhone,
+.putTime {
+	display: block;
+	margin: 0 auto;
+	width: 230px;
+}
+.cl-container h1 {
+	font-size: 24px;
+}*/
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.topline-mnu {
+	padding-left: 30px;
+	}
+    .header-content-text {
+    	margin-left: -57px;
+    }
+    .cl-container {
+    	width: 585px;
+    }
+}

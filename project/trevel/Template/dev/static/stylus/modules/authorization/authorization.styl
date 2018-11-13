@@ -1,0 +1,184 @@
+#authorization
+    height 490px
+    margin: -245px auto
+.text-wrap
+    display: flex
+    flex-direction: column
+.modal-form__login
+    background-image url(../img/general/user.png)
+    background-repeat no-repeat
+    background-position 40px 25px;
+    background-size 20px
+.modal-form__pass       
+    background-image url(../img/general/pass.png)
+    background-repeat no-repeat
+    background-position 42px 22px;
+    background-size 16px
+.repas
+    display flex
+    justify-content space-between
+    align-items center
+    margin-bottom 35px
+#modal-form__remember
+    display: none
+.modal-form__for-rem
+    display: flex
+    align-items: center
+    cursor: pointer
+#modal-form__remember + .modal-form__for-rem
+  cursor: pointer;
+#modal-form__remember + .modal-form__for-rem:before
+    content: '';
+    display: block
+    size (20px)    
+    border-radius: 3px;
+    border: 1px solid #d0d0d0
+    margin-right 15px
+    transition: .2s;
+#modal-form__remember:checked + label:before
+    background: #5d9adb;
+    box-shadow: inset 0 0 0 3px #fff
+.modal-form__forget-pass
+    color: #5d9adb
+    cursor pointer
+    &:hover
+        text-decoration underline
+.buttons-wrap
+    display: flex
+    justify-content space-between
+    align-items center
+    padding: 0px 15px
+
+
+
+
+.modal-form
+    input[type="text"]
+        height 70px
+        width 100%
+        margin-bottom 18px
+        padding-left 80px
+        padding-right 40px
+        border: none 
+        border: 1px solid #cecece
+        border-radius: 3px
+        &:last-child
+            margin-bottom 25px
+    input[type="password"]
+        height 70px
+        width 100%
+        margin-bottom 18px
+        padding-left 80px
+        padding-right 40px
+        border: none 
+        border: 1px solid #cecece
+        border-radius: 3px
+        &:last-child
+            margin-bottom 25px
+
+    
+.modal_div
+    max-width 625px
+    padding: 80px 110px 55px
+    background #fff
+    border-radius: 3px;
+    position: fixed
+    top: 45%
+    left: 0
+    right 0
+    display: none
+    opacity 0
+    z-index 9999
+    .modal_div__title
+        text-align center
+        font-weight 400
+        font-size rem(24px)
+        color: #000000
+        margin-bottom rem(40px)
+    .modal_close
+        position: relative
+        size: (30px)
+        position: absolute
+        top: 25px
+        right 25px
+        cursor pointer
+        display: block
+        transition: .3s;
+        &:before
+            content: ""
+            position: absolute
+            top: 15px
+            display: block
+            width: 30px
+            height: 1px
+            background: #bbb
+            transform: rotate(45deg)
+        &:after
+            content: ""
+            position: absolute
+            top: 15px
+            display: block
+            width: 30px
+            height: 1px
+            background: #bbb
+            transform: rotate(-45deg)
+        &:hover
+            opacity: 0.7
+
+
+
+#overlay
+    position: fixed
+    background #000
+    opacity 0.8
+    width 100%
+    height 100%
+    top: 0
+    left 0
+    cursor pointer
+    display: none
+    z-index 9998
+
+
+// adaptability
+// @media only screen and (max-width : 1200px) 
+
+// @media only screen and (max-width : 992px) 
+
+@media only screen and (max-width : 720px) 
+    .modal_div
+        max-width: 500px
+        padding: 80px 50px 55px
+
+@media only screen and (max-width : 576px)
+    #authorization
+        height auto
+        margin: -239.5px auto
+    .repas
+        flex-wrap: wrap
+        justify-content center
+        margin-bottom 25px
+    .modal-form input[type="text"],
+    .modal-form input[type="password"]
+        padding-left 40px
+        height 40px
+    .modal-form__login
+        background-position: 10px 9px;
+    .modal-form__pass
+        background-position: 13px 10px;
+        background-size 13px
+    .buttons-wrap
+        flex-direction: column
+        span
+            margin 15px 0
+    .modal-form__forget-pass
+        margin-top 15px
+    .modal_div .modal_close
+        top: 10px
+        right 10px
+    .modal_div
+        max-width: 290px;
+        padding: 25px 25px 25px;
+// @media only screen and (min-width : 1200px)
+// @media only screen and (max-height : 657px)
+    

@@ -1,0 +1,192 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.team-item:nth-child(3n+2) {
+	border: none;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.whatcan-slider-bg {
+	margin-top: 0px;
+	margin-bottom: 25px;
+}
+.articles-box {
+	flex-wrap: wrap;
+}
+.articles-box img {
+	margin-bottom: 25px;
+}
+.image-text img {
+	float: none;
+	margin-bottom: 25px;
+}
+.price-pig {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	    bottom: -53px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.stat-table tr td {
+	padding: 3px 5px 3px 0px;
+}
+.download-wrap {
+	flex-direction: column;
+}
+.download-wrap span {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.whatcan-slider-bg {
+	background-size: contain;
+    width: 445px;
+    height: 285px;
+}
+.whatcan-slider {
+	top: 23px;
+    left: 71px;
+    width: 302px;
+}
+.ws-item {
+	width: 302px;
+    height: 168px;
+}
+.license-form input[type="text"] {
+	margin-bottom: 15px;
+}
+.fsb-title {
+	margin-right: 15px;
+}
+.fsb-switch {
+	margin-right: 10px;
+}
+.fbt-arrow {
+	display: none;
+}
+.fb-text {
+	padding: 20px 0 0 0px;
+}
+.faq-seting-box {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.faq-seting {
+	align-items: center;
+}
+.tct-text {
+	max-width: 100%;
+	margin-bottom: 25px;
+}
+.cs-wrap {
+	padding: 25px 50px;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.main-header {
+	min-height: 647px;
+}
+.top-line {
+	margin-bottom: 25px;
+	padding: 0px 15px;
+    min-height: 60px;
+}
+.sb-point {
+	margin-bottom: 15px;
+}
+.logo img {
+    width: 220px;
+}
+.header-content h1 {
+	font-size: 38px;
+}
+.header-content h2 {
+	font-size: 21px;
+	margin-bottom: 25px;
+}
+.stat-table {
+	font-size: 10px;
+
+}
+.stat-box {
+	margin-bottom: 20px;
+}
+.stat-table tr td {
+	padding: 3px 5px 3px 0px;
+}
+.stat-table tr td span {
+    font-size: 5px;
+}
+.download-wrap .btn.trans {
+	padding: 8px 10px;
+}
+.license-form input[type="text"] {
+	width: 270px;
+}
+.license h2 {
+	font-size: 28px;
+}
+.whatcan-slider-bg {
+	width: 290px;
+    height: 186px;
+}
+.whatcan-slider{
+	top: 15px;
+    left: 45px;
+    width: 198px;
+}
+.ws-item {
+	width: 199px;
+    height: 110px;
+}
+.reviever-slider .owl-dots {
+    display: flex;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+}
+.articles-box img {
+	margin: 0 auto 25px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

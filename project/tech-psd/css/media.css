@@ -1,0 +1,178 @@
+/*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1580px) {
+	.consultation-img,
+	.consultation-text {
+		display: none;
+	}
+	.consultation {
+		transform: rotate(-90deg);
+		right: -91px;
+		margin-top: -50px;
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.phone {
+		float: right;
+	}
+	.event-box-left {
+		margin-bottom: 25px;
+	}
+	.footer-nav ul li {
+		display: block;
+	}
+	.ebr-slider {
+		height: auto;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.product-box,
+	.all-categories {
+		margin: 0 auto 15px;
+	}
+	.advantages-box {
+		margin: 0 auto 25px;
+	}
+	.footer-nav ul li {
+		display: inline-block;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.gmap .container {
+		padding: 0;
+	}
+	.gmap-callback {
+		position: static;
+		width: 100%;
+	}
+	.gmap-callback:before,
+	.gmap-callback:after,
+	.event-box-left:before,
+	.event-box-left:after,
+	.ebr-slider:before,
+	.ebr-slider:after {
+		display: none;
+	}
+	.ebl-content .text {
+		text-align: left;
+	}
+	.ebl-content span {
+		padding-left: 0;
+	}
+	.ebr-slider {
+		padding-left: 25px;
+	}
+	.basket-product-img, .basket-product-info, .basket-product-counter, .basket-product-price, .basket-product-delete {
+		min-height: 60px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.esi-title {
+		font-size: 17px;
+	}
+	.ebl-content .text .title {
+		font-size: 27px;
+	}
+	.services_banner h2 {
+		font-size: 28px;
+	}
+	.services_banner .return {
+		margin-left: 15px;
+	}
+	.services_content .box1 {
+		margin: 0px 0px 30px;
+	}
+	.product-preview-slider .product_slider img {
+		height: 346px;
+		width: 100%;
+	}
+	.basket-product-info {
+		text-align: center;
+	}
+	.basket-product-counter {
+		justify-content: center;
+	}
+	.basket-product-price {
+		justify-content: center;
+	}
+	.basket-product-delete {
+		justify-content: center;
+	}
+	.basket-product-img, .basket-product-info, .basket-product-counter, .basket-product-price, .basket-product-delete {
+		min-height: 40px;
+	}
+	.product-price {
+		margin-bottom: 20px;
+	}
+	.user-agreement .checkbox-custom, .user-agreement .label {
+		font-size: 12px;
+	}
+	.btn.white {
+		display: block;
+	}
+	.table_list {
+		text-align: center;
+	}
+	.table_list h3 {
+		font-size: 12px;
+	}
+	.table_list span {
+		font-size: 12px;
+	}
+	.table_list p {
+		font-size: 12px;
+	}
+}	
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.table_list h3 {
+		font-size: 9px;
+	}
+	.table_list span {
+		font-size: 9px;
+	}
+	.table_list p {
+		font-size: 9px;
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.footer-nav {
+		float: right;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.event-box-left {
+		min-height: 521px;
+		justify-content: center;
+	}
+}

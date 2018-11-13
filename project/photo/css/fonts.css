@@ -1,0 +1,35 @@
+/* Catorze27Style1-SemiBold */
+@font-face {
+	font-family: "Catorze27Style1-SemiBold";
+	src: url("../fonts/Catorze27Style1-SemiBold/Catorze27Style1-SemiBold.ttf");
+}
+/* CenturyGothicRegular */
+@font-face {
+	font-family: "CenturyGothicRegular";
+	src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot");
+	src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/CenturyGothicRegular/CenturyGothicRegular.woff") format("woff"),
+	url("../fonts/CenturyGothicRegular/CenturyGothicRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "ArialBold"; */
+@font-face {
+	font-family: "ArialBold";
+	src: url("../fonts/ArialBold/ArialBold.eot");
+	src: url("../fonts/ArialBold/ArialBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ArialBold/ArialBold.woff") format("woff"),
+	url("../fonts/ArialBold/ArialBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "ArialRegular"; */
+@font-face {
+	font-family: "ArialRegular";
+	src: url("../fonts/ArialRegular/ArialRegular.eot");
+	src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+	url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

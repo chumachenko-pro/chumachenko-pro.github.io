@@ -1,0 +1,268 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+/****** Start INDEX-4   *************/
+.services_img {
+	width: 55%;
+	margin: 0 auto;
+}
+.services_text,
+.text_right {
+	text-align: center;
+}
+.services_text .aln_r,
+.services_text .callback_wrap {
+	justify-content: center;
+}
+
+/*** section class="t_korotkova"  ***/
+	section.t_korotkova .form_block {
+		padding: 0;
+	}
+	section.t_korotkova .form_block .left {
+		width: 100%;
+		padding: 35px 10px 0 0;
+		margin-bottom: 30px;
+	}
+	section.t_korotkova .form_block .right {
+		width: 40%;
+		float: none;
+		clear: both;
+		margin: 0 auto;
+		display: table;
+		margin-bottom: 30px;
+	}
+	section.t_korotkova .quote {
+		padding: 25px 50px;
+	}
+	section.t_korotkova .quote p {
+		padding: 30px 87px;
+	}
+	section.t_korotkova .similar_news .block {
+		padding: 23px 15px 15px 15px;
+	}
+	section.t_korotkova .similar_news h5.topic {
+		margin-bottom: 15px;
+	}
+	section.t_korotkova .similar_news h3 {
+		line-height: 24px;
+		margin: 0 0 10px 0;
+	}
+	section.t_korotkova .similar_news p {
+		line-height: 19px;
+		margin: 0 0 15px 0;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.logo_wrap {
+	height: 80px;
+}
+.callback_wrap, .phone_wrap {
+	height: 50px;
+	justify-content: center;
+}
+.tool_nav_left {
+	margin-bottom: 35px;
+}
+.tool_nav_left ul {
+	justify-content: center;
+}
+.tool_nav_left ul li {
+	margin: 0 10px;
+}
+.top_line {
+	padding-bottom: 25px;
+}
+.h_btns {
+	height: 80px;
+}
+
+/****** Start INDEX-5  *************/
+.company_img {
+	width: 40%;
+	margin: 0 15px 15px 0;
+	float: left;
+	height: auto;
+}
+.company_img img {
+	height: auto;
+}
+/****** End INDEX-5  *************/
+/*** section class="t_korotkova"  ***/
+	section.t_korotkova .container > img {
+		width: 100%;
+	}
+	section.t_korotkova .form_block .left h2 {
+		margin: 0 0 45px 35px;
+		line-height: 30px;
+	}
+	section.t_korotkova .form_block .left p {
+		margin: 0 0 133px 209px;
+	}
+	section.t_korotkova .form_block .right {
+		width: 60%;
+	}
+	section.t_korotkova .quote {
+		padding: 15px;
+	}
+	section.t_korotkova .quote p {
+		padding: 50px;
+	}
+	section.t_korotkova .similar_news .block {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.tnr {
+	width: 100%;
+	text-align: center;
+}
+.tool_nav_right ul {
+	justify-content: center;
+}
+.tool_nav_right ul li:first-child {
+	margin-right: 0;
+}
+.tool_naw_wrap {
+	    justify-content: center;
+}
+footer .logo_wrap {
+	justify-content: center;
+}
+
+
+/****** Start INDEX-4   *************/
+.services_img {
+	height: auto;
+	width: 90%;
+}
+.services_img img {
+	height:  auto;
+}
+/****** End INDEX-4   *************/
+
+/****** Start INDEX-5  *************/
+.quote {
+	padding: 95px 35px;
+}
+.quote_text:before {
+	left: -25px;
+}
+.quote_text:after {
+	right: -25px;
+}
+.quote_text p {
+	font-size: 24px;
+}
+/****** End INDEX-5  *************/
+/*** section class="t_korotkova"  ***/
+	section.t_korotkova .form_block .left h2 {
+		margin: 0 0 20px 0;
+		line-height: 28px;
+		text-align: center;
+	}
+	section.t_korotkova .form_block .left p {
+		margin: 0 0 245px 0;
+		text-align: center;
+	}
+	section.t_korotkova .form_block .left {
+		background-position: center bottom;
+	}
+	section.t_korotkova .form_block .right {
+		width: 100%;
+	}
+	section.t_korotkova .form_block .right form {
+		padding: 0 15px;
+	}
+	section.t_korotkova .container > h2 {
+		text-align: center;
+	}
+	section.t_korotkova .time h5.topic {
+		float: none;
+		margin-bottom: 10px;
+	}
+	section.t_korotkova .quote {
+		padding: 10px;
+	}
+	section.t_korotkova .quote p {
+		padding: 50px 15px;
+	}
+	section.t_korotkova .quote p {
+		font-size: 23px;
+		line-height: 32px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+/************************************/
+
+@media screen and (max-width: 767px) {
+	.masonry[data-columns]::before {
+		content: '1 .col-xs-12 .col-sm-6 .col-md-4 .col-lg-4';
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.masonry[data-columns]::before {
+		content: '2 .col-xs-12 .col-sm-6 .col-md-4 .col-lg-4';
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.masonry[data-columns]::before {
+		content: '3 .col-xs-12 .col-sm-6 .col-md-4 .col-lg-4';
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.masonry[data-columns]::before {
+		content: '3 .col-xs-12 .col-sm-6 .col-md-4 .col-lg-4';
+	}
+}

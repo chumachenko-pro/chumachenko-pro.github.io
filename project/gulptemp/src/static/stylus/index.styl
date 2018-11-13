@@ -1,0 +1,659 @@
+body
+	background-color #240000
+	color: #fff
+h1
+	font-size rem(36px)
+	color: #fff
+	margin-bottom rem(15px)
+h2
+	font-size rem(24px)
+	color: #fff
+	margin-bottom rem(10px)
+
+.content
+	padding: 25px 0px
+
+input
+	color: #fff
+	box-shadow: 0 0 25px 1px rgba(255,255,255,0.5) ;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.25) ;
+	transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+	&:hover
+		box-shadow: 0 0 25px 3px rgba(255,255,255,0.5) ;
+
+@media only screen and (max-width : 576px)
+	html
+		font-size 14px
+		
+
+
+// header
+.header
+	&-inner
+		position relative
+		display: flex
+		justify-content space-between
+		align-items flex-start
+		padding: 40px 0 23px
+	&__logo
+		text-transform uppercase
+		font-size rem(24px)
+		color: #fff
+	&__nav
+		display: flex;
+		li
+			margin-right 25px
+			border-bottom 2px solid transparent
+			padding-bottom: 15px
+			transition: .3s
+			&:last-child
+				margin-right 0
+			&:hover
+				border-bottom 2px solid #c4bfbf
+				a
+					color: #c4bfbf
+			 &.active
+				border-bottom 2px solid #fff
+				a
+					color: #fff
+			a
+				font-size rem(18px)
+				font-weight 700
+				color: #c4bfbf
+@media only screen and (max-width : 768px)
+	.header
+		&-inner
+			align-items center
+		&__nav
+			position: absolute
+			left: 0
+			top: 100%
+			display: none
+			width 100%
+			background-color #240000
+			z-index 99;
+			padding: 15px 0
+			border: 1px solid #fff
+			li
+				text-align center
+				margin-right 0
+				padding: 10px 0
+				&.active
+					border: none
+// header
+
+
+
+
+
+
+
+
+
+
+
+
+
+// cta-box
+.cta-box
+	text-align center 
+	margin-bottom 60px
+	&__text
+		font-size rem(16px)
+		line-height 1.4
+		color: #fff
+// authorization
+.authorization-wrapper
+	min-height: 267px
+	.authorization-wrapper__container
+		display: none
+		&.active
+			display: block
+		
+			
+.authorization
+	display: flex
+	flex-direction: column
+	justify-content center
+	align-items center
+	margin: 0 auto 25px
+	&__title
+		text-align center
+		margin-bottom 15px
+	&__input
+		outline: none
+		border: 1px solid #fff
+		border-radius: 5px
+		padding-left 30px
+		padding-right 30px
+		margin-bottom 10px
+		background: transparent
+		max-width 320px
+		width 100%
+		height 54px
+	&__button
+		margin-top 10px
+		display: inline-block
+		padding: 10px 20px
+		background: #ad2424
+		border: 1px solid #fff
+		border-radius: 5px
+		text-transform uppercase
+		font-size rem(16px)
+		color: #fff
+		margin-bottom 30px
+		cursor pointer
+		outline: none
+		&:hover
+			background: #7f0f0f
+			text-shadow: 0 0 7px rgba(255,255,255,0.66)
+	&__link
+		font-size rem(14px)
+		color: #fff
+		cursor pointer
+		&:hover
+			text-decoration underline
+	&__text
+		font-size rem(14px)
+		color: #fff
+
+
+// rules
+.rules
+	h1
+		text-align center
+	&__text
+		font-size rem(14px)
+		line-height 1.4
+		margin-bottom 10px
+// faq
+.faq
+	h1
+		text-align center
+	&__text
+		font-size rem(14px)
+		line-height 1.4
+		margin-bottom 10px
+// admin
+.tablewrapper
+	overflow: auto
+.admin-head
+	display: flex
+	justify-content space-between
+	align-items center
+	margin-bottom 35px
+	font-size rem(18px)
+	&__balance
+		display: flex
+		align-items center
+		.info
+			flex-shrink: 0
+			display: inline-block;
+			box-sizing: content-box;
+			cursor: pointer;
+			padding: 3px 9px;
+			border: 1px solid rgba(255,255,255,0.66);
+			border-radius: 5px;
+			font-size: 18px;
+			outline: none;
+			color: rgba(255,255,255,0.9);
+			text-overflow: clip;
+			background: #ad2424;
+			box-shadow: 0 0 11px 1px rgba(255,255,255,0.5) ;
+			transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+			margin-left 5px
+			&:hover
+				background: #7f0f0f;
+// admin
+
+
+
+	
+
+.history_pay_title
+	font-size rem(12px)
+	color: #ffffff
+	margin-bottom 15px
+
+
+// tab
+.tabNav
+	display: flex
+	flex-wrap: wrap
+	margin-bottom 30px
+	&__item
+		cursor pointer
+		font-size rem(17px)
+		line-height 1.4
+		color: #c4bfbf
+		margin-right 20px
+		transition: .3s
+		&.active
+			color: #fff
+		&:hover
+			color: #fff
+		&:last-child 
+			margin-right 0
+.tabContHead
+	display: flex
+	justify-content space-between
+	align-items center
+	margin-bottom 15px
+	&__title
+		flex-shrink: 0
+		font-size rem(18px)
+		padding: 9.5px 0;
+	&__search
+		display: flex
+		align-items center
+		input[type="text"]
+			outline: none
+			border: 1px solid #fff
+			border-radius: 5px
+			padding-left 30px
+			padding-right 30px
+			background: transparent
+			width 390px
+			height 40px
+			font-size rem(11px)
+		button
+			outline: none
+			display: block
+			size(40px)
+			border: none 
+			background none
+			font-size 24px
+			color: #d01c2f
+			i 
+				margin-top 3px
+@media only screen and (max-width : 768px)
+	.tabContHead
+		&__search
+			input[type="text"]
+				width: 200px
+@media only screen and (max-width : 576px)
+	.tabContHead
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom 25px
+		&__title
+			margin-bottom rem(15px)
+// tab 2
+.tabs2
+	display: flex
+	flex-wrap: wrap
+	justify-content center
+	margin-bottom 10px
+	.tab2
+		cursor: pointer
+		font-size rem(15px)
+		line-height 1.4
+		margin-right rem(15px)
+		color: #c4bfbf
+		transition: .3s
+		sup 
+			font-size rem(9px)
+		&:hover
+			color: #fff
+		&:last-child
+			margin-right 0
+		&.active
+			color: #fff
+.adminTable
+	width: 100%
+	border-collapse: collapse;
+	margin-bottom 5px
+	&.statistic
+		margin-bottom 50px
+		&:last-child
+			margin-bottom 0	
+	&__head
+		background #891414
+	
+		th
+			font-weight 700
+			text-align left
+	th
+		border 1px solid #808080
+		padding: 13px
+		font-size rem(14px)
+		color: #fff
+		a
+			&.yellow
+				color: orange
+			&.green
+				color: green
+			&.red
+				color: red
+			&.blue
+				color: #4cbaff
+.adminPagination
+	display: flex
+	justify-content flex-end
+	align-items center
+	ul
+		display: flex
+		align-items center
+		li
+			margin 0px 5px
+			a
+				font-size rem(13px)
+				color: #fff
+				&:hover
+					text-decoration underline
+	&__nav
+		display: flex
+		align-items center
+		font-size rem(13px)
+		cursor pointer
+		opacity 0.7
+		transition: .3s
+		span 
+			margin: 0 5px
+		i 
+			font-size rem(10px)
+		&:hover
+			opacity 1
+	&.adminPagination--center
+		justify-content center
+// account
+.account
+	h1
+		text-align center
+
+
+
+.newOrder
+	display: flex
+	flex-wrap: wrap
+	width 100%
+	&__link
+		outline: none
+		border: 1px solid #fff
+		border-radius: 5px
+		padding-left 30px
+		padding-right 30px
+		margin-bottom 10px
+		background: transparent
+		width 100%
+		height 54px
+	&__quantity
+		outline: none
+		border: 1px solid #fff
+		border-radius: 5px
+		padding-left 30px
+		padding-right 30px
+		margin-bottom 10px
+		background: transparent
+		width calc(80% - 25px)
+		height 54px
+		margin-right 25px
+	&__button
+		width 20%
+		height 54px
+		display: inline-block
+		padding: 10px 20px
+		background: #ad2424
+		border: 1px solid #fff
+		border-radius: 5px
+		text-transform uppercase
+		font-size rem(16px)
+		color: #fff
+		margin-bottom 30px
+		cursor pointer
+		outline: none
+		&:hover
+			background: #7f0f0f
+			text-shadow: 0 0 7px rgba(255,255,255,0.66)
+@media only screen and (max-width : 576px)
+	.newOrder__quantity
+		width: 100%
+		margin-right 0
+	.newOrder__button
+		width 100%
+
+
+// setings
+.setting
+	margin-top 50px
+	display: flex
+	flex-direction: column
+	align-items center
+	&__wrapper 
+		display: flex;
+		flex-wrap: wrap;
+		align-items center
+		margin-bottom 20px
+	&__label
+		width: 290px;
+		font-size rem(18px)
+		margin-bottom 5px
+	&__input
+		outline: none
+		border: 1px solid #fff
+		border-radius: 5px
+		padding-left 30px
+		padding-right 30px
+		background: transparent
+		width 290px
+		height 50px
+		margin-bottom 5px
+	&__button
+		margin-top 25px
+		height 50px
+		display: inline-block
+		padding: 10px 20px
+		background: #ad2424
+		border: 1px solid #fff
+		border-radius: 5px
+		text-transform uppercase
+		font-size rem(16px)
+		color: #fff
+		margin-bottom 10px
+		cursor pointer
+		outline: none
+		&:hover
+			background: #7f0f0f
+			text-shadow: 0 0 7px rgba(255,255,255,0.66)
+
+
+// footer
+.footer
+	padding: 35px 0
+	&-inner
+		display: flex;
+		flex-direction: column
+	&__nav
+		display: flex
+		flex-wrap: wrap
+		justify-content center
+		align-items center
+		margin-bottom 10px
+		li
+			margin-right 10px
+			&:last-child
+				margin-right 0
+			a
+				line-height 1.4
+				font-weight 700
+				font-size rem(15px)
+				color: #907e7e
+				transition: .3s
+				&:hover
+					color: #fff
+	&__copyright
+		text-align center
+		font-weight 700
+		font-size rem(14px)
+		color: #513939
+// footer
+
+
+// modal
+.modal_div
+	max-width: 500px; 
+	background: #240000;
+	padding: 25px
+	border-radius: 7px
+
+	position: fixed;
+	top: 45%;
+	left: 0;
+	right: 0;
+	margin: -192.5px auto;
+
+	display: none;
+	opacity: 0;
+	z-index: 9999;
+	&__title
+		font-size rem(18px)
+		margin-bottom 15px
+
+
+
+.modal_div .modal_close
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: -10.5px;
+	right: -10.5px;
+	cursor: pointer;
+	display: block;
+	border-radius: 50%
+	background #000
+	border	3px solid #fff
+	color: #fff
+	cursor: pointer
+	&:hover
+		i
+			color: #db3b3b;
+	i 
+		position: relative
+		top: -3px
+		left: 3.7px
+		font-size: 12px
+		transition: .3s
+
+/* Пoдлoжкa */
+#overlay {
+	z-index: 9998; 
+	position:fixed; 
+	background-color:#000; 
+	opacity:0.8;
+	-moz-opacity:0.8;
+	width:100%; 
+	height:100%; 
+	top:0;
+	left:0;
+	cursor:pointer;
+	display:none; 
+}
+
+.modal_div.double
+	min-height auto
+	margin: -108px auto
+.hiddenwrap
+	display: none
+	margin-top 20px
+.modalForm
+	display: flex
+	flex-direction: column
+	align-items center
+	&__input
+		outline: none
+		border: 1px solid #fff
+		border-radius: 5px
+		padding-left 30px
+		padding-right 30px
+		margin-bottom 20px
+		background: transparent
+		width 100%
+		height 50px
+	&__button
+		height 50px
+		display: inline-block
+		padding: 10px 20px
+		background: #ad2424
+		border: 1px solid #fff
+		border-radius: 5px
+		text-transform uppercase
+		font-size rem(16px)
+		color: #fff
+		margin-bottom 10px
+		cursor pointer
+		outline: none
+		&:hover
+			background: #7f0f0f
+			text-shadow: 0 0 7px rgba(255,255,255,0.66)
+	&__text
+		display: none
+		font-size rem(14px)
+		margin-bottom 10px
+	&__choice
+		display: none
+		justify-content center
+		a
+			font-weight 700
+			font-size 20px
+			color: #ffffff
+			margin-right 15px
+			opacity: 0.8
+			transition: .3s
+			&:hover
+				opacity: 1
+			&:last-child
+				margin-right 0
+			span 
+				color: #3598db
+	&__link
+		font-weight 700
+		color: red
+		opacity 0.7
+		transition: .3s
+		.two
+			display: none
+		&.active
+			.one
+				display: none
+			.two
+				display: block
+		&:hover
+			opacity 1
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 576px)
+	.modal_div
+		max-width: 290px;
+		margin: -150px auto
+		.adminTable th
+			padding: 5px
+	.modal_div .modal_close i
+		top: -1px;
+	.modal_div.paymod.payment .payment__choice a
+		font-size 18px
+	.modal_div.paymod
+		margin: -129px auto
+
+
+
+
+
+
+
+// for animate text
+.visually-hidden {
+   border: 0;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   width: 1px;
+}

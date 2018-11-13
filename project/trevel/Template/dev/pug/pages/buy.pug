@@ -1,0 +1,80 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Бронирование экскурсии '
+	- var pageClass = 'buy-page'
+
+block content
+	<link rel="stylesheet" href="css/jquery-ui.css"/>
+	.container
+		ul.way-nav
+			li
+				a(href="index.html") Главная 
+			li
+				a(href="") Ужин-круиз: гастрономический круиз под звуки джаза и блюза
+			li.active
+				a(href="") Бронирование экскурсии
+
+	section.buy-section
+		.container
+			h2.buy-title Ужин-круиз: гастрономический круиз под звуки джаза и блюза
+
+			.row.no-gutters
+				.col-lg-4
+					aside.buy-date
+						.buy-date__title выберите дату
+						#calendar
+						.buy-date__title выберите время
+						
+						<select id="select-time">
+							<option value="hide">Отправление 20:00 (ASTRA)</option>
+							<option value="1" rel="icon-temperature">Раз</option>
+							<option value="2">Два</option>
+							<option value="3">Три</option>
+						</select> 
+
+
+
+
+				.col-lg-8
+					.buy-price
+						h3.buy-price__title Онлайн цены на билеты
+						.row
+							.col-lg-5
+								.buy-rates
+									h3.rates__title STANDARD 
+									h3.rates__places Доступно мест: <sapn>117</span>
+									ul.rates__list
+										li Детский | Children - от 100руб.
+										li Полный | Adult - от 800руб.
+								.buy-rates
+									h3.rates__title VIP-5 ASTRA 
+									h3.rates__places Доступно мест: <sapn>117</span>
+									ul.rates__list
+										li Детский | Children - от 100руб.
+										li Полный | Adult - от 800руб.
+							.col-lg-5
+								.buy-rates
+									h3.rates__title Vip-2 astra 
+									h3.rates__places Доступно мест: <sapn>117</span>
+									ul.rates__list
+										li Детский | Children - от 100руб.
+										li Полный | Adult - от 800руб.
+							
+
+			
+					.buy-warning
+						h3.buy-warning__title Для продолжения бронирования необходимо
+						.enter-or-reg
+							.modal-form__enter Войти
+							span или
+							.modal-form__reg Зарегистрироваться
+					
+
+
+
+
+	section.choice-location
+		.container
+			h2.buy-title Всего в базе свободных мест <sapn>- 121</span>
+			img(src="static/img/general/choice-location-ships.png", alt="")

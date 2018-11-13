@@ -1,0 +1,833 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+
+
+
+
+
+
+/* header */
+header {
+	padding-top: 150px;
+}
+.top-line {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 30px 0px 25px;
+	min-height: 150px;
+	background-color: #fff;
+	z-index: 10;
+}
+.header-content {
+	background: url(../img/background.png) center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 60px 0px 15px;
+}
+.header-parametr {
+	text-align: center;
+}
+	.header-parametr .img {
+		margin-bottom: 10px;
+	}
+	.header-parametr .text {
+		font-family: "MyriadProRegular";
+		line-height: 1.2;
+		font-size: 18px;
+		color: #3c3c3b;
+	}
+		.header-parametr .text span {
+			font-family: "MyriadProBold";
+		}
+
+.product-preview {
+	margin: 0 auto;
+	position: relative;
+	width: 360px;
+	height: 360px;
+	background-color: #fff;
+	border-radius: 50%;
+	margin-bottom: -58px;
+	z-index: 1;
+
+	-webkit-box-shadow: 0px 13px 28px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 13px 28px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 13px 28px 0px rgba(0,0,0,0.75);
+}
+	.product-preview .img {
+		height: 240px;
+		margin-bottom: 20px;
+	}
+	.product-preview .img img {
+		max-width: 100%;
+	}
+	.product-preview .title {
+		font-family: "MyriadProBold";
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 28px;
+		color: #3c3c3b;
+	}
+	.product-preview .title span {
+		color: #4ea830;
+	}
+.product-about {
+	position: relative;
+	width: 360px;
+	margin: 0 auto 50px;
+}
+	.product-about .text {
+		width: 360px;
+		height: 97px;
+		background-color: #4ea830;
+		position: relative;
+		z-index: 2;
+
+		padding: 20px;
+		font-family: "MyriadProRegular";
+		line-height: 1.2;
+		font-size: 18px;
+		color: #fff;
+	}
+	.product-about .left {
+		display: block;
+		position: absolute;
+		top: -34px;
+	    left: 58px;
+	    width: 134px;
+	    height: 34px;
+	   	background-color: #4ea830;
+	    opacity: 0.7;
+	    transform: skew(-74deg);
+	    z-index: 0;
+	}
+	.product-about .right {
+		display: block;
+		position: absolute;
+		top: -34px;
+	    right: 58px;
+	    width: 134px;
+	    height: 34px;
+	    background-color: #4ea830;
+	    transform: skew(74deg);
+	    z-index: 0;
+	}
+.logo-2 {
+	float: right;
+}
+/* header */
+
+
+/* structure */
+.structure {
+	padding: 65px 0px;
+	background-color: #4ea830;
+}
+.structure-box {
+	position: relative;
+	border: 1px solid #fff;
+	width: 262.5px;
+	height: 262.5px;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	margin: 15px auto;
+
+}
+	.structure-box .overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		font-family: "MyriadProRegular";
+		font-size: 18px;
+		line-height: 1.2;
+		color: #3c3c3b;
+		padding: 30px 20px;
+		transition: .3s;
+		opacity: 0;
+
+	}
+	.structure-box:active .overlay,
+	.structure-box:hover .overlay {
+		opacity: 1;
+	}
+/* structure */
+
+
+/* tables */
+.tables {
+	background: url(../img/background.png);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+
+	padding: 80px 0px 180px;
+}
+.table-body {
+	position: relative;
+	padding: 55px 20px 40px;
+	background-color: #fff;
+	margin-bottom: 90px;
+	-webkit-box-shadow: 0px 13px 38px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 13px 38px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 13px 38px 0px rgba(0,0,0,0.75);
+}
+.tb-wrap {
+	overflow-x: auto;
+	max-width: 100%;
+}
+	.table-body .title {
+		position: absolute;
+		top: -32px;
+		left: -20px;
+		display: flex;
+		justify-content: flex-start;
+		-ms-align-items: center;
+		align-items: center;
+		min-height: 64px;
+		background-color: #5b6062;
+
+		padding: 10px 40px;
+
+		font-family: "MyriadProBold";
+		font-size: 19px;
+		color: #fff;
+	}
+
+.for-download {
+	background-color: #fff;
+	padding-bottom: 45px;
+}
+.for-download .title {
+	font-family: "MyriadProBold";
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.3;
+	font-size: 19px;
+	color: #fff;
+	
+	padding: 28px 15px;
+	background-color: #5b6062;
+	margin-bottom: 40px;
+}
+.inputs-wrap {
+	margin: 0 auto 20px;
+	max-width: 460px;
+	padding: 0px 15px;
+}
+	.inputs-wrap input {
+		font-family: "MyriadProRegular";
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 100%;
+		height: 38px;
+		border: 1px solid #bbb;
+		margin-bottom: 20px;
+		outline: none;
+	}
+.checkbox-wrap {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	padding: 0px 15px
+}
+	.checkbox-wrap label {
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+.submit-wrap {
+	display: flex;
+	justify-content: center;
+}
+	.submit-wrap input {
+		border-radius: 10px;
+		background-color: rgb(78, 168, 48);
+		padding: 0 50px;
+		height: 61px;
+		outline: none;
+		border: none;
+		font-family: "MyriadProBold";
+		text-transform: uppercase;
+		font-size: 19px;
+		color: #fff;
+	}
+.checkbox {
+    display: none;
+}
+.checkbox-custom {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+
+	font-family: "MyriadProRegular";
+	font-size: 12px;
+	color: #8c9295;
+}
+.checkbox-custom span {
+	border: 1px solid #8c9295;
+	padding: 3px;
+}
+.checkbox-custom:before {
+	content: "";
+	display: block;
+    position: relative;
+    margin-right: 5px;    
+    width: 18px;             
+    height: 18px;
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(125,125,125,1);
+	-moz-box-shadow: 0px 0px 0px 1px rgba(125,125,125,1);
+	box-shadow: 0px 0px 0px 1px rgba(125,125,125,1);
+}
+.checkbox:checked + .checkbox-custom::before {
+    content: ""; 
+    display: block;
+    background-image: url(../img/galochka.png); 
+    background-repeat: no-repeat;
+    background-position: center;        
+}
+.checkbox:checked + .checkbox-custom {
+	border-color: #5b6062;
+	color: #5b6062;
+}
+
+.sertificate {
+	position: relative;
+	padding: 5px 0px;
+	background: #4ea830;
+	margin-bottom: 75px;
+	transition: .3s;
+}
+.sertificate:hover {
+	background-color: #60bd41;
+}
+.sertificate.active {
+	background: #5b6062;
+}
+.sertificate-wrap {
+	display: flex;
+	justify-content: ;
+	cursor: pointer;
+}
+	.sertificate-wrap .slogo {
+		margin-right: 10px;
+	}
+	.sertificate-wrap .left,
+	.sertificate-wrap .right {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		text-align: center;
+	}
+	.sertificate-wrap .left {
+		border-right: 1px solid #fff;
+	}
+	.sertificate-wrap .left div,
+	.sertificate-wrap .right div {
+		font-family: "MyriadProBold";
+		font-size: 19px;
+		color: #fff;
+	}
+.sertificate-list {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+
+	width: 100%;
+	padding: 30px;
+	background-color: #fff;
+	z-index: 1;
+}
+.sertificate-list-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+	justify-content: space-between;
+	border: 1px solid #4ea830;
+	padding: 10px 10px 0px;
+	max-height: 766px;
+	overflow-y: auto;
+}
+	.sertificate-list-wrap img {
+		max-width: 100%;
+		margin: 0 auto 10px;
+
+	}
+.rulon-img {
+	margin-right: 40px;
+	display: block;
+	width: 685px;
+}
+	.rulon-img img {
+		max-width: 100%;
+	}
+/* tables */
+
+
+/* footer */
+footer {
+	background: #4ea830;
+	padding: 45px 0px 50px
+}
+.footer-logo {
+	text-align: center;
+}
+/* footer */
+
+
+
+
+/* table 1 */
+.table-1 {
+	font-family: "MyriadProRegular";
+}
+	.table-1 li {
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.table-1 li:last-child {
+		margin-bottom: 2px;
+	}
+	.table-1 li.head {
+		background-color: #4ea830;
+	}
+	.table-1 li.head span {
+		text-align: center;
+		border-bottom: none;
+		font-size: 16px;
+		color: #fff;
+		border-left: 2px solid #fff;
+	}
+		.table-1 li span {
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
+			margin-left: 2px;
+			border-bottom: 2px solid #bbb;
+			width: 25%;
+			height: 37px;
+			font-size: 12px;
+			color: #000;
+		}
+		.table-1 li span:first-child {
+			padding-left: 5px;
+			margin-left: 0px;
+			justify-content: flex-start;
+			width: 50%;
+		}
+.dot {
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: #706f6f;
+	border-radius: 50%;
+}
+/* table 1 */
+
+
+/* table 2 */
+.table-2 {
+	min-width: 515px;
+	font-family: "MyriadProRegular";
+}
+	.table-2 li {
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+	}	
+	.table-2 li.head {
+		background-color: #4ea830;
+	}
+	.table-2 li.head span {
+		text-align: center;
+		border-bottom: none;
+		border-left: 2px solid #fff;
+		font-size: 16px;
+		color: #fff;
+		height: 35px;
+	}
+		.table-2 li span {
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
+			margin-left: 2px;
+			width: 25%;
+			height: 27px;
+			font-size: 10px;
+			color: #000;
+			border-bottom: 1px solid #000;
+		}
+		.table-2 li span:first-child {
+			padding-left: 5px;
+			border-left: none;
+			justify-content: flex-start;
+			width: 50%;
+		}
+/* table 2 */
+
+
+/* table 3 */
+.table-3 {
+	width: 1100px;
+	font-family: "MyriadProRegular";
+	text-align: center;
+}
+	.table-3 li.head span {
+		padding: 5px 0px;
+		background-color: #4ea830;
+		font-family: "MyriadProBold";
+		font-size: 12px;
+		color: #fff;
+		width: auto;
+	}
+	.table-3 li.head2 span {
+		padding: 5px 0px;
+		background-color: #5b6062;
+		font-size: 12px;
+		color: #fff;
+		width: auto;
+	}
+	.table-3 li {
+		display: flex;
+	}
+	.table-3 li:last-child {
+		border-bottom: 1px solid #bbb;
+	}
+	.table-3 li:nth-child(odd) {
+		background-color: #eee;
+	}
+	.table-3 li span {
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		width: 100%;
+		min-height: 28px;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		font-size: 12px;
+	}
+	.table-3 li span:last-child {
+		border-right: none;
+	}
+.table-3 .head2 .duble {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+	.duble div {
+		width: 50%;
+	}
+	.duble div:first-child {
+		width: 100%;
+		border-bottom: 1px solid #fff;
+	}
+	.duble div:last-child {
+		border-left: 1px solid #fff;
+	}
+/* table 3 */
+
+
+/* table 4 */
+.rulon2m {
+
+}
+.rulon2m img {
+	max-width: 100%;
+}
+.table-4 {
+	width: 535px;
+	font-family: "MyriadProRegular";
+	text-align: center;
+}
+	.table-4 li.head span {
+		padding: 5px 0px;
+		background-color: #4ea830;
+		font-family: "MyriadProBold";
+		font-size: 12px;
+		color: #fff;
+		width: auto;
+	}
+	.table-4 li.head2 span {
+		padding: 5px 0px;
+		background-color: #5b6062;
+		font-size: 12px;
+		color: #fff;
+		width: auto;
+	}
+	.table-4 li {
+		display: flex;
+	}
+	.table-4 li:last-child {
+		border-bottom: 1px solid #bbb;
+	}
+	.table-4 li:nth-child(odd) {
+		background-color: #eee;
+	}
+	.table-4 li span {
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		width: 100%;
+		min-height: 28px;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		font-size: 12px;
+	}
+	.table-4 li span:last-child {
+		border-right: none;
+	}
+.table-4 .head2 .duble {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+/* table 4 */
+
+
+/* table-5 */
+.table-5 {
+	font-family: "MyriadProRegular";
+	text-align: center;
+}
+	.table-5 li.head span {
+		padding: 5px 0px;
+		background-color: #4ea830;
+		font-family: "MyriadProBold";
+		font-size: 12px;
+		color: #fff;
+	}
+	.table-5 li.head2 span {
+		padding: 5px 0px;
+		background-color: #5b6062;
+		font-size: 12px;
+		color: #fff;
+	}
+	.table-5 li.head2 span sup {
+		font-size: 8px;
+	}
+	.table-5 li {
+		display: flex;
+	}
+	.table-5 li:last-child {
+		border-bottom: 1px solid #bbb;
+	}
+	.table-5 li:nth-child(odd) {
+		background-color: #eee;
+	}
+	.table-5 li span {
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		width: 100%;
+		min-height: 32px;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		font-size: 12px;
+	}
+	.table-5 li span:last-child {
+		border-right: none;
+	}
+/* table-5 */
+
+
+/* table-6 */
+.table-6 {
+	width: 1100px;
+	font-family: "MyriadProRegular";
+	font-size: 12px;
+}
+	.table-6 .head {
+			}
+		.table-6 .head span {
+			display: flex;
+			justify-content: center;
+			-ms-align-items: center;
+			align-items: center;
+			height: 30px;
+			background-color: #4ea830;
+			color: #fff;
+			border-left: 1px solid #fff;
+			border-bottom: none;
+		}
+		.table-6 .head span:first-child {
+			border-left: none;
+			margin-right: 0;
+		}
+		
+		.table-6 li {
+			display: flex;
+		}
+		.table-6 li span {
+			display: flex;
+			-ms-align-items: center;
+			align-items: center;
+			width: 100%;
+			height: 30px;
+			border-bottom: 2px solid #b7b7b7;
+		}
+		.table-6 li span:first-child {
+			margin-right: 1px;
+		}
+.white,
+.grey,
+.dgrey {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.white {background-color: #fff;}	
+.grey {background-color: #ececec;}
+.dgrey {background-color: #c6c6c6;}
+/* table-6 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

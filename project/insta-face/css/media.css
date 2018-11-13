@@ -1,0 +1,154 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.tl-phone-box {
+	margin: 0 auto;
+	width: 213px;
+	padding: 8px 0;
+	float: none;
+}
+.sp-btn {
+    margin: 25px auto;
+}
+.you-box {
+    margin: 0 auto;
+}
+.bleed-white-box {
+    margin: 0 auto;
+}
+.rates-tarif {
+	margin: 0px auto 25px;
+}
+.cb-left:after {
+  display: none;
+}
+.cb-left {
+  padding: 40px 0; 
+}
+.advantages_item {
+  margin:  0px auto 0;;
+}
+.cb-right {
+  padding-top: 40px;
+  padding-left: 0px;
+}
+.choiseq {
+    top: 340px;
+}
+.calling:after {
+  display: none;
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.advantages-underline {
+	width: 270px;
+}
+.policy  {
+	text-align: center;
+	float: none;
+}
+.copyright {
+	text-align: center;
+}
+.policy {
+    margin: 15px auto;
+    
+}
+h1 {
+	font-size: 30px;
+	margin-bottom: 60px;
+}
+.cal-bg {
+  border-radius: 5px 5px 0 0;
+}
+.cal-bg,
+.lac-bg {
+  width: 100%;
+}
+.bb-wrap {
+  margin-left: -118px;
+}
+.cb-mob {
+  margin-left: -52px;
+}
+.contacts-block {
+  height: 65px;
+}
+.header-text {
+  min-height: 440px;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.ri-img {
+  float: none;
+  margin: 0 auto;
+  position: inherit;
+  width: 50px;
+}
+.advantages {
+  padding: 0;
+}
+.guarantees {
+  padding: 25px 0;
+}
+
+.tab {
+  width: 117px;
+}
+.bg-title {
+  font-size: 30px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}

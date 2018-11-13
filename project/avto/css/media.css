@@ -1,0 +1,121 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.mnu_line nav ul li {
+	margin: 0 10px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.phone {
+	margin: 0 auto;
+}
+
+.fphone {
+	margin: 0 auto;
+	float: none;
+}
+
+.copyr {
+	text-align: center;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	float: none;
+}
+
+.logo {
+	display: block;
+	width: 260px;
+}
+
+.logo p {
+	padding: 4px 0;
+	font-size: 18px;
+	color: #000;
+}
+
+.mnu_line nav ul li {
+	margin: 5px 10px;
+}
+
+.mail {
+	margin: 0 auto;
+	float: none;	
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.phcompany {
+	width: 180px;
+}
+
+.in-name, .in-mail, .in-select {
+	width: 180px;
+}
+
+.in-txt {
+	width: 180px;
+}
+
+.in-button {
+	padding: 15px;
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+.phcompany {
+	width: 180px;
+}
+
+.g-recaptcha {
+	display: none;
+}
+
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

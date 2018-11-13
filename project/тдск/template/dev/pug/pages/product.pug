@@ -1,0 +1,91 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Продукт'
+	- var pageClass = 'product-page'
+
+block content
+	section.product-content
+		.container
+		
+			include ../modules/breadcrumbs
+
+			.product-wrap
+				//- Картинки
+				.product-img-wrap
+					.product-img
+						img(src="static/img/content/product-img.png", alt="")
+					.document-wrap
+						a.product-document(href="static/img/content/document-big-1.png" data-fancybox="group")
+							img(src="static/img/content/document-img-1.png", alt="")
+							.product-document__overlay
+								img(src="static/img/general/search.png", alt="")
+						a.product-document(href="static/img/content/document-big-1.png" data-fancybox="group")
+							img(src="static/img/content/document-img-1.png", alt="")
+							.product-document__overlay
+								img(src="static/img/general/search.png", alt="")
+						a.product-document(href="static/img/content/document-big-1.png" data-fancybox="group")
+							img(src="static/img/content/document-img-1.png", alt="")
+							.product-document__overlay
+								img(src="static/img/general/search.png", alt="")
+				//- Информация
+				.product-info-wrap
+					h1 Песок из отсева дробления фр. 2,5-5
+					ul.product-parametrs
+						li ГОСТ <span>31424-2010</span>
+						li Модуль крупности – <span>3-5</span>
+						li Насыпная плотность – <span>1320 кг/м<sup>3</sup></span>
+					.product-price <span>360 руб./т.,</span> (490 руб./м )
+					button.open_modal.button.button--red(href="#modal1") Заказать
+					.product-info 
+						.product-info__title Описание:
+						.product-info__text Применяется в качестве заполнителя тяжелых, легких, мелкозернистых, ячеистых и силикатных бетонов, строительных растворов, приготовления сухих смесей, для устройства оснований и покрытий автомобильных дорог и аэродромов, для посыпки автомобильных дорог и тротуаров в зимнее время, в качестве фильтров водоподготовки и водоочистки, пескоструйной обработки, для изготовления керамических масс, тротуарной плитки, кровельных материалов, минеральной ваты.
+			
+
+			.calculator-application
+				//- Калькулятор
+				.product-calculator#prodIn
+					h2 Калькулятор
+					.product-calculator__subtitle Укажите размеры площадки:
+					.calculator__wrap.calculator__wrap--product
+						.calculator__input-wrap
+							label.calculator__label(for="") Длина
+							input.calculator__input#longInp(type="text" placeholder="23 м")
+						.calculator__input-wrap
+							label.calculator__label(for="") Ширина
+							input.calculator__input#widthInp(type="text" placeholder="23 м")
+						.calculator__input-wrap
+							label.calculator__label(for="") Высота
+							input.calculator__input#heightInp(type="text" placeholder="23 м")
+					.calculator__output
+						.calculator__sum Итого Вам потребуется: <span id="cubatura">0</span> м<sup>3</sup> (<span id="tonage">0</span> т.) - <br><span class="red"id="calcSum">0 руб.</span>
+						.calculator__total-sum Ориентировочная стоимость доставки от <span class="deliv">0</span> руб. Итого: <br><span class="red" id="totalSum">0 руб.</span>
+				//- Заявка
+				.application-wrap
+					.application
+						.application__title Отправьте заявку:
+						form.application__form(action="")
+							//- Настройки почты
+							<input type="hidden" name="project_name" value="Site Name">
+							<input type="hidden" name="admin_email" value="desphub@gmail.com" id="#out">
+							<input type="hidden" name="form_subject" value="Form Subject">
+							//- Настройки почты
+
+							//- из калькулятора
+							input#lOut(type="hidden" name="Длинна")
+							input#wOut(type="hidden" name="Ширина")
+							input#hOut(type="hidden" name="Высота")
+
+							input#sOut(type="hidden" name="Сумма")
+							input#tOut(type="hidden" name="С доставкой")
+							//- из калькулятора
+
+							label.application__label(for="appName") Имя
+							input.application__input#appName(type="text" placeholder="Ваше имя")
+							label.application__label(for="appTel") Телефон
+							input.application__input#appTel(type="tel" placeholder="+7 (___) ___-__-__")
+							button.button.button--red Заказать
+
+					
+
+					

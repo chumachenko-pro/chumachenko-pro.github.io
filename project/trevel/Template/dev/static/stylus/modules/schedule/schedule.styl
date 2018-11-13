@@ -1,0 +1,215 @@
+// search
+.tour-selection__search
+    display: flex
+    input[type="text"]
+        width 240px
+        height 40px
+        background-color #eaeaea
+        border: none
+        border-radius: 20px 0px 0px 20px
+        padding-left 80px
+        padding-right 20px
+        background-image: url(../img/general/date.png)
+        background-repeat: no-repeat
+        background-position: 40px 50%
+    input[type="submit"]
+        width 85px
+        height 40px
+        background #5b9de8
+        border: none 
+        border-radius: 0px 20px 20px 0px
+        background-image: url(../img/general/search.png)
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        transition: .3s
+        cursor: pointer
+        &:hover
+            background-color #5faaff
+    input[type="text"]::-webkit-input-placeholder {
+        color:#82889c;
+        font-weight 300
+        font-style: italic;
+        font-size rem(14px)
+    }
+    input[type="text"]::-moz-placeholder {
+        color:#82889c;
+        font-weight 300
+        font-style: italic;
+        font-size rem(14px)
+    }
+    input[type="text"]:-moz-placeholder {
+        color:#82889c;
+        font-weight 300
+        font-style: italic;
+        font-size rem(14px)
+    }
+    input[type="text"]:-ms-input-placeholder {
+        color:#82889c;
+        font-weight 300
+        font-style: italic;
+        font-size rem(14px)
+    }
+// search
+.tour-selection__top
+    background #fff
+    .tour-selection__top-wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content space-between
+        align-items center
+        .tour-selection__nav
+            display: flex
+            .tour-selection__choice
+                // padding: 21px 0px
+                cursor pointer
+                min-height: 75px
+                display: flex
+                align-items center
+                margin-right 50px
+                border-bottom 2px solid transparent
+                img 
+                    margin-right 15px
+            .tour-selection__choice:last-child
+                    margin-right 0
+            .tour-selection__choice.active
+                border-bottom 2px solid #5b9de8
+.iactive
+    display: none
+
+
+
+
+
+.tour-selection__title
+    font-weight 700
+    font-size rem(24px)
+    color: #ea4728
+    text-transform uppercase
+.tour-selection__content
+    background #f1f2f3
+    padding: 40px 0px 50px
+
+
+
+
+.accordion-cont
+    padding: 30px 0px 20px
+    border-top 1px solid #000
+    border-bottom 1px solid #000
+    justify-content flex-end
+.tour-selection__price
+    width 50%
+    font-size rem(14px)
+    .title
+        font-weight 700
+        margin-bottom 20px
+    .day-list
+        margin-bottom 20px
+        li
+            line-height rem(18px)
+.tour-selection__tel
+    display: flex
+    width 100%
+    justify-content space-between
+    align-items center
+    .tel
+        font-weight 700
+
+
+
+
+
+    
+
+
+
+.tour-selection__point.sked-title
+    font-weight 700
+    padding-top 0
+    padding-bottom 20px
+    border-bottom 2px solid #000
+    
+.tour-selection__point
+    display: flex
+    justify-content space-between
+    align-items center
+    font-size rem(14px)
+    padding: 10px 0px
+    transition: .3s
+    cursor pointer
+    .tour-selection__time
+        width 135px
+        padding-right 30px
+    .tour-selection__way
+        width 435px
+        padding-right 30px
+    .tour-selection__duration
+        width 315px
+        padding-right 30px
+    .tour-selection__place
+        width 255px
+.tour-selection__point.accordion-title:hover
+    background-color #eee
+.tour-selection__point.accordion-title.active
+    padding: 30px 0px
+
+
+
+// tabs
+.tabs .active 
+    color: #5b9de8
+.tabs .active img.iactive
+    display: block
+.tabs .active img.inormal
+    display: none
+
+.tab_item 
+    display: none
+.tab_item:first-child 
+    display: block
+
+// acord
+.accordion-title.active + .accordion-cont 
+    display: flex
+.accordion-cont 
+	display: none
+
+
+
+.tour-selection__point.accordion-title 
+    .mob-title
+        font-weight 700
+        margin-right 10px
+        display: none
+
+
+// adaptability
+// @media only screen and (max-width : 1200px) 
+
+// @media only screen and (max-width : 992px) 
+
+@media only screen and (max-width : 720px) 
+    .tour-selection__price
+        width 100%
+@media only screen and (max-width : 576px)
+    .tour-selection__point.accordion-title
+        border-bottom 1px solid #bbb
+        .submti
+            display: flex
+            padding: 5px 0px
+            max-width: 100%;
+            flex-direction: column;
+    .tour-selection__point.accordion-title 
+        .mob-title
+            display: block
+    .tour-selection__point
+        flex-direction: column
+        align-items flex-start
+    .tour-selection__point.sked-title
+        display: none
+    .tour-selection__tel
+        flex-direction: column
+    .tour-selection__tel 
+        .tel
+            margin-bottom 15px
+// @media only screen and (min-width : 1200px)

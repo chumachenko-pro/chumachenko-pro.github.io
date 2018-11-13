@@ -1,0 +1,149 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.f-wrap {
+	padding: 49px 0%;
+}
+.about-advantages-box {
+	margin: 0 40px;
+}
+.header-nav ul li {
+	margin-left: 10px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.header-nav {
+	display: none;
+}
+.hamburger-mnu {
+	top: 104px;
+}
+.footer-items {
+	width: 50%;
+	justify-content: center;
+}
+.vacansy-box {
+	flex-direction: column;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+}
+.vacansy-box-post {
+	width: 100%;
+}
+.vacansy-description-post {
+	padding: 20px 0px 15px;
+	max-width: 100%;
+}
+.vacansy-description-characteristic {
+	width: 100%;
+}
+.about-advantages-box {
+	margin: 0 20px 35px;;
+}
+.pp-subtitle br {
+	display: none;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.h-wrap {
+		padding: 15px 0px;
+		min-height: 60px;
+	}
+.logo img {
+	width: 160px;
+}
+.hamburger-mnu {
+	top: 69px;
+}
+.main-content h1 {
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.footer-items {
+	padding: 5px 0px;
+	width: 100%;
+}
+.f-wrap {
+	padding: 10px 0px;
+	min-height: 80px;
+}
+.page-prev.about .about-title {
+	font-size: 54px;
+}
+.logo-small {
+	margin: 0px 15px 10px 0px;
+}
+.page-prev {
+	min-height: 320px;
+}
+.about-text {
+	margin: 0 auto 66px;
+}
+.content {
+	padding: 40px 0px 40px;
+}
+.pp-content h2 {
+	font-size: 24px;
+	line-height: 1;
+}
+.pp-subtitle {
+	font-size: 13px;
+}
+.contact-inp {
+	width: 100%;
+}
+.main-content.secondary h2 {
+	font-size: 40px;
+}
+.portfolio-gallery-item {
+	width: 290px;
+	height: 216px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+.page-prev.about .about-title {
+	margin-top: -2%;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.inp-email {
+	margin-right: 26px;
+}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

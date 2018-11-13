@@ -1,0 +1,139 @@
+@media (max-width: 480px) {
+    .button {
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+
+
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 82px;
+        width: 100%;
+        margin-left: -15px;
+        margin-right: -15px;
+        background-color: #fff;
+    }
+     .main-nav ul {
+         flex-direction: column;
+     }
+
+
+     .event {
+         padding: 50px 0px;
+     }
+     .event h1 {
+         font-size: 26px;
+     }
+     .event .button.green {
+         margin-bottom: 25px;
+     }
+     .event-text span:last-child {
+        margin-bottom: 50px;
+    }
+
+
+     .for-whu-wrap {
+         flex-direction: column;
+     }
+     .for-whu__left-text, .for-whu__right-list {
+         width: 100%;
+     }
+     .for-whu__left-text {
+         margin-bottom: 25px;
+     }
+
+
+     .slider-wrap {
+         display: none;
+     }
+     .program-list {
+         flex-direction: column;
+     }
+     .program-list ul:first-child {
+         margin: 0;
+     }
+
+     .call__city {
+         flex-direction: column;
+     }
+     .call__city .city {
+         margin: 0px 0px 25px;
+     }
+
+
+     .wih-stats {
+         flex-direction: column;
+     }
+
+
+
+     .call {
+         padding: 25px 0px 50px;
+     }
+
+
+
+     .benefit__box img {
+        max-width: 100%;
+     }
+     .benefit {
+         padding: 25px 0px 50px;
+     }
+     .benefit__box,
+     .benefit__box:nth-child(even) {
+         flex-direction: column-reverse;
+     }
+     .benefit__box img,
+     .benefit__box:nth-child(even) img {
+        margin: 0;
+     }
+     .benefit__box .text h3 .number {
+         display: none;
+     }
+
+     .how-is {
+         padding: 25px 0px 50px;
+     }
+     .how-is__stages {
+         flex-direction: column;
+     }
+     .stages-numbers {
+         display: none;
+     }
+
+     .how-work {
+         padding: 25px 0 50px;
+     }
+     .how-work h2 {
+         margin-bottom: 25px;
+     }
+     .how-work__item {
+         flex-direction: column;
+     }
+     .how-work__item img {
+         margin-right: 0;
+         margin-bottom: 25px;
+     }
+
+
+     .contact-form .input-wrap {
+         margin-bottom: 25px;   
+     }
+     .contact-form .input-wrap.center {
+         padding-top: 25px;
+     }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}

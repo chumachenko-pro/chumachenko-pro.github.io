@@ -1,0 +1,15 @@
+.modal.application#modal1
+	span.modal__close
+		<i class="fas fa-times"></i>
+	.modal__title Заявка
+	form.modalForm
+		//- send param
+		input(type="hidden" name="project_name" value="Site Name")
+		input(type="hidden" name="admin_email" value="desphub@gmail.com")
+		input(type="hidden" name="form_subject" value="Модальное окно 1")
+		
+		input.modalForm__input(type="text" name="Имя" placeholder="Ваше имя" required)
+		input.modalForm__input(type="text" name="Телефон" placeholder="Ваш телефон" required)
+		input.button(type="submit" value="Отправить")
+		
+#modalOverlay

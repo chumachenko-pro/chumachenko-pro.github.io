@@ -1,0 +1,23 @@
+<script src='https://www.google.com/recaptcha/api.js'></script>
+#registration.modal_div
+    span.modal_close
+    .modal_div__title Регистрация
+    form.modal-form
+        .text-wrap
+            input.modal-form__name(type="text" placeholder="Имя")(required)
+            input.modal-form__phone(type="text" placeholder="Телефон")(required)
+        .location-wrap
+            .location-title Вы из
+                span Санкт-Петербурга?
+            input.modal-form__radio#radio-yes(type="radio" name="regRadio" value="Да")
+            label(for="radio-yes") Да
+            input.modal-form__radio#radio-no(type="radio" name="regRadio" value="Нет")
+            label(for="radio-no") Нет
+        .text-wrap
+            input.modal-form__mail(type="text" placeholder="Email")(required)
+        .capcha-wrap
+            .capcha-title Подтвердите что Вы не робот
+            <div class="g-recaptcha" width="100" data-sitekey="6LfpVVIUAAAAAAiOIZdmC3TeLcAReQSHyNDlYZQB"></div>
+        .buttons-wrap
+            input.modal-form__enter(type="submit")(value="Зарегистрироваться")
+#overlay

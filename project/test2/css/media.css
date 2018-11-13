@@ -1,0 +1,52 @@
+@media (max-width: 1200px) {
+    .start__phone {
+        margin-top: -456px;
+    }
+    .company {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .footer_search-warning br,
+    .footer_text br {
+        display: none;
+    }
+    .start__phone {
+        margin-top: auto;
+    }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+    .header__info .text br {
+        display: none;
+    }
+    .start {
+        padding: 50px 0px 40px;
+    }
+    .details {
+        padding: 50px 0px 50px;
+    }
+    .power {
+        padding: 250px 0px 50px;
+    }
+    .power p br {
+        display: none;
+    }
+    .reasons {
+        padding: 50px 0px 40px;
+    }
+    .product-box {
+        padding: 30px 25px 35px;
+    }
+    .product,
+    .footer {
+        padding: 50px 0px 25px;
+    }
+}
+@media (max-width: 1200px) {
+    .start__phone {
+       
+    }
+}

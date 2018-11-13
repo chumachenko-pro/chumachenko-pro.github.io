@@ -1,0 +1,156 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Расписание теплоходов'
+    - var pageClass = 'timetable-of-motor-ships'
+
+block content
+    .container
+        ul.way-nav
+            li
+                a(href="index.html") Главная 
+            li.active
+                a(href="") Расписание теплоходов
+
+
+    //- data-choice
+    section.data-choice
+        .container
+            .choice-slider.owl-carousel
+                .choice-slider__item
+                    .choice-slider__date 1 апреля
+                    button.choice-slider__day пн
+                .choice-slider__item
+                    .choice-slider__date 2 апреля
+                    button.choice-slider__day вт
+                .choice-slider__item
+                    .choice-slider__date 3 апреля
+                    button.choice-slider__day ср
+                .choice-slider__item
+                    .choice-slider__date 4 апреля
+                    button.choice-slider__day чт
+                .choice-slider__item
+                    .choice-slider__date 5 апреля
+                    button.choice-slider__day пт
+                .choice-slider__item
+                    .choice-slider__date 6 апреля
+                    button.choice-slider__day сб
+                .choice-slider__item
+                    .choice-slider__date 7 апреля
+                    button.choice-slider__day вс
+                .choice-slider__item
+                    .choice-slider__date 8 апреля
+                    button.choice-slider__day пн
+                .choice-slider__item
+                    .choice-slider__date 9 апреля
+                    button.choice-slider__day вт
+                .choice-slider__item
+                    .choice-slider__date 10 апреля
+                    button.choice-slider__day ср
+                .choice-slider__item
+                    .choice-slider__date 11 апреля
+                    button.choice-slider__day чт
+                .choice-slider__item
+                    .choice-slider__date 12 апреля
+                    button.choice-slider__day пт
+                .choice-slider__item
+                    .choice-slider__date 13 апреля
+                    button.choice-slider__day сб
+                .choice-slider__item
+                    .choice-slider__date 14 апреля
+                    button.choice-slider__day вс
+                .choice-slider__item
+                    .choice-slider__date 15 апреля
+                    button.choice-slider__day пн
+                .choice-slider__item
+                    .choice-slider__date 16 апреля
+                    button.choice-slider__day вт
+                .choice-slider__item
+                    .choice-slider__date 17 апреля
+                    button.choice-slider__day ср
+                .choice-slider__item
+                    .choice-slider__date 18 апреля
+                    button.choice-slider__day чт
+        
+    //- Расписание
+    include ../modules/schedule.pug
+					
+    section.content-section
+        .content-section__top-line
+            .container
+                .content-section__title-wrap
+                    h2.content-section__title 
+                        img.content-section___icon(src="static/img/general/content-section-icon-1.png", alt="")
+                        span СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+                    button.content-section__button больше туров
+        .content-section__wrap
+            .container
+                .row
+                    .col-lg.col-sm-6
+                        .special-offer
+                            .special-offer__img
+                                img(src="static/img/content/special-offer-1.png", alt="")
+                                .special-offer__price 
+                                    span от<br/>280руб.
+                            .special-offer__info
+                                .special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+                                .special-offer__time 
+                                    <i class="far fa-clock"></i>
+                                    span с 10 до 20 ежедневно
+                                .special-offer__icons
+                                    <i class="fas fa-music"></i>
+                                    <i class="fas fa-headphones"></i>
+                                    <i class="fas fa-coffee"></i>
+                                    <i class="fas fa-glass-martini"></i>
+                            button.special-offer__button купить
+                    .col-lg.col-sm-6
+                        .special-offer
+                            .special-offer__img
+                                img(src="static/img/content/special-offer-1.png", alt="")
+                                .special-offer__price 
+                                    span от<br/>280руб.
+                            .special-offer__info
+                                .special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+                                .special-offer__time 
+                                    <i class="far fa-clock"></i>
+                                    span с 10 до 20 ежедневно
+                                .special-offer__icons
+                                    <i class="fas fa-music"></i>
+                                    <i class="fas fa-headphones"></i>
+                                    <i class="fas fa-coffee"></i>
+                                    <i class="fas fa-glass-martini"></i>
+                            button.special-offer__button купить
+                    .col-lg.col-sm-6
+                        .special-offer
+                            .special-offer__img
+                                img(src="static/img/content/special-offer-1.png", alt="")
+                                .special-offer__price 
+                                    span от<br/>280руб.
+                            .special-offer__info
+                                .special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+                                .special-offer__time 
+                                    <i class="far fa-clock"></i>
+                                    span с 10 до 20 ежедневно
+                                .special-offer__icons
+                                    <i class="fas fa-music"></i>
+                                    <i class="fas fa-headphones"></i>
+                                    <i class="fas fa-coffee"></i>
+                                    <i class="fas fa-glass-martini"></i>
+                            button.special-offer__button купить
+                    .col-lg.col-sm-6
+                        .special-offer
+                            .special-offer__img
+                                img(src="static/img/content/special-offer-1.png", alt="")
+                                .special-offer__price 
+                                    span от<br/>280руб.
+                            .special-offer__info
+                                .special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+                                .special-offer__time 
+                                    <i class="far fa-clock"></i>
+                                    span с 10 до 20 ежедневно
+                                .special-offer__icons
+                                    <i class="fas fa-music"></i>
+                                    <i class="fas fa-headphones"></i>
+                                    <i class="fas fa-coffee"></i>
+                                    <i class="fas fa-glass-martini"></i>
+                            button.special-offer__button купить

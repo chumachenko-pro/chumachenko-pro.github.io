@@ -1,0 +1,127 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Мой личный кабинет'
+	- var pageClass = 'personal-page'
+
+
+
+block content
+	.container
+		ul.way-nav
+			li
+				a(href="index.html") Главная 
+			li.active
+				a(href="") Музыкальные круизы
+	section.personal-section
+		.container
+			.row.no-gutters
+				.col-md-3
+					aside.personal-sidebar
+						ul.personal-navigation
+							li
+								.personal-navigation__icon
+									<i class="far fa-file-alt"></i>
+								a(href="") Мои заказы
+							li
+								.personal-navigation__icon
+									<i class="fas fa-info-circle"></i>
+								a(href="") Правила покупки электронных билетов
+							li
+								.personal-navigation__icon
+									<i class="fas fa-gift"></i>
+								a(href="") Купить подарочный сертификат
+							li
+								.personal-navigation__icon
+									<i class="fas fa-pen-square"></i>
+								a(href="") Заявление на возврат
+							li
+								.personal-navigation__icon
+									<i class="fas fa-lock"></i>
+								a(href="") Поменять пароль
+				.col-md-9
+					.personal-content
+						h2.personal-content__title Мои заказы
+						.personal-order
+							.personal-order__title
+								span.title Статус заказа
+								span.info Заказ не оплачен и отменен
+							.personal-order__info
+								.personal-order__departure
+									span.title Отправление
+									span.info 01.01.2018
+								.personal-order__number
+									span.title номер заказа
+									span.info 60054
+								.personal-order__quantity
+									span.title количество
+									span.info 4
+								.personal-order__price
+									span.title общая стоимость
+									span.info 5580 руб.
+							.personal-order__option
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/eye.png", alt="")
+									span Посмотреть билет
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/print.png", alt="")
+									span Печать билета
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/mail-2.png", alt="")
+									span Отправить билет по email
+						.personal-order
+							.personal-order__title
+								span.title Статус заказа
+								span.info Заказ не оплачен и отменен
+							.personal-order__info
+								.personal-order__departure
+									span.title Отправление
+									span.info 01.01.2018
+								.personal-order__number
+									span.title номер заказа
+									span.info 60054
+								.personal-order__quantity
+									span.title количество
+									span.info 4
+								.personal-order__price
+									span.title общая стоимость
+									span.info 5580 руб.
+							.personal-order__option
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/eye.png", alt="")
+									span Посмотреть билет
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/print.png", alt="")
+									span Печать билета
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/mail-2.png", alt="")
+									span Отправить билет по email
+
+						.personal-order
+							.personal-order__title
+								span.title Статус заказа
+								span.info Заказ не оплачен и отменен
+							.personal-order__info
+								.personal-order__departure
+									span.title Отправление
+									span.info 01.01.2018
+								.personal-order__number
+									span.title номер заказа
+									span.info 60054
+								.personal-order__quantity
+									span.title количество
+									span.info 4
+								.personal-order__price
+									span.title общая стоимость
+									span.info 5580 руб.
+							.personal-order__option
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/eye.png", alt="")
+									span Посмотреть билет
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/print.png", alt="")
+									span Печать билета
+								a.personal-order__option-item(href="")
+									img(src="static/img/general/mail-2.png", alt="")
+									span Отправить билет по email
+

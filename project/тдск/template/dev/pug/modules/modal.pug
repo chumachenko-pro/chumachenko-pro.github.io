@@ -1,0 +1,21 @@
+#modal1.modal_div.modal_div--application
+	span.modal_close
+	h3.modal1__title Заказать звонок
+	form.modal1-form
+		//- Настройки почты
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="desphub@gmail.com" id="#out">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		//- Настройки почты
+
+		
+		input.modal1-form__input(type="text" name="Имя" placeholder="Ваше имя")
+		input.modal1-form__input(type="tel" name="Телефон" placeholder="+7 (___) ___-__-__")
+		button.button.button--red Заказать
+
+#modal2.modal_div.modal_div--senk
+	span.modal_close
+	.senk-title Ваше сообщение отправлено
+<div id="overlay"></div>
+
+

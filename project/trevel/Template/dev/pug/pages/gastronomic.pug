@@ -1,0 +1,280 @@
+extends ../layout/main
+
+block variables
+    - var title = ' Ужин-круиз: гастрономический круиз под звуки ...'
+    - var pageClass = 'gastronomic'
+
+block content
+    .event
+        .container
+            ul.way-nav
+                li
+                    a(href="index.html") Главная 
+                li
+                    a(href="") Музыкальные круизы
+                li.active
+                    a(href="") Ужин-круиз: гастрономический круиз под звуки ...
+
+
+            h1.gastronomic-event__title Ужин-круиз: гастрономический круиз под звуки джаза и блюза
+
+
+
+
+
+            .gastronomic-event-wrap
+                .left
+                    //- gastronomic-galery
+                    .gastronomic-galery-section
+                        .gastronomic-slider.owl-carousel
+                            .gastronomic-slider__item
+                                img(src="static/img/content/event-slider-1.png", alt="")
+                            .gastronomic-slider__item
+                                img(src="static/img/content/event-slider-1.png", alt="")
+                            .gastronomic-slider__item
+                                img(src="static/img/content/event-slider-1.png", alt="")
+                            .gastronomic-slider__item
+                                img(src="static/img/content/event-slider-1.png", alt="")
+
+                        .gastronomic-galery
+                            .gastronomic-galery__item
+                                img(src="static/img/content/event-slider-1.png", alt="")
+                            .gastronomic-galery__item
+                                img(src="static/img/content/event-slider-1.png", alt="")
+                            .gastronomic-galery__item
+                                img(src="static/img/content/event-slider-1.png", alt="")
+                            .gastronomic-galery__item
+                                img(src="static/img/content/event-slider-1.png", alt="")
+                    //- gastronomic-info
+                    .gastronomic-info
+                        .gastronomic-info__top
+                            .gastronomic-info__services
+                                span Сервис:
+                                <i class="fas fa-wine-glass"></i>
+                                <i class="fas fa-utensils"></i>
+                                <i class="fas fa-music"></i>
+                                <i class="fas fa-headphones"></i>
+                                .wc-icon
+                                <i class="fas fa-globe"></i>
+                            button.gastronomic-info__button меню на борту
+                        .gastronomic-info__content
+                            .gastronomic-info__item
+                                .icon
+                                    img(src="static/img/general/gastronomic-info__item-icon-1.png", alt="")
+                                .info-box
+                                    .title ПРЕКРАСНАЯ ВОЗМОЖНОСТЬ ДЛЯ ЛЕТНЕГО УЖИНА
+                                    .text Предлагаем вам сбежать от суеты мегаполиса и расслабиться на борту теплохода-ресторана, наслаждаясь свежим речным воздухом и парадными набережными Невы!
+                            .gastronomic-info__item
+                                .icon
+                                    img(src="static/img/general/gastronomic-info__item-icon-2.png", alt="")
+                                .info-box
+                                    .title ПРЕКРАСНАЯ ВОЗМОЖНОСТЬ ДЛЯ ЛЕТНЕГО УЖИНА
+                                    .text Предлагаем вам сбежать от суеты мегаполиса и расслабиться на борту теплохода-ресторана, наслаждаясь свежим речным воздухом и парадными набережными Невы!
+                            .gastronomic-info__item
+                                .icon
+                                    img(src="static/img/general/gastronomic-info__item-icon-3.png", alt="")
+                                .info-box
+                                    .title ПРЕКРАСНАЯ ВОЗМОЖНОСТЬ ДЛЯ ЛЕТНЕГО УЖИНА
+                                    .text Предлагаем вам сбежать от суеты мегаполиса и расслабиться на борту теплохода-ресторана, наслаждаясь свежим речным воздухом и парадными набережными Невы!
+                .right
+                    //- gastronomic-date
+                    .gastronomic-date
+                        form.gastronomic-date__form
+                            .left
+                                label.gastronomic-date__title выберите дату
+                                input.gastronomic-date__date#datepicker(type="text")
+                                label.gastronomic-date__title выберите дату
+                                <select id="flight">
+                                    <option value="hide">выберите доступный рейс</option>
+                                    <option value="1" rel="icon-temperature">Раз</option>
+                                    <option value="2">Два</option>
+                                    <option value="3">Три</option>
+                                </select> 
+                            .right
+                                button.gastronomic-date__button Далее
+                        .gastronomic-date__title Цены on-line билетов:
+                        .g-list-wrap
+                            ul.gastronomic-date__list
+                                .gastronomic-date__title STANDARD 
+                                li.red Полный - от 800руб.
+                                li.green Льготный - от 700руб.
+                                li.blue Детский (3-12 лет) - от 400руб.
+                                li.yellow <b>Стол на 4 персоны</b> ( зона "STANDARD") - от 2100 руб.
+                            ul.gastronomic-date__list
+                                .gastronomic-date__title STANDARD
+                                li.violet Большой VIP (8 персон) 7990 руб.
+                                li.red Большой VIP (8 персон) 7990 руб.
+                                li.green Малый VIP (2 персоны) 3990 руб.
+                        .gastronomic-date__warning
+                            .warning-text <a>Дети до 3 лет</a> БЕЗ ПРЕДОСТАВЛЕНИЯ ОТДЕЛЬНОГО МЕСТА - бесплатно.
+                            .warning-text ВНИМАНИЕ! На ребенка без посадочного места необходимо <a>получить бесплатный посадочный талон</a> в офисе на причале! Посадка на борт по бесплатному посадочному талону осуществляется только при наличии Полного/Льготного билета на данный рейс.
+                            .warning-text <a>Детский билет</a> - дети от 3 до 12 лет. 
+                            .warning-text <a>Льготный билет</a> - школьники от 13 до 18 лет, студенты, пенсионеры, инвалиды (при предъявлении подтверждающих документов).
+                
+
+
+
+
+
+
+            
+    
+
+
+    //- content-section road
+    section.content-section
+        .content-section__top-line
+            .container
+                .content-section__title-wrap
+                    h2.content-section__title 
+                        img.content-section___icon(src="static/img/general/content-section-icon-2.png", alt="")
+                        span Маршрут
+        .content-section__wrap
+            .container
+                .gastranomic-route__map
+                    img(src="static/img/content/gastranomic-road__map.png", alt="")
+                .gastranomic-route__text 
+                    span Ужин круиз по Неве является прекрасной возможностью посмотреть парадные набережные Санкт-Петербурга и приятно расслабиться в уютном зале<br>теплохода-ресторана "Астра" Рейс сопровождает живая музыка.
+                    button.gastranomic-route__button Скачать карту
+                .row
+                    .col-md-6
+                        .gastranomic-route__info-box
+                            .icon
+                                img(src="static/img/general/route__info-box-img-1.png", alt="")
+                            .text Отправление теплохода «КОРЮШКА» и «ASTRA» от Центральной пристани Санкт-Петербурга: «Спуск со львами» у Дворцового моста, Адмиралтейская набережная, 2
+
+                    .col-md-6
+                        .gastranomic-route__info-box
+                            .icon
+                                img(src="static/img/general/route__info-box-img-2.png", alt="")
+                            .text Отправление теплохода «КОРЮШКА» и «ASTRA» от Центральной пристани Санкт-Петербурга: «Спуск со львами» у Дворцового моста, Адмиралтейская набережная, 2
+
+                
+
+
+    //- content-section 3d
+    section.content-section
+        .content-section__top-line
+            .container
+                .content-section__title-wrap
+                    h2.content-section__title 
+                        img.content-section___icon(src="static/img/general/content-section-icon-3.png", alt="")
+                        span СМОТРЕТЬ 3D-ТУР ПО ТЕПЛОХОДУ "Астра"
+        .content-section__wrap
+            .container
+                .gastranomic__3d
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1523136929114!6m8!1m7!1sCAoSLEFGMVFpcE4xOXF1Q01yV19lZ0ZUWDRHM1JTOE5UQlZ5Q1RPM1psa3NuUVY4!2m2!1d59.93986317198713!2d30.30880861392734!3f329.4974838627857!4f-14.487564667197972!5f0.7820865974627469" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+
+    //- content-section video
+    section.content-section
+        .content-section__top-line
+            .container
+                .content-section__title-wrap
+                    h2.content-section__title 
+                        img.content-section___icon(src="static/img/general/content-section-icon-4.png", alt="")
+                        span видео
+        .content-section__wrap
+            .container
+                .gastranomic-video
+                    <iframe src="https://www.youtube.com/embed/vkfbRbPM9Do?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+    //- content-section comments
+    section.content-section
+        .content-section__top-line
+            .container
+                .content-section__title-wrap
+                    h2.content-section__title 
+                        img.content-section___icon(src="static/img/general/content-section-icon-5.png", alt="")
+                        span Комментарии
+        .content-section__wrap
+            .container
+                .gasto-comment
+                    img(src="static/img/general/gastra-coments.png", alt="")
+
+
+
+    //- content-section special-offer
+    section.content-section
+        .content-section__top-line
+            .container
+                .content-section__title-wrap
+                    h2.content-section__title 
+                        img.content-section___icon(src="static/img/general/content-section-icon-1.png", alt="")
+                        span СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+                    button.content-section__button больше туров
+        .content-section__wrap
+            .container
+                .row
+                    .col-lg.col-sm-6
+                        .special-offer
+                            .special-offer__img
+                                img(src="static/img/content/special-offer-1.png", alt="")
+                                .special-offer__price 
+                                    span от<br/>280руб.
+                            .special-offer__info
+                                .special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+                                .special-offer__time 
+                                    <i class="far fa-clock"></i>
+                                    span с 10 до 20 ежедневно
+                                .special-offer__icons
+                                    <i class="fas fa-music"></i>
+                                    <i class="fas fa-headphones"></i>
+                                    <i class="fas fa-coffee"></i>
+                                    <i class="fas fa-glass-martini"></i>
+                            button.special-offer__button купить
+                    .col-lg.col-sm-6
+                        .special-offer
+                            .special-offer__img
+                                img(src="static/img/content/special-offer-1.png", alt="")
+                                .special-offer__price 
+                                    span от<br/>280руб.
+                            .special-offer__info
+                                .special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+                                .special-offer__time 
+                                    <i class="far fa-clock"></i>
+                                    span с 10 до 20 ежедневно
+                                .special-offer__icons
+                                    <i class="fas fa-music"></i>
+                                    <i class="fas fa-headphones"></i>
+                                    <i class="fas fa-coffee"></i>
+                                    <i class="fas fa-glass-martini"></i>
+                            button.special-offer__button купить
+                    .col-lg.col-sm-6
+                        .special-offer
+                            .special-offer__img
+                                img(src="static/img/content/special-offer-1.png", alt="")
+                                .special-offer__price 
+                                    span от<br/>280руб.
+                            .special-offer__info
+                                .special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+                                .special-offer__time 
+                                    <i class="far fa-clock"></i>
+                                    span с 10 до 20 ежедневно
+                                .special-offer__icons
+                                    <i class="fas fa-music"></i>
+                                    <i class="fas fa-headphones"></i>
+                                    <i class="fas fa-coffee"></i>
+                                    <i class="fas fa-glass-martini"></i>
+                            button.special-offer__button купить
+                    .col-lg.col-sm-6
+                        .special-offer
+                            .special-offer__img
+                                img(src="static/img/content/special-offer-1.png", alt="")
+                                .special-offer__price 
+                                    span от<br/>280руб.
+                            .special-offer__info
+                                .special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+                                .special-offer__time 
+                                    <i class="far fa-clock"></i>
+                                    span с 10 до 20 ежедневно
+                                .special-offer__icons
+                                    <i class="fas fa-music"></i>
+                                    <i class="fas fa-headphones"></i>
+                                    <i class="fas fa-coffee"></i>
+                                    <i class="fas fa-glass-martini"></i>
+                            button.special-offer__button купить

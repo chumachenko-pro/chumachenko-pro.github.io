@@ -1,0 +1,123 @@
+.modal_div {
+	background-image url(../img/general/background.png)
+	border-radius: 15px
+	position: fixed;
+	top: 45%;
+	left: 0;
+	right: 0;
+	display: none; 
+	opacity: 0;
+	z-index: 1000;
+}
+.modal_div .modal_close {
+	position relative
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	cursor: pointer;
+}
+.modal_div .modal_close:hover {
+	opacity: 0.8;
+}
+.modal_div .modal_close:before
+	content: ""
+	display: block
+	height: 1px
+	width: 25px
+	background: #000
+	transform: rotate(45deg)
+	position: absolute
+	position: absolute
+	top: 9px
+	left: -3px
+.modal_div .modal_close:after
+	content: ""
+	display: block
+	height: 1px
+	width: 25px
+	background: #000
+	transform: rotate(-45deg)
+	position: absolute
+	top: 9px
+	left: -3px
+#overlay {
+	z-index:999; 
+	position:fixed;
+	background-color:#000;
+	opacity:0.8; 
+	-moz-opacity:0.8;
+	width:100%; 
+	height:100%; 
+	top:0;
+	left:0;
+	cursor:pointer;
+	display:none;
+}
+
+
+// Заявка
+.modal_div.modal_div--application
+	padding: 70px 75px;
+	width: 441px
+	height: 429px
+	margin: -214.5px auto
+.modal1__title
+	text-align center
+	margin-bottom rem(40px)
+.modal1-form
+	display: flex
+	flex-direction: column
+	.modal1-form__input
+		font-family: 'Oswald', sans-serif
+		border: none 
+		border-radius: 4px
+		padding-left 15px
+		padding-right 15px
+		height 44px
+		margin-bottom 17px
+	.button
+		margin-top 17px
+
+
+// Спасибо
+.modal_div.modal_div--senk
+	width: 757px;
+	height: 166px;
+	margin: -83px auto
+	padding: 63px 25px
+.senk-title
+	font-weight 400
+	font-size rem(30px)
+	color: #000
+	text-align center
+
+
+
+@media only screen and (max-width : 992px) {
+	.modal_div.modal_div--senk {
+		width: 600px;	
+	}
+}
+@media only screen and (max-width : 768px) {
+	.modal_div.modal_div--senk {
+		width: 500px;	
+	}
+}
+@media only screen and (max-width : 576px) {
+	.modal_div.modal_div--application {
+		width 290px
+		height 362px
+		margin-top -182px
+		padding: 50px 25px;
+	}
+	.modal1__title {
+		font-size 30px	
+	}
+	.modal_div.modal_div--senk {
+		width: 290px;
+		height auto;
+		margin-top -102px
+	}
+}

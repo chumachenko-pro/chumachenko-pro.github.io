@@ -1,0 +1,322 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+	//- carousel
+
+
+	//- удалить обвертку и клас актив
+	.sliderType
+		.changer Сменить слайдер
+
+
+		//- картинки
+		section.carousel.active
+			.carouselBody.owl-carousel
+				.carouseItem
+					img.carouseItem__background(src="img/slideBackground.png", alt="")
+					.container
+						.carouseItem__inner
+							h1.customTitle Надежный септик под ключ<br>для каждого дома или дачи
+							h3 Какой выбрать?
+							.carouseItem__text Оставьте заявку и наши специалисты подберут правильное решение для вас.<br>Вы получите смету в течении дня.
+							button.button.open_modal(href="#modal1") Подобрать септик
+				.carouseItem
+					img.carouseItem__background(src="img/slideBackground.png", alt="")
+					.container
+						.carouseItem__inner
+							h1.customTitle Надежный септик под ключ<br>для каждого дома или дачи
+							h3 Какой выбрать?
+							.carouseItem__text Оставьте заявку и наши специалисты подберут правильное решение для вас.<br>Вы получите смету в течении дня.
+							button.button.open_modal(href="#modal1") Подобрать септик
+				.carouseItem
+					img.carouseItem__background(src="img/slideBackground.png", alt="")
+					.container
+						.carouseItem__inner
+							h1.customTitle Надежный септик под ключ<br>для каждого дома или дачи
+							h3 Какой выбрать?
+							.carouseItem__text Оставьте заявку и наши специалисты подберут правильное решение для вас.<br>Вы получите смету в течении дня.
+							button.button.open_modal(href="#modal1") Подобрать септик
+
+		//- видео
+		section.carousel
+			.video-background
+				.video-foreground
+					iframe(src="https://www.youtube.com/embed/RfNTtSbWu0E?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=RfNTtSbWu0E&start=0&mute=1", frameborder="0", allowfullscreen)
+			.carouselBody.vidBG.owl-carousel
+				.carouseItem
+					.container
+						.carouseItem__inner
+							h1.customTitle Надежный септик под ключ<br>для каждого дома или дачи
+							h3 Какой выбрать?
+							.carouseItem__text Оставьте заявку и наши специалисты подберут правильное решение для вас.<br>Вы получите смету в течении дня.
+							button.button.open_modal(href="#modal1") Подобрать септик
+				.carouseItem
+					.container
+						.carouseItem__inner
+							h1.customTitle Надежный септик под ключ<br>для каждого дома или дачи
+							h3 Какой выбрать?
+							.carouseItem__text Оставьте заявку и наши специалисты подберут правильное решение для вас.<br>Вы получите смету в течении дня.
+							button.button.open_modal(href="#modal1") Подобрать септик
+				.carouseItem
+					.container
+						.carouseItem__inner
+							h1.customTitle Надежный септик под ключ<br>для каждого дома или дачи
+							h3 Какой выбрать?
+							.carouseItem__text Оставьте заявку и наши специалисты подберут правильное решение для вас.<br>Вы получите смету в течении дня.
+							button.button.open_modal(href="#modal1") Подобрать септик
+				
+	//- production
+	section.production
+		.container
+			h2.customTitle Наша продукция
+			.row
+				.col-lg-3.col-md-6
+					a(href="").productionBox
+						img.productionBox__bg(src="img/productBox.png", alt="")
+						.productionBox__title Септики для дома и дачи
+				.col-lg-3.col-md-6
+					a(href="").productionBox
+						img.productionBox__bg(src="img/productBox.png", alt="")
+						.productionBox__title Септики для дома и дачи
+				.col-lg-3.col-md-6
+					a(href="").productionBox
+						img.productionBox__bg(src="img/productBox.png", alt="")
+						.productionBox__title Септики для дома и дачи
+				.col-lg-3.col-md-6
+					a(href="").productionBox
+						img.productionBox__bg(src="img/productBox.png", alt="")
+						.productionBox__title Септики для дома и дачи
+				.col-lg-3.col-md-6
+					a(href="").productionBox
+						img.productionBox__bg(src="img/productBox.png", alt="")
+						.productionBox__title Септики для дома и дачи
+				.col-lg-3.col-md-6
+					a(href="").productionBox
+						img.productionBox__bg(src="img/productBox.png", alt="")
+						.productionBox__title Септики для дома и дачи
+				.col-lg-3.col-md-6
+					a(href="").productionBox
+						img.productionBox__bg(src="img/productBox.png", alt="")
+						.productionBox__title Септики для дома и дачи
+				.col-lg-3.col-md-6
+					a(href="").productionBox
+						img.productionBox__bg(src="img/productBox.png", alt="")
+						.productionBox__title Септики для дома и дачи
+	//- //- picking
+	//- section.picking
+	//- 	.container
+	//- 		h2.customTitle Подбор подходящей автономной канализации
+	//- 		form.captureForm(action="")
+	//- 			.row
+	//- 				.col-lg-4
+	//- 					ul.checkList
+	//- 						li.checkList__title Выберите тип объекта
+	//- 						li
+	//- 							input.checkList__checkbox#typeObj1(type="radio" name="typeOb" checked)
+	//- 							label.checkList__label(for="typeObj1") Дом/дача
+	//- 						li
+	//- 							input.checkList__checkbox#typeObj2(type="radio" name="typeOb")
+	//- 							label.checkList__label(for="typeObj2") Баня
+	//- 						li
+	//- 							input.checkList__checkbox#typeObj3(type="radio" name="typeOb")
+	//- 							label.checkList__label(for="typeObj3") Гостиница
+	//- 						li
+	//- 							input.checkList__checkbox#typeObj4(type="radio" name="typeOb")
+	//- 							label.checkList__label(for="typeObj4") Котеджный Поселок
+							
+	//- 				.col-lg-4
+	//- 					ul.checkList
+	//- 						li.checkList__title Выберите тип объекта
+	//- 						li
+	//- 							input.checkList__checkbox#guests1(type="radio" name="guests" checked)
+	//- 							label.checkList__label(for="guests1") Дом/дача
+	//- 						li
+	//- 							input.checkList__checkbox#guests2(type="radio" name="guests")
+	//- 							label.checkList__label(for="guests2") Баня
+	//- 						li
+	//- 							input.checkList__checkbox#guests3(type="radio" name="guests")
+	//- 							label.checkList__label(for="guests3") Гостиница
+	//- 						li
+	//- 							input.checkList__checkbox#guests4(type="radio" name="guests")
+	//- 							label.checkList__label(for="guests4") Котеджный Поселок
+	//- 				.col-lg-4
+	//- 					ul.checkList
+	//- 						li.checkList__title Выберите тип объекта
+	//- 						li
+	//- 							input.checkList__checkbox#reason1(type="radio" name="reason" checked)
+	//- 							label.checkList__label(for="reason1") Дом/дача
+	//- 						li
+	//- 							input.checkList__checkbox#reason2(type="radio" name="reason")
+	//- 							label.checkList__label(for="reason2") Баня
+	//- 						li
+	//- 							input.checkList__checkbox#reason3(type="radio" name="reason")
+	//- 							label.checkList__label(for="reason3") Гостиница
+	//- 						li
+	//- 							input.checkList__checkbox#reason4(type="radio" name="reason")
+	//- 							label.checkList__label(for="reason4") Котеджный Поселок
+	//- 			.row
+	//- 				.col-lg-4
+	//- 					input.captureForm__input.captureForm__input--border(type="text" placeholder="Ваше имя")
+	//- 				.col-lg-4
+	//- 					input.captureForm__input.captureForm__input--border(type="text" placeholder="Ваш телефон")
+	//- 				.col-lg-4
+	//- 					input.captureForm__button.button(type="submit")
+	//- popular product
+	section.popularProduct
+		.container
+			h2.customTitle Популярные товары
+			.row
+				.col-lg-3.col-md-6
+					.popularProductBox
+						.popularProductBox__image
+							img(src="img/popularProductBox.png", alt="")
+						.popularProductBox__content
+							.popularProductBox__top
+								.popularProductBox__name FEKAlife 4 пр
+								.popularProductBox__oldPrice 56 000 руб.
+							.popularProductBox__info
+								.popularProductBox__warning Цена по акции
+								.popularProductBox__price 49 990 руб.
+							button.button.open_modal(href="#modal1") Подобрать септик
+				.col-lg-3.col-md-6
+					.popularProductBox
+						.popularProductBox__image
+							img(src="img/popularProductBox.png", alt="")
+						.popularProductBox__content
+							.popularProductBox__top
+								.popularProductBox__name FEKAlife 4 пр
+								.popularProductBox__oldPrice 56 000 руб.
+							.popularProductBox__info
+								.popularProductBox__warning Цена по акции
+								.popularProductBox__price 49 990 руб.
+							button.button.open_modal(href="#modal1") Подобрать септик
+				.col-lg-3.col-md-6
+					.popularProductBox
+						.popularProductBox__image
+							img(src="img/popularProductBox.png", alt="")
+						.popularProductBox__content
+							.popularProductBox__top
+								.popularProductBox__name FEKAlife 4 пр
+								.popularProductBox__oldPrice 56 000 руб.
+							.popularProductBox__info
+								.popularProductBox__warning Цена по акции
+								.popularProductBox__price 49 990 руб.
+							button.button.open_modal(href="#modal1") Подобрать септик
+				.col-lg-3.col-md-6
+					.popularProductBox
+						.popularProductBox__image
+							img(src="img/popularProductBox.png", alt="")
+						.popularProductBox__content
+							.popularProductBox__top
+								.popularProductBox__name FEKAlife 4 пр
+								.popularProductBox__oldPrice 56 000 руб.
+							.popularProductBox__info
+								.popularProductBox__warning Цена по акции
+								.popularProductBox__price 49 990 руб.
+							button.button.open_modal(href="#modal1") Подобрать септик
+	//- causes
+	section.causes
+		.container
+			h2.customTitle Причины выбрать нашу компанию
+			.row
+				.col-lg-6
+					.causesBox.wow.fadeInLeft
+						.causesBox__icon
+							<i class="far fa-user"></i>
+						.causesBox__content
+							.causesBox__title Бесплатный выезд специалиста
+							.causesBox__text Квалифицированный сотрудник бесплатно подъедет на ваш участок и на месте произведет необходимые замеры, расчеты и окажет грамотную консультацию
+				.col-lg-6
+					.causesBox.wow.fadeInRight
+						.causesBox__icon
+							<i class="fab fa-pagelines"></i>
+						.causesBox__content
+							.causesBox__title Бесплатный выезд специалиста
+							.causesBox__text Квалифицированный сотрудник бесплатно подъедет на ваш участок и на месте произведет необходимые замеры, расчеты и окажет грамотную консультацию
+				.col-lg-6
+					.causesBox.wow.fadeInLeft
+						.causesBox__icon
+							<i class="fas fa-cogs"></i>
+						.causesBox__content
+							.causesBox__title Бесплатный выезд специалиста
+							.causesBox__text Квалифицированный сотрудник бесплатно подъедет на ваш участок и на месте произведет необходимые замеры, расчеты и окажет грамотную консультацию
+				.col-lg-6
+					.causesBox.wow.fadeInRight
+						.causesBox__icon
+							<i class="fas fa-truck"></i>
+						.causesBox__content
+							.causesBox__title Бесплатный выезд специалиста
+							.causesBox__text Квалифицированный сотрудник бесплатно подъедет на ваш участок и на месте произведет необходимые замеры, расчеты и окажет грамотную консультацию
+				.col-lg-6
+					.causesBox.wow.fadeInLeft
+						.causesBox__icon
+							<i class="far fa-thumbs-up"></i>
+						.causesBox__content
+							.causesBox__title Бесплатный выезд специалиста
+							.causesBox__text Квалифицированный сотрудник бесплатно подъедет на ваш участок и на месте произведет необходимые замеры, расчеты и окажет грамотную консультацию
+				.col-lg-6
+					.causesBox.wow.fadeInRight
+						.causesBox__icon
+							<i class="fas fa-shield-alt"></i>
+						.causesBox__content
+							.causesBox__title Бесплатный выезд специалиста
+							.causesBox__text Квалифицированный сотрудник бесплатно подъедет на ваш участок и на месте произведет необходимые замеры, расчеты и окажет грамотную консультацию
+	//- video
+	section.video
+		.container
+			h2.customTitle Какую канализационную систему установить? Видеообзор
+			.row
+				.col-lg-6
+					a.videoBox(href="https://www.youtube.com/embed/Q9IZQCz3d1M" data-fancybox="video")
+						img.videoBox__image(src="img/videoBox.png", alt="")
+						button.playButton
+							<i class="fas fa-play"></i>
+				.col-lg-6
+					a.videoBox(href="https://www.youtube.com/embed/Q9IZQCz3d1M" data-fancybox="video")
+						img.videoBox__image(src="img/videoBox.png", alt="")
+						button.playButton
+							<i class="fas fa-play"></i>
+	//- capture
+	section.capture
+		.container
+			h2 Подберем канализацию о которой можно забыть
+			form.captureForm(action="")
+				//- send param
+				input(type="hidden" name="project_name" value="Site Name")
+				input(type="hidden" name="admin_email" value="desphub@gmail.com")
+				input(type="hidden" name="form_subject" value="Модальное окно 1")
+				.row
+					.col-md-4
+						input.captureForm__input(type="text" placeholder="Ваше имя")
+					.col-md-4
+						input.captureForm__input(type="text" placeholder="Ваш телефон")
+					.col-md-4
+						input.captureForm__button.button(type="submit")
+	//- certificates
+	section.certificates
+		.container
+			h2.customTitle Сертификаты и патенты
+			.row
+				.col-lg-3.col-md-6
+					a.certificatesBox(href="img/certificatesBox.png" data-fancybox="certificates")
+						img(src="img/certificatesBox.png", alt="")
+				.col-lg-3.col-md-6
+					a.certificatesBox(href="img/certificatesBox.png" data-fancybox="certificates")
+						img(src="img/certificatesBox.png", alt="")
+				.col-lg-3.col-md-6
+					a.certificatesBox(href="img/certificatesBox.png" data-fancybox="certificates")
+						img(src="img/certificatesBox.png", alt="")
+				.col-lg-3.col-md-6
+					a.certificatesBox(href="img/certificatesBox.png" data-fancybox="certificates")
+						img(src="img/certificatesBox.png", alt="")
+	//- location
+	section.location
+		.container
+			h2.customTitle Как нас найти?
+		.location__map
+			#ymap
+			.mapOverlay

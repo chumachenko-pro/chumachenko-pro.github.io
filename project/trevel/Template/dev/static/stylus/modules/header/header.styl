@@ -1,0 +1,114 @@
+header
+    position relative
+// header top line
+.header__top-line-wrap
+    position relative
+    background #223869
+    .header__top-line 
+        display: flex
+        justify-content space-between
+        align-items center
+        padding: 10px 0px;
+    .top-line__right
+        display: flex
+        flex-wrap: wrap
+        align-items center    
+.header__contacts
+    display flex
+    flex-direction: column
+    margin-right 20px
+    .header__phone,
+    .header__mail
+        font-weight 400
+        font-size rem(14px)
+        color: #fff
+        line-height rem(20px)
+    .header__phone
+        letter-spacing: 3px
+.header__logo .smoll
+    display: none
+// header top line
+
+// .header__mob-line
+.header__mob-line
+    display: none
+    background #1c4f8a
+.header__mob-line-wrap
+    display: flex
+    justify-content: space-between
+    padding: 10px 0px
+// .header__mob-line
+
+
+// header navigation
+.header__nav-wrap
+    background #5b9de8
+    .header__nav
+        display flex
+        justify-content space-between
+        align-items center
+        li
+            text-align center
+            padding 14px 30px
+            position relative
+            transition: .3s
+            &:after
+                content ""
+                position: absolute
+                right: 0
+                top calc( 50% - 13px )
+                display: block
+                height 26px
+                border-right: 1px solid #fff
+            &:hover a
+                text-decoration underline
+            &:first-child
+                padding-left 0
+            &:last-child
+                padding-right 0
+                &:after
+                    display: none
+            a
+                text-transform uppercase
+                font-size rem(12px)
+                line-height rem(24px)
+                font-weight 400
+                color: #fff 
+// header navigation
+
+
+@media only screen and (max-width : 1200px) 
+    .header__nav-wrap
+        display: none
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index 99
+    .header__nav-wrap .header__nav
+        flex-direction: column
+    .header__nav-wrap .header__nav li
+        padding: 5px 0px
+    .header__nav-wrap .header__nav li:first-child
+        padding: 15px 0px 5px
+    .header__nav-wrap .header__nav li:last-child
+        padding: 5px 0px 15px
+    .header__nav-wrap .header__nav li:after
+        display: none
+    .mobile-mnu
+        display: block
+// @media only screen and (max-width : 992px) 
+@media only screen and (max-width : 720px) 
+    .header__logo .big
+        display: none
+    .header__logo .smoll
+        display: block
+@media only screen and (max-width : 576px)
+    .header__mob-line
+        display: block
+    .button.hidden-xs-down,
+    .header__top-line-wrap .top-line__right .header__contacts.hidden-xs-down
+        display: none
+@media only screen and (min-width : 1200px)
+    .mobile-mnu
+        display: none

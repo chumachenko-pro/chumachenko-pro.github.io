@@ -1,0 +1,77 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.ss-text {
+	margin-bottom: 50px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.buy-card {
+	margin-bottom: 50px;
+}
+.top-slider
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.top-slider {
+	width: 333px;
+	height: 221px;
+}
+.abc-text {
+	font-size: 40px;
+}
+.day-box {
+	padding: 50px 25px;
+}
+.programm-box .btn-wrap {
+	margin: 0 25px;
+}
+footer .logo {
+	width: 75px;
+}
+.logo2 {
+	width: 50px;
+}
+.ib-title br {
+	display: none;
+}
+.ib-title {
+	font-size: 28px;
+	line-height: 38px;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.ss-text {
+	margin-right: -25px;
+	margin-top: 65px;
+	line-height: 1.353;
+}
+}

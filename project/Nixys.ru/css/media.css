@@ -1,0 +1,142 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+header {
+	padding-bottom: 50px;
+}
+.partners-logo-box {
+	justify-content: center;
+}
+.partners-logo {
+	margin: 25px 15px;
+}
+.advantages-box {
+	max-width: 645px;
+}
+.achievements-box {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 25px;
+}
+.services-box {
+	margin: 0 auto 75px;
+}
+.services-box:last-child {
+	margin-bottom: 0;
+}
+.advantages-box {
+	margin-bottom: 100px;
+}
+.event-macbook {
+    margin-right: -277px;
+    margin-bottom: 50px;
+    bottom: -10px;
+    left: -205px;
+
+    background-size: contain;
+    width: 501px;
+    height: 273px;
+}
+.event-macbook img {
+    width: 342px;
+    left: 79px;
+    top: 20px;
+}
+.ab-wrap {
+	justify-content: center;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.reviews-box {
+	flex-direction: column;
+    align-items: center;
+}
+.rb-text {
+	text-align: center;
+}
+
+
+.contact_form{flex-direction: column;}
+
+.contacts-wrap{flex-wrap: wrap;}
+.contacts-box{margin-bottom: 50px;}
+.contacts-box:last-child{margin-bottom: 0px;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.confidence {
+	padding-bottom: 75px;
+}
+.footer-wrap .logo-title {
+	margin-left: -50px;
+    max-width: 110px;
+}
+.contacts-wrap {
+    width: 295px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.logo-wrap {
+	margin-right: 35px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

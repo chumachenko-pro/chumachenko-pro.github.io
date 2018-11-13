@@ -1,0 +1,17 @@
+#authorization.modal_div
+	span.modal_close
+	.modal_div__title Авторизация в личном кабинете
+	form.modal-form
+		.text-wrap
+			input.modal-form__login(type="text")(placeholder="Логин")(required)
+			input.modal-form__pass(type="password")(placeholder="Пароль")(required)
+		.repas
+			.checkbox-wrap
+				input#modal-form__remember(type="checkbox")
+				label.modal-form__for-rem(for="modal-form__remember") Запомнить меня
+			a.modal-form__forget-pass Забыли пароль?
+		.buttons-wrap
+			input.modal-form__enter(type="submit")(value="Войти")
+			span или
+			a.modal-form__reg(href="#registration") зарегистрироваться
+#overlay

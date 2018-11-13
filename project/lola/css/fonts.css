@@ -1,0 +1,63 @@
+/* font-family: "Ubuntu-B"; */
+@font-face {
+	font-family: "Ubuntu-B";
+	src: url("../fonts/Ubuntu/Ubuntu-B.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Ubuntu-BI"; */
+@font-face {
+	font-family: "Ubuntu-BI";
+	src: url("../fonts/Ubuntu/Ubuntu-BI.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Ubuntu-C"; */
+@font-face {
+	font-family: "Ubuntu-C";
+	src: url("../fonts/Ubuntu/Ubuntu-C.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Ubuntu-L"; */
+@font-face {
+	font-family: "Ubuntu-L";
+	src: url("../fonts/Ubuntu/Ubuntu-L.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Ubuntu-LI"; */
+@font-face {
+	font-family: "Ubuntu-LI";
+	src: url("../fonts/Ubuntu/Ubuntu-LI.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Ubuntu-M"; */
+@font-face {
+	font-family: "Ubuntu-M";
+	src: url("../fonts/Ubuntu/Ubuntu-M.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Ubuntu-MI"; */
+@font-face {
+	font-family: "Ubuntu-MI";
+	src: url("../fonts/Ubuntu/Ubuntu-MI.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Ubuntu-R"; */
+@font-face {
+	font-family: "Ubuntu-R";
+	src: url("../fonts/Ubuntu/Ubuntu-R.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Ubuntu-RI"; */
+@font-face {
+	font-family: "Ubuntu-RI";
+	src: url("../fonts/Ubuntu/Ubuntu-RI.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

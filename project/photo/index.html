@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="shortcut icon" href="favicon.png" />
+
+	<link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+
+	<link href="css/jquery-ui.min.css" rel="stylesheet" />
+	<link href="css/jquery-ui.theme.min.css" rel="stylesheet" />
+
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+
+
+<body>
+	<header>
+		<div class="header-wrap">
+			<div class="container">
+				<div class="top_line">
+					<a href="index.html" class="logo">ФОТОСТУДИЯ №1</a>
+					
+					<div class="phone">
+						<a href="tel:+74957768990">+7 (495) 776-89-90</a>
+						<a href="tel:+74957768990">+7 (495) 776-89-90</a>
+					</div>
+				</div>
+			</div>
+			<div class="header-bottom">
+				<div class="container">
+					<div class="header-content">
+						<div class="hc-price">Новогодняя фотосессия от 6000 Р</div>
+						<div class="hc-sub">В стоимость фотосессии включены: макияж, укладка, одежда, интерьеры, реквизиты, аренда фотостудии, обработка фото</div>
+					</div>
+				</div>
+				<div class="navigaton">
+					<div class="container">
+						<div class="navigaton-wrap">
+							<a href="#stoimost" class="calculate-btn go_to">Рассчитать стоимость</a>
+							<nav>
+								<ul>
+									<li class="gift"><a class="go_to" href="#buygift">Купить подарочный сертификат</a></li>
+									<li><a class="go_to" href="#kontakt">Контакты</a></li>
+									<li><a class="go_to" href="#oplata">Внести оплату</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+
+
+	<!-- ПК галерея -->
+	<section class="foto">
+		<div class="container">
+			<div class="box_wrap">
+
+
+				<!-- Видимые фото -->
+				<div href="img/foto1.jpg" class="box_foto" data-fancybox="group">
+					<img src="img/foto1.jpg" alt="">
+				</div>
+				<div href="img/foto2.jpg" class="box_foto" data-fancybox="group">
+					<img src="img/foto2.jpg" alt="">
+				</div>
+				<div href="img/foto3.jpg" class="box_foto" data-fancybox="group">
+					<img src="img/foto3.jpg" alt="">
+				</div>
+				<!-- Видимые фото -->
+
+
+				<!-- Скрытые фото -->
+				<div href="img/foto3.jpg" class="box_foto more_service" data-fancybox="group">
+					<img src="img/foto3.jpg" alt="">
+				</div>
+
+				<div href="img/foto3.jpg" class="box_foto more_service" data-fancybox="group">
+					<img src="img/foto3.jpg" alt="">
+				</div>
+
+				<div href="img/foto3.jpg" class="box_foto more_service" data-fancybox="group">
+					<img src="img/foto3.jpg" alt="">
+				</div>
+
+				<div href="img/foto3.jpg" class="box_foto more_service" data-fancybox="group">
+					<img src="img/foto3.jpg" alt="">
+				</div>
+				<!-- Скрытые фото -->
+
+
+				<a class="btn green show-more">Смотреть больше</a>
+			</div>
+		</div>
+	</section>
+	<!-- ПК галерея -->
+
+
+
+	<section class="calculator" id="stoimost">
+		<div class="calculator-top-line">
+			<div class="calculator-title">Калькулятор стоимости</div>
+		</div>
+
+		<div class="calculator-content">
+			<div class="container">
+				<div class="cc-wrap">
+
+				<div class="cc-left">
+					<div class="calculator-box">
+						<div class="cb-item">
+							<div class="cbi-left">Макияж</div>
+							<div class="cbi-rught">Входит в стоимость</div>
+						</div>
+
+						<div class="cb-item">
+							<div class="cbi-left">Укладка</div>
+							<div class="cbi-rught">Входит в стоимость</div>
+						</div>
+
+						<div class="cb-item">
+							<div class="cbi-left">Одежда</div>
+							<div class="cbi-rught">
+								Входит в стоимость
+								<div class="question">
+									?
+									<span>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, asperiores!
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="cb-item">
+							<div class="cbi-left">Обувь</div>
+							<div class="cbi-rught">Входит в стоимость</div>
+						</div>
+
+						<div class="cb-item">
+							<div class="cbi-left">Аксесуары</div>
+							<div class="cbi-rught">Входит в стоимость</div>
+						</div>
+						
+						<!-- form -->
+						<form class="calc-form" onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+							<div class="cb-item">
+								<div class="cbi-left">Количество образов</div>
+								<div class="cbi-rught">
+
+
+									<!--  -->
+									<div class="form-number"><output id="output" for="flying" name="level">1</output></div>
+
+									<div class="range-wrap">
+
+
+										<input name="flevel" id="flying" type="range" min="1" max="4" value="1" step="1"> 
+										   
+
+										<div class="range-numb">
+											<span>1</span>
+											<span>2</span>
+											<span>3</span>
+											<span>4</span>
+										</div>
+
+									</div>
+									<!--  -->
+
+
+									<div class="question">
+										?
+										<span>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, asperiores!
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="cb-item">
+								<div class="cbi-left">Количество интерьеров</div>
+								<div class="cbi-rught">
+
+									<div class="form-number" id="count"></div>
+									
+									<a class="greytext" data-toggle="modal" data-target="#myModal">Выбрать интерьеры</a>
+
+									<div class="question">
+										?
+										<span>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, asperiores!
+										</span>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="cb-item">
+								<!--  -->
+								<div class="cbi-left nopad kind_of_photoshoot">
+									<input name="dzen" type="radio" class="radio" id="radio1" value="dzen" checked="checked"/>
+									<label class="gift-btn qSelf" for="radio1">Для себя</label>
+								</div>
+								
+								<div class="cbi-rught nopad kind_of_photoshoot">
+									<input name="dzen" type="radio" class="radio" id="radio2" value="dzen"/>
+									<label class="gift-btn qGift" for="radio2">В подарок</label>
+								</div>
+								<!--  -->
+							</div>
+						</form>
+						<!-- form -->
+					</div>
+				</div>
+
+				<div class="cc-right">
+					<div class="ccr-box">Наш стилист подберет Вам <br>
+					наряды и сделает укладку для <span class="obtext">1 образа</span><br>
+					руководствуясь вашими пожеланиями</div>
+					<div class="ccr-box">Профессиональный визажист сделает вам
+					макияж в соответствии со стилем вашей 
+					фотосессии  </div>
+					<div class="ccr-box">Фотосессия будет проходить на <span class="intext">1 интерьере</span>.
+					Весь реквизит уже включен в стоимость </div>
+					<div class="ccr-box">На площадке с вами будет работать 
+					профессиональный фотограф, подсказывая 
+					вам наиболее удачные позы и ракурсы</div>
+					<div class="ccr-box">В течении двух дней с момента съемки вы 
+					получите обработанные снимки на почту, 
+					загруженные на файлообменник</div>
+
+					<div class="price-title">Стоимость вашей фотосессии составляет:</div>
+					<div class="price" id="rprice">6000</div>
+					<a class="choice-data">Выбрать дату и время</a>
+				</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="video">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box_video">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cfPoPN-zgss?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-5 col-md-offset-1">
+					<div class="text_wrap">
+						<p>Обработанные фотографии в течении 2 дней</p>
+						<p>Фотограф всегда подскажет вам более удачный 
+							ракурс и позу, чтобы получить самые лучшие<br> кадры</p>
+						<p>У нас вы почувствуете себя моделью глянцевых журналов</p>
+					</div>
+					<a class="btn green" data-toggle="modal" data-target="#myModal5">Забронировать фотосессию!</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="why">
+		<div id="garland" class="garland_1"><div id="nums_1">1</div></div>
+		<div class="container">
+			<div class="row">
+				<h2>Почему люди выбирают нас?</h2>
+				<div class="col-md-8 col-md-offset-3">
+					<div class="text_wrap">
+						<h3>Самая низкая цена в Москве на интерьерную фотосессию</h3>
+						<p>Мы не берем студии в аренду. У нас собственная фотостудия оборудованная 
+							по последнему слову техники со всем необходимым реквизитом, за счет этого 
+						мы можем позволить себе дать вам такие приятные цены.</p>
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-3">
+					<div class="text_wrap">
+						<h3>У нас работаю только профессионалы</h3>
+						<p>Весь персонал фотостудии имеет специализированное образование, 
+							дипломы, сертификаты и награды в своей области деятельности, которым 
+						отведен отдельный уголок на нашей студии</p>
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-3">
+					<div class="text_wrap">
+						<h3>Фотографии в течении 2 дней</h3>
+						<p>В нашем штате работают профессиональные ретушеры которые занимаются 
+							только обработкой фотографий, благодаря этому мы можем отдать вам 
+						готовые снимки в течении 2 дней</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="garland2" class="garland_1"><div id="nums_2">1</div></div>
+	</section>
+
+	<section class="book_it">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-11 col-md-offset-1">
+					<h2>Успей забронировать время на фотосессию</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-1">
+					<div class="text_wrap">
+						<p>Благодаря тому что мы смогли предоставить самые 
+							лучшие условия для проведения фотосессии, многие 
+						даты уже почти полностью забронированны на весь день.</p>
+						<p>Чтобы не упустить удобное для себя время, забронируй 
+							время под свою фотосессию прямо сейчас и уже никто 
+						не сможет его занять!</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="book_form">
+						<form>
+							<div class="select_wrap">
+								<!--  
+								<select name="domain" class="select1">
+									<option><p>10</p> декабря</option>
+									<option>10 декабря</option>
+								</select>
+								-->
+								<input type="text" class="data datepicker">
+								<img src="img/form_img.png" alt="">
+								<select name="domain" class="select2 select">
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+								</select>
+							</div>
+							<a class="time-btn pctime">Забронировать</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="buy" id="buygift">
+		<h2>Купить фотосессию в подарок</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="box_video">
+						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/cfPoPN-zgss?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="text_box1">
+						<p>Новогодняя фотосессия отличный подарок 
+							для всей семьи. Подарите своим близким 
+						новогоднее настроение и яркие воспоминания.</p>
+						<p>Оставьте заявку и мы сконфигурируем для вас
+						сертификат подходящий именно для вас.</p>
+					</div>
+					<div class="text_box2">
+						<p>Стоимость сертификата от</p><span>6000P</span>
+					</div>
+					<a class="btn green" data-toggle="modal" data-target="#myModal5">Купить сертификат!</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- MOBILE BLOCK -->
+	<section class="section1 hidden-lg hidden-md hidden-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Новогодняя фотосессия за 6000 Р</h2>
+					<h3>В стоимость фотосессии включены</h3>
+					<div class="box1">
+						<ul>
+							<li>Аренда PRO фотостудии</li>
+							<li>Профессиональный фотограф</li>
+							<li>Новогодние интерьеры</li>
+							<li>Вечернй макияж</li>
+							<li>Вечерняя укладка</li>
+							<li>Новогодний гардероб</li>
+							<li>Новогодние реквизиты</li>
+							<li>Обработка фотографий</li>
+						</ul>
+						<div class="clear"></div>
+						<a href="" class="mobile_btn fixGo" data-toggle="modal" data-target="#myModal5">Забронировать фотосессию</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Мобильная галерея -->
+	<section class="section2 hidden-lg hidden-md hidden-sm">
+
+
+		<!-- visible image -->
+		<div class="box" href="img/mobile_img1.jpg" data-fancybox="group2">
+			<img src="img/mobile_img1.jpg" alt="">
+		</div>
+		<div class="box" href="img/mobile_img2.jpg" data-fancybox="group2">
+			<img src="img/mobile_img2.jpg" alt="">
+		</div>
+		<!-- visible image -->
+
+
+		<!-- invisible image -->
+		<div class="box more_service2" href="img/mobile_img1.jpg" data-fancybox="group2">
+			<img src="img/mobile_img1.jpg" alt="">
+		</div>
+		<div class="box more_service2" href="img/mobile_img2.jpg" data-fancybox="group2">
+			<img src="img/mobile_img2.jpg" alt="">
+		</div>
+		<div class="box more_service2" href="img/mobile_img1.jpg" data-fancybox="group2">
+			<img src="img/mobile_img1.jpg" alt="">
+		</div>
+		<div class="box more_service2" href="img/mobile_img2.jpg" data-fancybox="group2">
+			<img src="img/mobile_img2.jpg" alt="">
+		</div>
+		<!-- invisible image -->
+		
+
+		<a class="mobile_btn2 show-more2">Смотреть ещё</a>
+	</section>
+	<!-- Мобильная галерея -->
+
+
+	<section class="mobile-calculator hidden-lg hidden-md hidden-sm">
+		<div class="container">
+			<div class="mobile-calculator-title">Рассчитать стоимость</div>
+
+			<div class="last-text">
+				В стоимость фотосессии уже включены аренда PRO фотостудии, профессиональный фотограф, новогодние интерьеры, вечерний макияж, вечерняя укладка, новогодний гардероб, новогодние реквизиты и обработка фотографий.
+				<br><br>
+				Вам осталось выбрать только количество образов и интерьеров студии.
+			</div>
+		</div>
+
+			<div class="mcalc-wrap">
+				<a href="" class="mw-qestion" data-toggle="modal" data-target="#myModal6">?</a>
+				<div class="mw-text" data-toggle="modal" data-target="#myModal">Кол-во интерьеров <br>и образов</div>
+				
+				<div class="mtp-wrap">
+					<div class="minus">-</div>
+					<input type="number" value="1" step="1" min="0" max="8" id="mobcalc">
+					<div class="plus" id="blink1">+</div>
+				</div>
+			</div>
+
+			
+
+			<div class="mc-price-wrap">
+				<div id="garland3" class="garland_1"><div id="nums_3">1</div></div>
+				<div class="mcp-text">Полная стоимость</div>
+				<img src="img/form_img.png" alt="">
+				<div class="mcp-price">6000Р</div>
+				<div id="garland4" class="garland_1"><div id="nums_4">1</div></div>
+			</div>
+
+			<a href="" class="mobcalc-btn red mobcalkbtn fixGo" data-toggle="modal" data-target="#myModal7">Выбрать дату и время сьемки</a>
+			
+			<a href="" class="mobcalc-btn yellow fixGo" data-toggle="modal" data-target="#myModal5">Купить в подарок</a>
+	</section>
+
+	
+	<section class="section3 hidden-lg hidden-md hidden-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Почему люди выбирают именно нас?</h2>
+					<h3>Самая низкая цена в Москве на интерьерную фотосессию</h3>
+					<p>Мы не берем студии в аренду. У нас 
+						собственная фотостудия оборудованная 
+						по последнему слову техники со всем 
+						необходимым реквизитом, за счет этого 
+						мы можем позволить себе дать вам такие 
+						приятные цены.
+					</p>
+					<h3>У нас работаю только проффесионалы</h3>
+					<p>
+						Весь персонал фотостудии имеет специализированное образование,
+						дипломы,сертификаты и награды в своей области
+						деятельности,которым отведен отдельный уголок на нашей студии
+					</p>
+					<h3>Удобное расположение фотостудии</h3>
+					<p>
+						Наша фотостудия находится в районе 
+						метро 1905 года, в пешей доступности 
+						от метро (7 мин.). На автомобиле к нам 
+						так же очень удобно добираться, а если 
+						вы предупредите администратора, то он 
+						забронирует под вас парковку
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section4 hidden-lg hidden-md hidden-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Внимание!</h2>
+					<h3>Успейте забронировать время<br> 
+						на фотосессию. Многие дни уже полностью заняты!
+					</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="book_it mobile hidden-lg hidden-md hidden-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Проверить дату для съемки</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="text_wrap">
+						<p>Проверьте свободно ли удобное для вас 
+							число и время для фотосессии
+						</p>
+					</div>
+				</div>
+				<div class="col-md-5">
+					<div class="book_form">
+						<form>
+							<div class="select_wrap">
+								<input id="mobdat" type="text" class="data datepicker">
+								<img src="img/form_img.png" alt="">
+								<select id="mobtimer" name="domain" class="select2 select" autocomplete="off" readonly>
+									<option>10:00</option>
+									<option>11:00</option>
+									<option>12:00</option>
+									<option>13:00</option>
+									<option>14:00</option>
+									<option>15:00</option>
+									<option>16:00</option>
+									<option>17:00</option>
+									<option>18:00</option>
+									<option>19:00</option>
+									<option>20:00</option>
+									<option>21:00</option>
+									<option>22:00</option>
+									<option>23:00</option>
+								</select>
+							</div>
+							<a class="time-btn fixGo mobtime" data-toggle="modal" data-target="#myModal4">Проверить дату и время для съемки</a>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="section5 hidden-lg hidden-md hidden-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>ФОТОСТУДИЯ №1</h2>
+					<p>Если вы еще не уверенны в выборе 
+						фотостудии, предагаем вам 
+						просмотреть предложения на 
+						других сайтах и возвращаться к нам
+						т.к. наше предложение самое лучшее
+					на рынке интерьерных фотосессий</p>
+					<!--<a class="mobile_btn3">Добавить сайт в закладки</a>-->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="contact_mobile hidden-lg hidden-md hidden-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Наши контакты</h2>
+					<p>Метро - Улица 1905 года</p>
+					<p>2я Звенигородская д.13 стр.18</p>
+					<p>Телефон: +7(495) 776-89-90</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="footer_mobile hidden-lg hidden-md hidden-sm">
+		<div class="map_mobile">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae4b71106bee4e0680dbda1fca1e0661f74ffe40d57d76f81ff563ba25f46f274&amp;width=100%&amp;height=100%&amp;lang=ru_UA&amp;scroll=false"></script>
+		</div>
+		<a href="" class="mobile_btn4 fixGo" data-toggle="modal" data-target="#myModal2">Внести предоплату за фотосессию</a>
+	</section>
+	<!-- MOBILE BLOCK -->
+
+
+	<section class="form_section" id="oplata">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Если вы уже забронировали фотосессию и желаете<br> внести предоплату</h2>
+					<div class="form_wrap">
+						<form>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Фотостудия№1">
+							<input type="hidden" name="admin_email" value="zemotziv@yandex.ru">
+							<input type="hidden" name="form_subject" value="Внести_предоплату">
+							<!-- END Hidden Required Fields -->
+
+							<span>Сумма оплаты</span>
+							<input type="text" name="Стоимость_оплаты">
+							<span>Ваше имя</span>
+							<input type="text" name="Имя">
+							<span>Телефон</span>
+							<input type="text" name="Телефон">
+							<span>E-mail</span>
+							<input type="text" name="E-mail">
+							<button>Оплатить</button>
+						</form>
+						<div class="senk" style="display: none;">Спасибо! Наш оператор свяжется с вами в течении 20 минут</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer" id="kontakt">
+		<div class="fotter_wrap">
+			<div class="map_box">
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae4b71106bee4e0680dbda1fca1e0661f74ffe40d57d76f81ff563ba25f46f274&amp;width=100%&amp;height=370&amp;lang=ru_UA&amp;scroll=false"></script>
+			</div>
+			<div class="contact_box">
+				<div class="title">
+					<h5>Контакты</h5>
+				</div>
+				<div class="contact">
+					<p>Метро - Улица 1905 года</p>
+					<p>2я Звенигородская д. 13 стр.18</p>
+					<p>Телефон : +7(495) 776-89-90</p>
+				</div>
+				<div class="copyright">
+					<p>ОГРН №1127746409405</p>
+					<p>Copyright 2017</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content interior-popup">
+				<button class="close" type="button" data-dismiss="modal"><span>×</span></button>
+				<div class="ip-img-wrap">
+					<div class="ip-img">
+						<img src="img/MobPhoto1.jpg" alt="">
+						<span class="ip-img-overlay active hidden-xs">
+							<input class="obraz" type="checkbox" id="c1" name="cc" checked="checked" />
+							<label for="c1"><span></span></label>
+							<a href="img/MobPhoto1.jpg" data-fancybox><img src="img/lupa.png" alt=""></a>
+						</span>
+					</div>
+					<div class="ip-img">
+						<img src="img/MobPhoto1.jpg" alt="">
+						<span class="ip-img-overlay hidden-xs">
+							<input class="obraz" type="checkbox" id="c2" name="cc" />
+							<label for="c2"><span></span></label>
+							<a href="img/MobPhoto1.jpg" data-fancybox><img src="img/lupa.png" alt=""></a>
+						</span>
+					</div>
+					<div class="ip-img">
+						<img src="img/MobPhoto1.jpg" alt="">
+						<span class="ip-img-overlay hidden-xs">
+							<input class="obraz" type="checkbox" id="c3" name="cc" />
+							<label for="c3"><span></span></label>
+							<a href="img/MobPhoto1.jpg" data-fancybox><img src="img/lupa.png" alt=""></a>
+						</span>
+					</div>
+					<div class="ip-img">
+						<img src="img/MobPhoto1.jpg" alt="">
+						<span class="ip-img-overlay hidden-xs">
+							<input class="obraz" type="checkbox" id="c4" name="cc" />
+							<label for="c4"><span></span></label>
+							<a href="img/MobPhoto1.jpg" data-fancybox><img src="img/lupa.png" alt=""></a>
+						</span>
+					</div>
+					<div class="ip-img">
+						<img src="img/MobPhoto1.jpg" alt="">
+						<span class="ip-img-overlay hidden-xs">
+							<input class="obraz" type="checkbox" id="c5" name="cc" />
+							<label for="c5"><span></span></label>
+							<a href="img/MobPhoto1.jpg" data-fancybox><img src="img/lupa.png" alt=""></a>
+						</span>
+					</div>
+					<div class="ip-img">
+						<img src="img/MobPhoto1.jpg" alt="">
+						<span class="ip-img-overlay hidden-xs">
+							<input class="obraz" type="checkbox" id="c6" name="cc" />
+							<label for="c6"><span></span></label>
+							<a href="img/MobPhoto1.jpg" data-fancybox><img src="img/lupa.png" alt=""></a>
+						</span>
+					</div>
+					<div class="ip-img">
+						<img src="img/MobPhoto1.jpg" alt="">
+						<span class="ip-img-overlay hidden-xs">
+							<input class="obraz" type="checkbox" id="c7" name="cc" />
+							<label for="c7"><span></span></label>
+							<a href="img/MobPhoto1.jpg" data-fancybox><img src="img/lupa.png" alt=""></a>
+						</span>
+					</div>
+					<div class="ip-img">
+						<img src="img/MobPhoto1.jpg" alt="">
+						<span class="ip-img-overlay hidden-xs">
+							<input class="obraz" type="checkbox" id="c8" name="cc" />
+							<label for="c8"><span></span></label>
+							<a href="img/MobPhoto1.jpg" data-fancybox><img src="img/lupa.png" alt=""></a>
+						</span>
+					</div>
+				</div>
+				<a class="choice-iterior-btn hidden-xs" type="button" data-dismiss="modal">Выбрать</a>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="myModal2" class="modal fade">
+		<div class="modal-dialog modal-form-wrap">
+			<div class="modal-content modal-form">
+				<button class="fixBack close-mob hidden-lg hidden-md hidden-sm" type="button" data-dismiss="modal"><span>×</span></button>
+				<div class="modal-header">
+					<h2>ФОТОСТУДИЯ №1</h2>
+					<div class="form_wrap">
+						<form>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Фотостудия№1">
+							<input type="hidden" name="admin_email" value="zemotziv@yandex.ru">
+							<input type="hidden" name="form_subject" value="Внести_предоплату_за_фотосессию">
+							<!-- END Hidden Required Fields -->
+
+
+							
+							<label for="inp1">Сумма оплаты</label>
+							<input type="text" name="Сумма_оплаты">
+							<label for="inp2">Ваше имя</label>
+							<input type="text" name="Имя">
+							<label for="inp3">Телефон</label>
+							<input type="text" name="Телефон">
+							<label for="inp4">E-mail</label>
+							<input type="text" name="Почта">
+							<button>Оплатить</button>
+						</form>
+
+						<div class="senk" style="display: none;">Спасибо! Наш оператор свяжется с вами в течении 20 минут</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="myModal3" class="modal fade">
+		<div class="modal-dialog modal-form-wrap">
+			<div class="modal-content modal-form">
+				<button class="close-mob hidden-lg hidden-md hidden-sm" type="button" data-dismiss="modal"><span>×</span></button>
+				<div class="modal-header">
+					<h2>ФОТОСТУДИЯ №1</h2>
+					<div class="form_wrap">
+						<form>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Фотостудия№1">
+							<input type="hidden" name="admin_email" value="zemotziv@yandex.ru">
+							<input type="hidden" name="form_subject" value="Калькулятор_стоимости">
+							<!-- END Hidden Required Fields -->
+							
+							<input id="takeobraz" type="text" name="obraz" style="display: none">
+							
+							<!-- Вывод данных -->
+							<input type="hidden" class="output" name="Количество образов" value="">
+							<input type="hidden" class="count" name="Количество интерьеров" value="">
+							<input type="hidden" class="kind_of_photoshoot" name="Вид фотосессии" value="">
+							<input type="hidden" class="rprice" name="Стоимость фотосессии" value="">
+	
+							<span>Желаемая дата</span>
+							<input type="text" name="Желаемая дата" class="datepicker">
+							<span>Желаемое время</span>
+							<select class="form-time" name="Желаемое_время" autocomplete="off" readonly>
+								<option>10:00</option>
+								<option>11:00</option>
+								<option>12:00</option>
+								<option>13:00</option>
+								<option>14:00</option>
+								<option>15:00</option>
+								<option>16:00</option>
+								<option>17:00</option>
+								<option>18:00</option>
+								<option>19:00</option>
+								<option>20:00</option>
+								<option>21:00</option>
+								<option>22:00</option>
+								<option>23:00</option>
+							</select>
+							<label for="">Ваше имя</label>
+							<input type="text" name="Имя">
+							<label for="">Телефон</label>
+							<input type="text" name="Телефон">
+							<label for="">E-mail</label>
+							<input type="text" name="Почта">
+							<button>Отправить</button>
+						</form>
+						<div class="senk" style="display: none;">Спасибо! Наш оператор свяжется с вами в течении 20 минут</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="myModal4" class="modal fade">
+		<div class="modal-dialog modal-form-wrap">
+			<div class="modal-content modal-form">
+				<button class="fixBack close-mob hidden-lg hidden-md hidden-sm" type="button" data-dismiss="modal"><span>×</span></button>
+				<div class="modal-header">
+					<h2>ФОТОСТУДИЯ №1</h2>
+					<div class="form_wrap">
+						<form>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Фотостудия№1">
+							<input type="hidden" name="admin_email" value="desphub@gmail.com">
+							<input type="hidden" name="form_subject" value="Успей_забронировать">
+							<!-- END Hidden Required Fields -->
+							
+							<!-- Вывод данных -->
+							<input type="hidden" class="date" name="Дата" value="">
+							<input type="hidden" class="time" name="Время" value="">
+
+							<label for="">Ваше имя</label>
+							<input type="text" name="Имя">
+							<label for="">Телефон</label>
+							<input type="text" name="Телефон">
+							<label for="">E-mail</label>
+							<input type="text" name="Почта">
+							<button>Отправить</button>
+						</form>
+						<div class="senk" style="display: none;">Спасибо! Наш оператор свяжется с вами в течении 20 минут</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="myModal5" class="modal fade">
+		<div class="modal-dialog modal-form-wrap">
+			<div class="modal-content modal-form">
+				<button class="fixBack close-mob hidden-lg hidden-md hidden-sm" type="button" data-dismiss="modal"><span>×</span></button>
+				<div class="modal-header">
+					<h2>ФОТОСТУДИЯ №1</h2>
+					<div class="form_wrap">
+						<form>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Фотостудия№1">
+							<input type="hidden" name="admin_email" value="zemotziv@yandex.ru">
+							<input type="hidden" name="form_subject" value="Бронирование_фотосессии">
+							<!-- END Hidden Required Fields -->
+							
+
+							<label for="">Ваше имя</label>
+							<input type="text" name="Имя">
+							<label for="">Телефон</label>
+							<input type="text" name="Телефон">
+							<label for="">E-mail</label>
+							<input type="text" name="Почта">
+							<button>Отправить</button>
+						</form>
+						<div class="senk" style="display: none;">Спасибо! Наш оператор свяжется с вами в течении 20 минут</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="myModal6" class="modal fade">
+		<div class="modal-dialog modal-form-wrap">
+			<div class="modal-content modal-form">
+				<button class="close-mob hidden-lg hidden-md hidden-sm" type="button" data-dismiss="modal"><span>×</span></button>
+				<div class="modal-header">
+					<h2>ФОТОСТУДИЯ №1</h2>
+					<div class="mob-modal-text">
+						<p>Один образ - это одна смена одежды 
+						и макияжа. Выбирая несколько образов, 
+						вы сможете несколько раз сменить 
+						наряды и макияж.</p>
+
+						<p>Интерьеры - на нашей студии  
+						представленны 8 дизайнерских 
+						интерьеров, выбирая несколько 
+						интерьеров, вы сможете сделать 
+						фото на выбранном количестве 
+						локаций</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="myModal7" class="modal">
+		<div class="modal-dialog modal-form-wrap">
+			<div class="modal-content modal-form">
+				<button class="fixBack close-mob hidden-lg hidden-md hidden-sm" type="button" data-dismiss="modal"><span>×</span></button>
+				<div class="modal-header">
+					<h2>ФОТОСТУДИЯ №1</h2>
+					<div class="form_wrap">
+						<form>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Фотостудия№1">
+							<input type="hidden" name="admin_email" value="zemotziv@yandex.ru">
+							<input type="hidden" name="form_subject" value="Мобильный_калькулятор_стоимости">
+							<!-- END Hidden Required Fields -->
+							
+							
+							<!-- Вывод данных -->
+							<input type="hidden" class="mob_output" name="Количество образов и интерьеров" value="">
+							<input type="hidden" class="mob_rprice" name="Стоимость фотосессии" value="">
+	
+							<span>Желаемая дата</span>
+							<input type="date" name="Желаемая дата" class="">
+							<span>Желаемое время</span>
+							<select class="form-time" name="Желаемое_время" autocomplete="off" readonly>
+								<option>10:00</option>
+								<option>11:00</option>
+								<option>12:00</option>
+								<option>13:00</option>
+								<option>14:00</option>
+								<option>15:00</option>
+								<option>16:00</option>
+								<option>17:00</option>
+								<option>18:00</option>
+								<option>19:00</option>
+								<option>20:00</option>
+								<option>21:00</option>
+								<option>22:00</option>
+								<option>23:00</option>
+							</select>
+							<label for="">Ваше имя</label>
+							<input type="text" name="Имя">
+							<label for="">Телефон</label>
+							<input type="text" name="Телефон">
+							<label for="">E-mail</label>
+							<input type="text" name="Почта">
+							<button>Отправить</button>
+						</form>
+						<div class="senk" style="display: none;">Спасибо! Наш оператор свяжется с вами в течении 20 минут</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="myModal8" class="modal fade">
+		<div class="modal-dialog modal-form-wrap">
+			<div class="modal-content modal-form">
+				<button class="fixBack close-mob hidden-lg hidden-md hidden-sm" type="button" data-dismiss="modal"><span>×</span></button>
+				<div class="modal-header">
+					<h2>ФОТОСТУДИЯ №1</h2>
+					<div class="form_wrap">
+						<form>
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Фотостудия№1">
+							<input type="hidden" name="admin_email" value="zemotziv@yandex.ru">
+							<input type="hidden" name="form_subject" value="Успей_забронировать">
+							<!-- END Hidden Required Fields -->
+							
+							<!-- Вывод данных -->
+							<input type="hidden" class="mob_date" name="Дата" value="">
+							<input type="hidden" class="mob_time" name="Время" value="">
+
+							<label for="">Ваше имя</label>
+							<input type="text" name="Имя">
+							<label for="">Телефон</label>
+							<input type="text" name="Телефон">
+							<label for="">E-mail</label>
+							<input type="text" name="Почта">
+							<button>Отправить</button>
+						</form>
+						<div class="senk" style="display: none;">Спасибо! Наш оператор свяжется с вами в течении 20 минут</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/common.js"></script>
+	
+
+	<script>
+		$('.fixGo').click(function(){
+			$('html').addClass('fixios');
+			$('body').addClass('fixios');
+		});
+
+		$('.fixBack').click(function(){
+			$('html').removeClass('fixios');
+			$('body').removeClass('fixios');
+		});
+	</script>
+	
+	
+	<script>
+		var count = 0;
+		var price = 0;
+		var range = document.getElementById('flying');		
+		$(function() { 
+		     updateCount(); 
+		     $('.ip-img-wrap input[type=checkbox]').change(function() { 
+		           updateCount(this.checked ? 1 : -1); 
+		     });
+		});
+		var prevValue = 1;
+		var neededInput = document.getElementById('flying');
+		neededInput.addEventListener('input', function(ev){
+		  var curPrice = $('#rprice').text(),
+		    inputValue = neededInput.value,
+		    maxCount = $('#count');
+		  if(inputValue == prevValue || +inputValue < +maxCount.html()) {
+		    ev.preventDefault();
+		    ev.stopPropagation();
+		    neededInput.value = maxCount.html();
+		    return false;
+		  }
+		  if(inputValue > prevValue){
+		    $('#rprice').text(+curPrice + 1000);
+		  }else{
+		    $('#rprice').text(+curPrice - 1000);
+		  }
+		  prevValue = inputValue;
+		})
+		$('.choice-iterior-btn').click(function(){
+			if (count == 1) {
+				price = 6000;
+				document.getElementById('flying').value = 1;
+				$('.form-number output').text('1');
+				$('.obtext').text('1 образа');
+				$('.intext').text('1 интерьере');
+				updatePrice();
+			} else if (count == 2) {
+				price = 8000;
+				document.getElementById('flying').value = 2;
+				$('.form-number output').text('2');
+				$('.obtext').text('2 образов');
+				$('.intext').text('2 интерьерах');
+				updatePrice();
+			} else if (count == 3) {
+				price = 10000;
+				document.getElementById('flying').value = 3;
+				$('.form-number output').text('3');
+				$('.obtext').text('3 образов');
+				$('.intext').text('3 интерьерах');
+				updatePrice();
+			} else if (count == 4) {
+				price = 12000;
+				document.getElementById('flying').value = 4;
+				$('.form-number output').text('4');
+				$('.obtext').text('4 образов');
+				$('.intext').text('4 интерьерах');
+				updatePrice();
+			} else if (count == 5) {
+				price = 14000;
+				document.getElementById('flying').value = 4;
+				$('.form-number output').text('4');
+				$('.obtext').text('4 образов');
+				$('.intext').text('5 интерьерах');
+				updatePrice();
+			} else if (count == 6) {
+				price = 16000;
+				document.getElementById('flying').value = 4;
+				$('.form-number output').text('4');
+				$('.obtext').text('4 образов');
+				$('.intext').text('6 интерьерах');
+				updatePrice();
+			} else if (count == 7) {
+				price = 18000;
+				document.getElementById('flying').value = 4;
+				$('.form-number output').text('4');
+				$('.obtext').text('4 образов');
+				$('.intext').text('7 интерьерах');
+				updatePrice();
+			} else if (count == 8) {
+				price = 20000;
+				document.getElementById('flying').value = 4;
+				$('.form-number output').text('4');
+				$('.obtext').text('4 образов');
+				$('.intext').text('8 интерьерах');
+				updatePrice();
+			}
+		});
+		function updateCount(a) {
+		     count = a ? count + a : $('input[type=checkbox]:checked').length;
+		     $('#count').text(count);
+		};
+		function updatePrice() {
+		     $('#rprice').text(price);
+
+		};
+		$('.obraz').click(function(){
+			$(this).parent('.ip-img-overlay').toggleClass('active')
+		});
+	</script>
+
+	<script>
+		//галерея pc
+	    $(".show-more").click(function(){
+		    $(document).find(".more_service:not(:visible):lt(2)").slideToggle('fast',
+		        function() {
+		            if ($(document).find(".more_service:not(:visible)").length==0) {
+		                $(".show-more").css("display","none");
+		            }
+		        }
+		    );
+		});
+	</script>
+	
+	<script>
+		//галерея mob
+	    $(".show-more2").click(function(){
+		    $(document).find(".more_service2:not(:visible):lt(2)").slideToggle('fast',
+		        function() {
+		            if ($(document).find(".more_service2:not(:visible)").length==0) {
+		                $(".show-more2").css("display","none");
+		            }
+		        }
+		    );
+		});
+	</script>
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

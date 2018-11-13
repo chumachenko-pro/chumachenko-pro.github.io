@@ -1,0 +1,78 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+	font-family: "RobotoLight";
+	src: url("../fonts/RobotoLight/RobotoLight.eot");
+	src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+	url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+	font-family: "RobotoBold";
+	src: url("../fonts/RobotoBold/RobotoBold.eot");
+	src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+	url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+/* font-family: "PFDinDisplayPro-bold"; */
+@font-face {
+	font-family: "PFDinDisplayPro-bold";
+	src: url("../fonts/PFDinDisplayPro/pfdindisplaypro-bold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "pfdindisplaypro-med"; */
+@font-face {
+	font-family: "pfdindisplaypro-med";
+	src: url("../fonts/PFDinDisplayPro/pfdindisplaypro-med.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "pfdindisplaypro-reg"; */
+@font-face {
+	font-family: "pfdindisplaypro-reg";
+	src: url("../fonts/PFDinDisplayPro/pfdindisplaypro-reg.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/* font-family: "IntroBold"; */
+@font-face {
+	font-family: "IntroBold";
+	src: url("../fonts/IntroBold/IntroBold.ttf");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "Intro-Book"; */
+@font-face {
+	font-family: "Intro-Book";
+	src: url("../fonts/IntroBold/Intro-Book.otf");
+	font-style: normal;
+	font-weight: normal;
+}

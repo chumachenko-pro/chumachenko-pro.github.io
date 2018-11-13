@@ -1,0 +1,77 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+	//- header
+	header.header
+		.container
+			.header-inner
+				a.header__logo Domain.ru
+				nav.header__nav
+					li.active
+						a(href="index.html") Главная
+					li
+						a(href="rules.html") Правила
+					li
+						a(href="faq.html") Вопрос-Ответ
+					li
+						a(href="") API
+					li
+						a(href="signup.html") Регистрация
+				button.header__btn
+					<i class="fas fa-bars"></i>
+	
+	//- content
+	section.content
+		.container
+			section.enter
+				.cta-box
+					h1
+						ul.rotating-content
+							li Дешевая
+							li Быстрая
+							li Безопасная
+							li Качественная
+
+					h2 Накрутка подписчиков в YouTube - Рай для реселлеров!
+					.cta-box__text На нашем сайте вы можете купить подписчики для своего или чужого канала ютуба, у нас очень низкие цены среди конкурентов, всего 155 рублей за 1000 подписчиков, также у нас есть специальные предложении для реселлеров и удобный API для работы с нами!
+				
+				
+				
+				
+				.authorization-wrapper
+					.authorization-wrapper__container.active
+						form.authorization(action="")
+							h2.authorization__title Вход в аккаунт
+							input.authorization__input(type="text" placeholder="Ваш E-mail" required)
+							input.authorization__input(type="text" placeholder="Ваш пароль" required)
+							input.authorization__button(type="submit" value="Войти")
+							a.authorization__link.changeForm Забыл пароль?
+					.authorization-wrapper__container
+						form.authorization(action="")
+							h2.authorization__title Восстановление пароля
+							input.authorization__input(type="text" placeholder="Введите ваш E-mail" required)
+							input.authorization__button(type="submit" value="Сбросить пароль")
+							a.authorization__link.changeForm Вспомнил Пароль?
+					
+
+
+	//- footer
+	footer.footer
+		.container
+			.footer-inner
+				nav.footer__nav
+					li
+						a(href="") Главная
+					li
+						a(href="") Правила
+					li
+						a(href="") Вопрос-Ответ
+					li
+						a(href="") API
+					li
+						a(href="") Регистрация
+				.footer__copyright Все права защищены © 2018

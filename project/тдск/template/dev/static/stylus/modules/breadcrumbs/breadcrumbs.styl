@@ -1,0 +1,32 @@
+.breadcrumbs
+    display: flex
+    flex-wrap: wrap
+    padding: 15px 0px
+    li  
+        margin-right 5px
+        padding: 5px 0px
+        &:before
+                content: ""
+                position relative
+                top: -4px
+                display: inline-block
+                background url(../img/general/arrow.png)
+                width 9px
+                height 5px
+                margin-right 5px
+        &:first-child
+            &:before
+                content: ""
+                display: none
+        &.active
+            a
+                color: #728392
+                &:hover
+                    text-decoration none
+        a
+            font-weight 400
+            font-size rem(18px)
+            color: #b8311b
+            &:hover
+                text-decoration underline
+            

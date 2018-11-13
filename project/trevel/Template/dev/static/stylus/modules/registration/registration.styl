@@ -1,0 +1,123 @@
+#registration
+    height 723px
+    margin: -361.5px auto
+    .buttons-wrap
+        justify-content center
+.modal-form__name
+    background-image url(../img/general/user.png)
+    background-repeat no-repeat
+    background-position 40px 25px;
+    background-size 20px
+.modal-form__phone
+    background-image url(../img/general/phone.png)
+    background-repeat no-repeat
+    background-position 42px 24px;
+    background-size 18px
+.modal-form__mail
+    background-image url(../img/general/mail.png)
+    background-repeat no-repeat
+    background-position 42px 24px;
+    background-size 18px
+.location-wrap
+    display: flex
+    justify-content flex-start
+    align-items center
+    font-weight 400
+    font-size rem(18px)
+    margin-bottom 20px
+    .location-title
+        margin-right 15px
+        span 
+            margin-left 5px
+    .modal-form__radio
+        margin-left 20px
+    label
+        margin-left 15px
+.capcha-wrap
+    margin-bottom 20px
+    .capcha-title
+        font-weight 400
+        font-size rem(18px)
+        margin-bottom 20px
+    .g-recaptcha
+        width 302px
+        margin: 0 auto
+.capcha-wrap
+    margin-bottom 40px
+
+
+// adaptability
+@media only screen and (max-height : 725px)
+    #registration.modal_div
+        padding-top 40px
+        padding-bottom 40px
+    #registration
+        height 530px
+        max-height: 100vh
+        margin: -265px auto
+        .modal-form input[type="text"]
+            height 40px
+        .modal-form input[type="password"]:last-child
+            height 40px
+        .modal-form input[type="password"]:last-child
+            margin-bottom 15px
+        .location-wrap
+            margin-bottom 15px
+        .modal-form input[type="text"]:last-child
+            margin-bottom 15px
+        .capcha-wrap .capcha-title
+            margin-bottom 15px
+        .capcha-wrap
+            margin-bottom 20px
+        .modal-form__mail
+            background-position: 40px 10px;
+        .modal-form__phone
+            background-position: 40px 10px;
+        .modal-form__name
+            background-position: 40px 10px;
+// @media only screen and (max-width : 1200px) 
+
+// @media only screen and (max-width : 992px) 
+
+@media only screen and (max-width : 720px) 
+    .modal_div
+        max-width: 500px
+        padding: 80px 50px 55px
+
+@media only screen and (max-width : 576px)
+    #registration
+        height 467px
+        margin: -233.5px auto
+    .modal-form input[type="text"],
+    .modal-form input[type="password"]
+        padding-left 40px
+        height 40px
+    .modal_div .modal_close
+        top: 10px
+        right 10px
+    .modal_div
+        max-width: 290px;
+        padding: 25px 25px 25px;
+    .location-wrap
+        flex-wrap: wrap
+        justify-content center
+    .location-wrap .location-title
+        margin-right 0
+        width 100%
+        text-align center
+    .capcha-wrap .capcha-title
+        font-size 1rem
+        text-align center
+    .location-wrap .modal-form__radio[name="regRadio"]
+        margin-left 0
+    .location-wrap label
+        margin: 5px 15px
+    #registration .modal-form input[type="text"]
+        background-position: 10px 10px;
+    .g-recaptcha
+        display: none
+// @media only screen and (min-width : 1200px)
+
+
+
+

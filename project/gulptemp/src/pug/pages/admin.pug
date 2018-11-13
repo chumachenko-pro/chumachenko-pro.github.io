@@ -1,0 +1,1066 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Администратор'
+	- var pageClass = 'admin-page'
+
+block content
+	//- header
+	header.header
+		.container
+			.header-inner
+				a.header__logo Domain.ru
+				nav.header__nav
+					li.active
+						a(href="") Главная
+					li
+						a(href="") Правила
+					li
+						a(href="") Вопрос-Ответ
+					li
+						a(href="") API
+					li
+						a(href="") Регистрация
+				button.header__btn
+					<i class="fas fa-bars"></i>
+	
+	//- content
+	section.content
+		.container
+			section.admin
+				.admin-head
+					.admin-head__user Привет, UserLogin!
+					.admin-head__balance Баланс: 1500₽
+						button.info.open_modal(href="#modal1") ?
+				
+				.tab
+					.tabNav.mainTab
+						.tabNav__item.active Заказы
+						.tabNav__item Пользователи
+						.tabNav__item История пополнений
+						.tabNav__item Статистика 
+						.tabNav__item Настройки
+					.tabContent
+						//- Заказы
+						.tabContent__item
+							.tabContHead
+								.tabContHead__title Список заказов:
+								form.tabContHead__search
+									input(type="text" placeholder="Поиск заказов по ссылке")
+									button <i class="fas fa-search"></i>
+							
+
+							.tab2
+								.tabNav.tabs2
+									.tabNav__item2.active.tab2 Все
+										sup (500000)
+									.tabNav__item2.tab2 Ожидают
+										sup (500)
+									.tabNav__item2.tab2 В работе
+										sup (500)
+									.tabNav__item2.tab2 Выполнены
+										sup (500)
+									.tabNav__item2.tab2 Отменены
+										sup (0)
+									.tabNav__item2.tab2 Ошибка
+										sup (0)
+								.tabContent.tab_content2
+									.tabContent__item2
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th Ссылка
+													th Количество
+													th Цена
+													th Старт
+													th Дата и время
+													th Статус
+												tr
+													th 7<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.yellow Ожидает
+												tr
+													th 15517<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.green Выполнен
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.red Отменён
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.blue В работе
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+
+									.tabContent__item2 
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th Ссылка
+													th Количество
+													th Цена
+													th Старт
+													th Дата и время
+													th Статус
+												tr
+													th 7<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.yellow Ожидает
+												tr
+													th 15517<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.green Выполнен
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.red Отменён
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.blue В работе
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2 
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th Ссылка
+													th Количество
+													th Цена
+													th Старт
+													th Дата и время
+													th Статус
+												tr
+													th 7<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.yellow Ожидает
+												tr
+													th 15517<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.green Выполнен
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.red Отменён
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.blue В работе
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2 
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th Ссылка
+													th Количество
+													th Цена
+													th Старт
+													th Дата и время
+													th Статус
+												tr
+													th 7<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.yellow Ожидает
+												tr
+													th 15517<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.green Выполнен
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.red Отменён
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.blue В работе
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2 
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th Ссылка
+													th Количество
+													th Цена
+													th Старт
+													th Дата и время
+													th Статус
+												tr
+													th 7<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+													a(href="#modal4").open_modal.yellow Ожидает
+												tr
+													th 15517<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.green Выполнен
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.red Отменён
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.blue В работе
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2 
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th Ссылка
+													th Количество
+													th Цена
+													th Старт
+													th Дата и время
+													th Статус
+												tr
+													th 7<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.yellow Ожидает
+												tr
+													th 15517<sup>api</sup>
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.green Выполнен
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.red Отменён
+												tr
+													th 15517
+													th https://www.youtube.com/cha...
+													th 1500
+													th 500р
+													th 8703
+													th 09.05.2018 в 15:33
+													th
+														a(href="#modal4").open_modal.blue В работе
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+						//- Пользователи
+						.tabContent__item 
+							.tabContHead
+								.tabContHead__title Список пользователей:
+								form.tabContHead__search
+									input(type="text" placeholder="Поиск заказов по ссылке")
+									button <i class="fas fa-search"></i>
+							
+
+							.tab2
+								.tabNav.tabs2
+									.tabNav__item2.active.tab2 Все
+										sup (500000)
+									.tabNav__item2.tab2 Ожидают
+										sup (500)
+									.tabNav__item2.tab2 В работе
+										sup (500)
+									.tabNav__item2.tab2 Выполнены
+										sup (500)
+									.tabNav__item2.tab2 Отменены
+										sup (0)
+									.tabNav__item2.tab2 Ошибка
+										sup (0)
+								.tabContent.tab_content2
+									.tabContent__item2
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th E-mail
+													th Дата регистрации
+													th Последний вход
+													th Баланс
+													th Заказов
+													th Настройки
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="#modal3").open_modal.yellow Изменить
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th E-mail
+													th Дата регистрации
+													th Последний вход
+													th Баланс
+													th Заказов
+													th Настройки
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="#modal3").open_modal.yellow Изменить
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th E-mail
+													th Дата регистрации
+													th Последний вход
+													th Баланс
+													th Заказов
+													th Настройки
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="#modal3").open_modal.yellow Изменить
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th E-mail
+													th Дата регистрации
+													th Последний вход
+													th Баланс
+													th Заказов
+													th Настройки
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="#modal3").open_modal.yellow Изменить
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th E-mail
+													th Дата регистрации
+													th Последний вход
+													th Баланс
+													th Заказов
+													th Настройки
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="#modal3").open_modal.yellow Изменить
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th ID
+													th E-mail
+													th Дата регистрации
+													th Последний вход
+													th Баланс
+													th Заказов
+													th Настройки
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="#modal3").open_modal.yellow Изменить
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+						//- История пополнений
+						.tabContent__item 
+							.tabContHead
+								.tabContHead__title История пополнений:
+								form.tabContHead__search
+									input(type="text" placeholder="Поиск заказов по ссылке")
+									button <i class="fas fa-search"></i>
+							.tab2
+								.tabNav.tabs2
+									.tabNav__item2.active.tab2 Все
+										sup (500000)
+									.tabNav__item2.tab2 За сегодня
+										sup (500)
+									.tabNav__item2.tab2 За месяц
+										sup (500)
+								.tabContent.tab_content2
+									.tabContent__item2
+										.history_pay_title Пополнений: 15179 на сумму 5979569496р
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th #
+													th ID
+													th E-mail
+													th Сумма
+													th Дата
+													th Система
+													th статус
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="").green Выполнен
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2
+										.history_pay_title Пополнений: 15179 на сумму 5979569496р
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th #
+													th ID
+													th E-mail
+													th Сумма
+													th Дата
+													th Система
+													th статус
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="").green Выполнен
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+									.tabContent__item2
+										.history_pay_title Пополнений: 15179 на сумму 5979569496р
+										.tablewrapper
+											table.adminTable
+												tr.adminTable__head
+													th #
+													th ID
+													th E-mail
+													th Сумма
+													th Дата
+													th Система
+													th статус
+												tr
+													th 33
+													th pochta@mail.com
+													th 14.05.2018 в 15:51
+													th 14.05.2018 в 15:51
+													th 5000000
+													th 150
+													th
+														a(href="").green Выполнен
+										.adminPagination
+											span.adminPagination__nav
+												<i class="fas fa-arrow-left"></i>
+												span Назад
+											ul.adminPagination__list
+												li
+													a(href="") 1
+												li
+													a(href="") 2
+												li
+													a(href="") 3
+											span.adminPagination__nav 
+												span Далее
+												<i class="fas fa-arrow-right"></i>
+
+						//- Статистика
+						.tabContent__item
+							.tabContHead
+								.tabContHead__title Статистика
+							.tab2
+								.tabNav.tabs2
+									.tabNav__item2.active.tab2 Общая
+										sup (500000)
+									.tabNav__item2.tab2 Настя
+										sup (500)
+									.tabNav__item2.tab2 Ксения
+										sup (500)
+								.tabContent.tab_content2
+									.tabContent__item2
+										table.adminTable.statistic
+											tr
+												th Всего пользователей
+												th 	50000
+											tr
+												th Всего активных пользователей	
+												th 	50000
+											tr
+												th Всего пользователей с индивидуальными ценами
+												th 	50000
+											tr
+												th Всего заблокированных пользователей	
+												th 	50000
+											tr
+												th Пользователей за сегодня
+												th 	50000
+											tr
+												th Пользователей за неделю
+												th 	50000
+										table.adminTable.statistic
+											tr
+												th Всего заказов
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов API
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего выполненных заказов
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов в работе	
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов в ожидании
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего отмененных заказов	
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов "Ошибки"	
+												th 	50000 на сумму 555555555р
+										table.adminTable.statistic
+											tr
+												th Общый баланс пользователей
+												th 7554855р
+									.tabContent__item2
+										table.adminTable.statistic
+											tr
+												th Всего пользователей
+												th 	50000
+											tr
+												th Всего активных пользователей	
+												th 	50000
+											tr
+												th Всего пользователей с индивидуальными ценами
+												th 	50000
+											tr
+												th Всего заблокированных пользователей	
+												th 	50000
+											tr
+												th Пользователей за сегодня
+												th 	50000
+											tr
+												th Пользователей за неделю
+												th 	50000
+										table.adminTable.statistic
+											tr
+												th Всего заказов
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов API
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего выполненных заказов
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов в работе	
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов в ожидании
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего отмененных заказов	
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов "Ошибки"	
+												th 	50000 на сумму 555555555р
+										table.adminTable.statistic
+											tr
+												th Общый баланс пользователей
+												th 7554855р
+									.tabContent__item2
+										table.adminTable.statistic
+											tr
+												th Всего пользователей
+												th 	50000
+											tr
+												th Всего активных пользователей	
+												th 	50000
+											tr
+												th Всего пользователей с индивидуальными ценами
+												th 	50000
+											tr
+												th Всего заблокированных пользователей	
+												th 	50000
+											tr
+												th Пользователей за сегодня
+												th 	50000
+											tr
+												th Пользователей за неделю
+												th 	50000
+										table.adminTable.statistic
+											tr
+												th Всего заказов
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов API
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего выполненных заказов
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов в работе	
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов в ожидании
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего отмененных заказов	
+												th 	50000 на сумму 555555555р
+											tr
+												th Всего заказов "Ошибки"	
+												th 	50000 на сумму 555555555р
+										table.adminTable.statistic
+											tr
+												th Общый баланс пользователей
+												th 7554855р
+						//- Настройки
+						.tabContent__item
+							form.setting(action="")
+								.setting__wrapper
+									label.setting__label(for="") Цена за 1000 подписчиков: 
+									input.setting__input(type="text" placeholder="500")
+								.setting__wrapper
+									label.setting__label(for="") Payeer ID: 
+									input.setting__input(type="text" placeholder="500")
+								.setting__wrapper
+									label.setting__label(for="") Payeer ключ: 
+									input.setting__input(type="text" placeholder="500")
+								.setting__wrapper
+									label.setting__label(for="") WebMoney ID: 
+									input.setting__input(type="text" placeholder="500")
+								.setting__wrapper
+									label.setting__label(for="") WebMoney ключ: 
+									input.setting__input(type="text" placeholder="500")
+								.setting__wrapper
+									label.setting__label(for="") PayPal ID: 
+									input.setting__input(type="text" placeholder="500")
+								.setting__wrapper
+									label.setting__label(for="") PayPal ключ: 
+									input.setting__input(type="text" placeholder="500")
+								input.setting__button(type="submit" value="Сохранить")
+							
+
+
+				
+				
+				
+	//- footer
+	footer.footer
+		.container
+			.footer-inner
+				nav.footer__nav
+					li.active
+						a(href="index.html") Главная
+					li
+						a(href="rules.html") Правила
+					li
+						a(href="faq.html") Вопрос-Ответ
+					li
+						a(href="") API
+					li
+						a(href="signup.html") Регистрация
+				.footer__copyright Все права защищены © 2018
+
+
+	//- modal
+	.modal_div#modal1
+		span.modal_close <i class="fas fa-times"></i>
+		.modal_div__title История изменения баланса
+		table.adminTable
+			tr.adminTable__head
+				th ID заказа
+				th Ссылка цена
+				th Количество было
+				th Цена стало
+			tr
+				th 7<sup>api</sup>
+				th 500р
+				th 1500
+				th 2000р
+			tr
+				th 7<sup>api</sup>
+				th 500р
+				th 1500
+				th 2000р
+			tr
+				th 7<sup>api</sup>
+				th 500р
+				th 1500
+				th 2000р
+			tr
+				th 7<sup>api</sup>
+				th 500р
+				th 1500
+				th 2000р
+			tr
+				th 7<sup>api</sup>
+				th 500р
+				th 1500
+				th 2000р
+		.adminPagination.adminPagination--center
+			span.adminPagination__nav
+				<i class="fas fa-arrow-left"></i>
+				span Назад
+			ul.adminPagination__list
+				li
+					a(href="") 1
+				li
+					a(href="") 2
+				li
+					a(href="") 3
+			span.adminPagination__nav 
+				span Далее
+				<i class="fas fa-arrow-right"></i>
+	.modal_div.double#modal3
+		span.modal_close <i class="fas fa-times"></i>
+		.modal_div__title Настройки пользователя
+
+		form.modalForm.modalForm--marb(action="")
+			input.modalForm__input(type="text" placeholder="Индивидуальная цена")
+			input.modalForm__button(type="submit" value="Сохранить")
+			.modalForm__text Текущая цена 150р
+			a(href="").modalForm__link 
+				span.one Заблокировать пользователя
+				span.two Скрыть панель блокировки
+		.hiddenwrap
+			form.modalForm(action="")
+				input.modalForm__input(type="text" placeholder="Причина блокировки")
+				input.modalForm__button(type="submit" value="Заблокировать")
+	//- mod4
+	.modal_div.double#modal4
+		span.modal_close <i class="fas fa-times"></i>
+		.modal_div__title Выполнение заказа
+
+		form.modalForm.modalForm--marb(action="")
+			input.modalForm__input(type="text" placeholder="Стартовое количество")
+			input.modalForm__button(type="submit" value="Я запустил!")
+			.modalForm__text Текущая цена 150р
+			a(href="").modalForm__link 
+				span.one Отменить заказ
+				span.two Скрыть панель отмены
+		.hiddenwrap
+			form.modalForm(action="")
+				input.modalForm__input(type="text" placeholder="Напишите причину отмены")
+				input.modalForm__button(type="submit" value="Отменить заказ")
+		
+	#overlay

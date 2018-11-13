@@ -1,0 +1,330 @@
+extends ../layout/main
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+block content
+	//- event section
+	section.event
+		.container
+			.event-wrap
+				.event-slider.owl-carousel
+					.event-slider__item
+						img(src="static/img/content/event-slider-1.png", alt="")
+						.slide-info
+							.slide-info__title City Sightseeing
+							.slide-info__text обзорная экскурсия на красных двухэтажных автобусах
+					.event-slider__item
+						img(src="static/img/content/event-slider-1.png", alt="")
+						.slide-info
+							.slide-info__title City Sightseeing
+							.slide-info__text обзорная экскурсия на красных двухэтажных автобусах
+					.event-slider__item
+						img(src="static/img/content/event-slider-1.png", alt="")
+						.slide-info
+							.slide-info__title City Sightseeing
+							.slide-info__text обзорная экскурсия на красных двухэтажных автобусах
+					.event-slider__item
+						img(src="static/img/content/event-slider-1.png", alt="")
+						.slide-info
+							.slide-info__title City Sightseeing
+							.slide-info__text обзорная экскурсия на красных двухэтажных автобусах
+				.event-services
+					.event-services__item
+						.event-services__icon.event-services__icon--red
+							img(src="static/img/general/event-services__icon-1.png", alt="")
+						.event-services__title Лучшие круизы 2018
+						.event-services__text Все водные маршруты Петербурга
+					.event-services__item
+						.event-services__icon.event-services__icon--green
+							img(src="static/img/general/event-services__icon-2.png", alt="")
+						.event-services__title Лучшие круизы 2018
+						.event-services__text Все водные маршруты Петербурга 
+					.event-services__item
+						.event-services__icon.event-services__icon--blue
+							img(src="static/img/general/event-services__icon-3.png", alt="")
+						.event-services__title Лучшие круизы 2018
+						.event-services__text Все водные маршруты Петербурга 
+					.event-services__item
+						.event-services__icon.event-services__icon--yellow
+							img(src="static/img/general/event-services__icon-4.png", alt="")
+						.event-services__title Лучшие круизы 2018
+						.event-services__text Все водные маршруты Петербурга 
+					.event-services__item
+						.event-services__icon.event-services__icon--violet
+							img(src="static/img/general/event-services__icon-5.png", alt="")
+						.event-services__title Лучшие круизы 2018
+						.event-services__text Все водные маршруты Петербурга 
+
+
+	section.main-page-nav
+		.container
+			ul.main-nav
+					li
+						.main-nav__icon
+							img(src="static/img/general/main-mnu-calendar.png", alt="")
+						a(href="") Расписание
+					li
+						.main-nav__icon
+							img(src="static/img/general/main-mnu-piano.png", alt="")
+						a(href="") музыкальные круизы
+					li
+						.main-nav__icon
+							img(src="static/img/general/main-mnu-ship.png", alt="")
+						a(href="") метеоры в петергоф
+					li
+						.main-nav__icon
+							img(src="static/img/general/main-mnu-ship2.png", alt="")
+						a(href="") экскурсионные круизы
+					li
+						.main-nav__icon
+							img(src="static/img/general/main-mnu-griphon.png", alt="")
+						a(href="") по рекам и каналам
+					li
+						.main-nav__icon
+							img(src="static/img/general/main-mnu-good.png", alt="")
+						a(href="") рестораны на воде
+					li
+						.main-nav__icon
+							img(src="static/img/general/main-mnu-bridge.png", alt="")
+						a(href="") разводные мосты
+					li
+						.main-nav__icon
+							img(src="static/img/general/main-mnu-bus.png", alt="")
+						a(href="") экскурси и музеи
+
+	//- Расписание
+	include ../modules/schedule.pug
+
+	
+	//- content section special offer
+	section.content-section
+		.content-section__top-line
+			.container
+				.content-section__title-wrap
+					h2.content-section__title 
+						img.content-section___icon(src="static/img/general/content-section-icon-1.png", alt="")
+						span СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+					button.content-section__button больше туров
+		.content-section__wrap
+			.container
+				.row
+					.col-lg.col-sm-6
+						.special-offer
+							.special-offer__img
+								img(src="static/img/content/special-offer-1.png", alt="")
+								.special-offer__price 
+									span от<br/>280руб.
+							.special-offer__info
+								.special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+								.special-offer__time 
+									<i class="far fa-clock"></i>
+									span с 10 до 20 ежедневно
+								.special-offer__icons
+									<i class="fas fa-music"></i>
+									<i class="fas fa-headphones"></i>
+									<i class="fas fa-coffee"></i>
+									<i class="fas fa-glass-martini"></i>
+							button.special-offer__button купить
+					.col-lg.col-sm-6
+						.special-offer
+							.special-offer__img
+								img(src="static/img/content/special-offer-1.png", alt="")
+								.special-offer__price 
+									span от<br/>280руб.
+							.special-offer__info
+								.special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+								.special-offer__time 
+									<i class="far fa-clock"></i>
+									span с 10 до 20 ежедневно
+								.special-offer__icons
+									<i class="fas fa-music"></i>
+									<i class="fas fa-headphones"></i>
+									<i class="fas fa-coffee"></i>
+									<i class="fas fa-glass-martini"></i>
+							button.special-offer__button купить
+					.col-lg.col-sm-6
+						.special-offer
+							.special-offer__img
+								img(src="static/img/content/special-offer-1.png", alt="")
+								.special-offer__price 
+									span от<br/>280руб.
+							.special-offer__info
+								.special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+								.special-offer__time 
+									<i class="far fa-clock"></i>
+									span с 10 до 20 ежедневно
+								.special-offer__icons
+									<i class="fas fa-music"></i>
+									<i class="fas fa-headphones"></i>
+									<i class="fas fa-coffee"></i>
+									<i class="fas fa-glass-martini"></i>
+							button.special-offer__button купить
+					.col-lg.col-sm-6
+						.special-offer
+							.special-offer__img
+								img(src="static/img/content/special-offer-1.png", alt="")
+								.special-offer__price 
+									span от<br/>280руб.
+							.special-offer__info
+								.special-offer__description ГРАНД МАКЕТ РОССИЯ, <br>ИНТЕРАКТИВНЫЙ МУЗЕЙ
+								.special-offer__time 
+									<i class="far fa-clock"></i>
+									span с 10 до 20 ежедневно
+								.special-offer__icons
+									<i class="fas fa-music"></i>
+									<i class="fas fa-headphones"></i>
+									<i class="fas fa-coffee"></i>
+									<i class="fas fa-glass-martini"></i>
+							button.special-offer__button купить
+
+
+
+
+
+	//- content section excursions
+	section.content-section 
+		.content-section__top-line
+			.container
+				.content-section__title-wrap
+					h2.content-section__title 
+						img.content-section___icon(src="static/img/general/content-section-icon-2.png", alt="")
+						span ЭКСКУРСИИ ПО САНКТ-ПЕТЕРБУРГУ
+		.content-section__wrap
+			.container
+				.row
+					.col-lg-4.col-sm-6
+						.excursions-box
+							.excursions-box__img
+								img(src="static/img/general/excursions-box-img-1.png", alt="")
+							.excursions-box__info
+								.excursions-box__title Метеоры в Петергоф
+								.excursions-box__text Официальная линия метеоров PETERHOF EXPRESS - быстрый и удобный трансфер в Царство Фонтанов
+					.col-lg-4.col-sm-6
+						.excursions-box
+							.excursions-box__img
+								img(src="static/img/general/excursions-box-img-1.png", alt="")
+							.excursions-box__info
+								.excursions-box__title Метеоры в Петергоф
+								.excursions-box__text Официальная линия метеоров PETERHOF EXPRESS - быстрый и удобный трансфер в Царство Фонтанов
+					.col-lg-4.col-sm-6
+						.excursions-box
+							.excursions-box__img
+								img(src="static/img/general/excursions-box-img-1.png", alt="")
+							.excursions-box__info
+								.excursions-box__title Метеоры в Петергоф
+								.excursions-box__text Официальная линия метеоров PETERHOF EXPRESS - быстрый и удобный трансфер в Царство Фонтанов
+					.col-lg-4.col-sm-6
+						.excursions-box
+							.excursions-box__img
+								img(src="static/img/general/excursions-box-img-1.png", alt="")
+							.excursions-box__info
+								.excursions-box__title Метеоры в Петергоф
+								.excursions-box__text Официальная линия метеоров PETERHOF EXPRESS - быстрый и удобный трансфер в Царство Фонтанов
+					.col-lg-4.col-sm-6
+						.excursions-box
+							.excursions-box__img
+								img(src="static/img/general/excursions-box-img-1.png", alt="")
+							.excursions-box__info
+								.excursions-box__title Метеоры в Петергоф
+								.excursions-box__text Официальная линия метеоров PETERHOF EXPRESS - быстрый и удобный трансфер в Царство Фонтанов
+					.col-lg-4.col-sm-6
+						.excursions-box
+							.excursions-box__img
+								img(src="static/img/general/excursions-box-img-1.png", alt="")
+							.excursions-box__info
+								.excursions-box__title Метеоры в Петергоф
+								.excursions-box__text Официальная линия метеоров PETERHOF EXPRESS - быстрый и удобный трансфер в Царство Фонтанов
+
+
+
+
+	//- content section news
+	section.content-section
+		.content-section__top-line
+			.container
+				.content-section__title-wrap
+					h2.content-section__title 
+						img.content-section___icon(src="static/img/general/content-section-icon-6.png", alt="")
+						span ЭКСКУРСИИ ПО САНКТ-ПЕТЕРБУРГУ
+					button.content-section__button Все новости
+		.content-section__wrap
+			.container
+				.row
+					.col-lg-3.col-sm-6
+						.news_box
+							.news_box__top
+								.news_box__date <span>25</span>янв
+								.news_box__title С новым 2018 годом!
+							.news_box__img
+								img(src="static/img/content/news_box-img-1.png", alt="")
+							.news_box__text Дорогие друзья! Группа компаний “ASTRA MARINE” поздравляет вас с наступающим Новым Годом и Рождеством!
+					.col-lg-3.col-sm-6
+						.news_box
+							.news_box__top
+								.news_box__date <span>25</span>янв
+								.news_box__title С новым 2018 годом!
+							.news_box__img
+								img(src="static/img/content/news_box-img-1.png", alt="")
+							.news_box__text Дорогие друзья! Группа компаний “ASTRA MARINE” поздравляет вас с наступающим Новым Годом и Рождеством!
+					.col-lg-3.col-sm-6.col-sm-6
+						.news_box
+							.news_box__top
+								.news_box__date <span>25</span>янв
+								.news_box__title С новым 2018 годом!
+							.news_box__img
+								img(src="static/img/content/news_box-img-1.png", alt="")
+							.news_box__text Дорогие друзья! Группа компаний “ASTRA MARINE” поздравляет вас с наступающим Новым Годом и Рождеством!
+					.col-lg-3.col-sm-6
+						.news_box
+							.news_box__top
+								.news_box__date <span>25</span>янв
+								.news_box__title С новым 2018 годом!
+							.news_box__img
+								img(src="static/img/content/news_box-img-1.png", alt="")
+							.news_box__text Дорогие друзья! Группа компаний “ASTRA MARINE” поздравляет вас с наступающим Новым Годом и Рождеством!
+	
+
+
+	//- social-connect
+	section.social-connect
+		.container
+			h2.social-connect__title Присоединяйтесь к нам в социальных сетях
+			.social-connect__subtitle @astra_marine_boats или ищите нас по тегам #astramarine #астрамарин
+		.social-slider.owl-carousel
+			.social-slider__item
+				img(src="static/img/content/social-slider-1.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-2.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-3.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-4.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-5.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-6.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-7.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-8.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-1.png", alt="")
+			.social-slider__item
+				img(src="static/img/content/social-slider-2.png", alt="")
+		.container
+			.social-connect__links
+				a.vk(href="")
+				a.inst(href="")
+				a.fb(href="")
+				a.fl(href="")
+				a.yt(href="")
+
+					
+				
+							
+
+
+
+
+
+

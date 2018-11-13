@@ -1,0 +1,165 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.news_right h2 {
+	margin-top: 25px;
+}
+.contact_form textarea {
+	width: 889px;
+}
+.top_mnu ul li {
+	margin-right: 15px;
+}
+.logo {
+	width: 135px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.news_right h2 {
+	margin-top: 25px;
+}
+.fs_text {
+	float: none;
+	margin: 0 auto;
+}
+.trainer {
+	margin-bottom: 50px;
+}
+.rate {
+	margin-bottom: 70px;
+}
+.reviews_left_img {
+	float: none;
+	margin: 0 auto;
+}
+.reviews_left {
+	margin-bottom: 50px;
+}
+.reviews_right {
+	margin-bottom: 50px;
+}
+.reviews_btn {
+	margin-left: 60px;
+}
+.logo_bottom {
+	display: block;
+	margin-bottom: 50px;
+}
+.nc_address  {
+	margin-bottom: 50px;
+}
+.contact_form textarea {
+	width: 700px;
+}
+.top_text {
+	max-width: 100%;
+}
+.header_btn {
+	max-width: 100%;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.reviews_left {
+	margin-bottom: 50px;
+}
+.reviews_btn {
+	margin-left: 70px;
+}
+.issues_left {
+	margin-bottom: 50px;
+}
+.social_3 {
+	margin-bottom: 50px;
+}
+.contact_form textarea {
+	max-width: 430px;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.popup_body_buy,
+.popup_body {
+	margin: 100px auto 0;
+}
+.top_text h1 {
+	font-size: 40px;
+	line-height: 50px;
+}
+.adults, .children {
+	float: none;
+}
+.children {
+	margin-top: 50px;
+}
+.teacher h2 {
+	font-size: 30px;
+}
+.bottom_mnu {
+	margin-bottom: 50px;
+}
+.issues_right:before {
+	content: "";
+	display: none;
+}
+/*.news_galery_preview {
+	width: 115px;
+}
+.news_galery_preview img {
+	width: 115px;
+}*/
+.contact_form textarea {
+	max-width: 350px;
+}
+.popup_right {
+	float: none;
+	margin: 0 auto;
+}
+.popup_body_buy {
+	padding: 20px 0;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+.top_text h1 {
+	font-size: 35px;
+	line-height: 50px;
+}
+.contact_form textarea {
+	max-width: 270px;
+}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

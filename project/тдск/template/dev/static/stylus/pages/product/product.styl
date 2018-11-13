@@ -1,0 +1,300 @@
+// main product-page
+.product-page
+    background url(../img/general/background.png)
+    .content
+        padding-top: 130px;
+        padding-bottom 75px
+// wrapper product-content
+.product-content
+    .product-wrap
+        display: flex
+        flex-wrap: wrap
+        margin-bottom 80px
+// Картинки
+.product-img-wrap
+    max-width: 600px
+    width: 100%
+    .product-img
+        position relative
+        width: 594px;
+        height: 594px;
+        background #fff
+        margin-bottom 25px
+        img 
+            absolute-center()
+            width calc(100% - 44px)
+            height calc(100% - 44px)
+            border-radius: 15px
+            object-fit: cover
+    .document-wrap
+        width 100%
+        display: flex
+        justify-content space-between
+        .product-document
+            position: relative
+            max-width 184px
+            width: calc(100% - 10px)
+            margin-right 10px
+            height 262px
+            &:last-child
+                margin-right 0
+            img 
+                width 100%
+                height 100%
+                object-fit: cover
+            &:hover .product-document__overlay 
+                display: flex
+            .product-document__overlay
+                position: absolute
+                top: 0
+                left: 0
+                width 100%
+                height 100%
+                display: none
+                justify-content center
+                align-items center
+                transition: .3s
+                img 
+                    width auto
+                    height auto
+            
+// информация
+.product-info-wrap
+    padding-top 50px
+    padding-right 20px
+    padding: 50px 20px 0px 60px
+    width: 50%
+    max-width: 600px
+    width: 100%
+    h1
+        font-weight 400
+        font-size rem(48px)
+        color: #b8311b
+        line-height rem(48px)
+        margin-bottom rem(50px)
+    .product-parametrs
+        margin-bottom rem(50px)
+        li
+            font-weight 400
+            font-size rem(30px)
+            line-height rem(44px)
+            color: #728392
+            span 
+                color: #000
+    .product-price
+        color: #b8311b
+        font-size rem(36px)
+        font-weight 400
+        margin-bottom rem(50px)
+        span 
+            font-weight 700
+    .product-info 
+        margin-top 50px
+        .product-info__title
+            font-weight 300
+            color #b8311b
+            font-size rem(30px)
+            margin-bottom rem(15px)
+        .product-info__text
+            font-weight 300
+            font-size rem(18px)
+            color: #000
+            line-height rem(30px)
+// wrapper calculator-application
+.calculator-application
+    display: flex
+    flex-wrap: wrap
+// Калькулятор
+.product-calculator
+    max-width: 600px
+    width: 100%
+    margin-bottom 25px
+    h2
+        margin-bottom rem(15px)
+    .product-calculator__subtitle
+        font-weight 400
+        font-size rem(30px)
+        color: #000000
+        margin-bottom rem(40px)
+    .calculator__wrap.calculator__wrap--product
+        display: flex
+        justify-content space-between
+        .calculator__input-wrap
+            margin-right 15px
+            display: flex
+            flex-direction: column
+            margin-bottom rem(30px)
+            &:last-child
+                margin-right 0
+            .calculator__label
+                font-weight 400
+                font-size rem(20px)
+                color: #000
+                margin-bottom rem(10px)
+            .calculator__input
+                font-family: 'Oswald', sans-serif
+                max-width 180px
+                width: 100%
+                height 44px
+                border: none 
+                border-radius: 4px
+                background #fff
+                padding-left 15px
+                padding-right 15px
+    .calculator__output
+        align-items flex-start
+        padding: 15px 20px 25px
+        margin-bottom 0
+        .calculator__sum
+            font-weight 400
+            color: #000
+        .calculator__total-sum
+            font-weight 400
+            color: #000
+// Заявка
+.application-wrap
+    max-width: 600px
+    width: 100%
+    padding: 0px 20px 0px 60px
+    display: flex
+    justify-content center 
+    align-items center
+    .application
+        width: 392px;
+        height: 469px;
+        background-color rgba(0, 0, 0, 0.2)
+        padding: 45px 55px
+        .application__title
+            font-weight 400
+            font-size rem(30px)
+            color: #000
+            margin-bottom rem(45px)
+        .application__label
+            font-weight 400
+            font-size rem(20px)
+            color: #000
+            margin-bottom rem(13px)
+            display: inline-block
+        .application__input
+            font-family: 'Oswald', sans-serif
+            height: 44px
+            width: 100%
+            border: none
+            border-radius: 4px
+            background: #fff
+            margin-bottom 20px
+            padding-left 15px
+            padding-right 15px
+        .button.button--red
+            margin-top 8px
+
+
+
+
+
+
+
+
+
+// Adaptability
+// Large Devices, Wide Screens
+@media only screen and (max-width : 1230px) {
+    .application-wrap,
+    .product-calculator,
+    .product-info-wrap,
+    .product-img-wrap {
+        max-width: auto;
+        width: 50%;
+    }
+    .product-info-wrap {
+        padding-top 0;
+    }
+    .product-img-wrap .product-img {
+        width 481px;
+        height 481px;
+    }
+    .product-info-wrap .product-price,
+    .product-info-wrap .product-parametrs,
+    .product-info-wrap h1 {
+        margin-bottom 2rem;
+    }
+    .product-info-wrap .product-info {
+        margin-top 30px
+    }
+    .calculator__output .calculator__sum {
+        font-size 2rem
+    }
+    .calculator__output .calculator__total-sum {
+        font-size 1.4rem
+    }
+    .product-img-wrap .document-wrap .product-document {
+        height 220px;    
+    }
+}
+// Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .application-wrap,
+    .product-calculator,
+    .product-info-wrap,
+    .product-img-wrap {
+        max-width: auto;
+        width: 100%;
+        padding: 0
+    }
+}
+// Small Devices, Tablets
+@media only screen and (max-width : 768px) {
+    .product-page .content {
+        padding-top 50px
+    }
+    .product-img-wrap .product-img {
+        width: 546px;
+    }
+    .product-img-wrap .document-wrap .product-document {
+        height auto
+    }
+    .application-wrap, .product-calculator, .product-info-wrap, .product-img-wrap {
+        margin-bottom 50px
+    }
+    .product-content .product-wrap {
+        margin-bottom 0
+    }
+}
+// Extra Small Devices, Phones
+@media only screen and (max-width : 576px) {
+    .product-img-wrap .product-img {
+        width: 100%;
+        height: 290px;
+    }
+    
+    .application-wrap .application {
+        height auto
+        padding: 45px 25px;
+    }
+    .product-page .content {
+        padding-bottom 0
+    }
+    .application-wrap .application .button.button--red {
+        max-width: 100%    
+    }
+    .product-calculator .product-calculator__subtitle {
+        font-size 1rem
+    }
+    .product-info-wrap .product-price, .product-info-wrap .product-parametrs, .product-info-wrap h1 {
+        line-height 2rem
+        font-size 1.8rem    
+    }
+    .product-info-wrap .product-parametrs li {
+        line-height 1.7rem
+        font-size 1rem
+    }
+    .product-info-wrap .product-info .product-info__title {
+        font-size 1.5rem
+    }
+    .product-info-wrap .product-info .product-info__text {
+        font-size 1rem
+    }
+    .application-wrap .application .application__title {
+        margin-bottom 1.8rem
+    }
+}

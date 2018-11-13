@@ -1,0 +1,144 @@
+.header-wrapper
+    display: flex
+    flex-direction: column
+.top-line
+    padding: 15px 0px 14px;
+    background #ffffff
+    .top-line__wrap
+        display: flex
+        justify-content flex-end
+        align-items center
+
+// Телефон
+.phone
+    display: flex
+    align-items center
+    font-weight 400
+    font-size 30px
+    margin-right 25px
+    color: #728392
+    img 
+        margin-right 8px
+    a
+        color: #728392
+        .red 
+            font-weight 700
+            color: #b8311b
+
+
+.navigation
+    background-color #b8311b
+    padding: 14px 0px 16px;
+    border-bottom 2px solid #ffffff
+    min-height: 57px;
+    position: relative
+    .main-nav__wrap
+        position: relative
+        display: flex
+        justify-content flex-end
+        .logo
+            position: absolute
+            top: calc(50% - 88px)
+            left: 25px
+            z-index 5
+        .main-nav
+            display: flex
+        li
+            position: relative
+            padding: 0px 15px
+            a
+                font-weight 400
+                font-size rem(22px)
+                color: #ffffff
+                transition: .3s
+                &:hover
+                    color: #ffc5bc
+            &:after
+                content: ""
+                position: absolute
+                right 0
+                top: calc(50% - 9.5px)
+                width 1px
+                height 19px
+                background-color #e84125
+            &:last-child
+                &:after
+                    display: none
+
+
+.mobile-mnu
+    display: none
+.close
+    display: none
+
+// Adaptability
+@media only screen and (max-width : 1230px) {
+    .navigation .main-nav__wrap .main-nav {
+        padding-top 60px
+        padding-left 60px
+        padding-right 60px
+        z-index 99
+        position: fixed
+        display: none
+        top: 0
+        width: 100%
+        height 100vh
+        left: 0
+        background-color #b8311b
+        // display: flex
+        flex-direction: column
+    }
+    .navigation .main-nav__wrap .main-nav li {
+        margin-bottom 15px
+    }
+    .navigation .main-nav__wrap .main-nav li:after {
+        display: none
+    }
+    .mobile-mnu {
+        display: block  
+    } 
+    .close {
+        display: block
+    }
+}
+@media only screen and (max-width : 992px) {
+       
+}
+@media only screen and (max-width : 768px) {
+    .header-wrapper {
+        flex-direction: column-reverse
+    }
+    .navigation .main-nav__wrap .logo {
+        left: 0
+        right 0
+        top: calc(50% - 50px)
+        margin: 0 auto    
+        width 100px
+        height 100px
+    }
+    .navigation .main-nav__wrap .logo img {
+        height 100%
+        width 100%
+    }
+    .top-line .top-line__wrap {
+        flex-direction: column
+    }
+    .top-line .top-line__wrap .phone {
+        font-size 23px
+        margin-right 0
+        margin-bottom 11px    
+    }
+    .top-line .top-line__wrap .phone img {
+        size: 32px
+        margin-right 5px
+    }
+    .top-line {
+        padding: 18px 0px 22px
+    }
+}
+@media only screen and (max-width : 576px) {
+    
+}
+@media only screen and (min-width : 1230px) {
+
+}

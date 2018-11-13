@@ -1,0 +1,107 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.header-parametr .text {
+	font-size: 12px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.table-body .title {
+	position: absolute;
+    left: 0;
+    width: 100%;
+}
+.checkbox-wrap {
+	flex-direction: column;
+}
+.table-4 {
+	margin-bottom: 25px;
+}
+.rulon2m {
+	margin-bottom: 25px;
+}
+.logo {
+	display: block;
+	margin-bottom: 25px;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.submit-wrap input {
+	font-size: 14px;
+}
+.header-parametr .text {
+	font-size: 8px;
+}
+.submit-wrap input {
+	padding: 0 30px;
+}
+.product-preview {
+	width: 280px;
+	height: 280px;
+}
+.product-about {
+	width: 280px;
+}
+.product-about .text {
+	width: 280px;
+}
+.product-about .left,
+.product-about .right {
+	display: none;
+}
+.table-body .title.mobfix {
+	top: -55px;
+}
+.table-5 li.head span {
+	font-size: 11px;
+}
+.top-line {
+	position: static;
+}
+header {
+	padding-top: 0;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

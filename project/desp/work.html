@@ -1,0 +1,73 @@
+!   <!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<title>Студия DeepSpace</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+	<video autoplay loop id="video-background" muted plays-inline>
+	  <source src="video.mp4" type="video/mp4">
+	</video>
+
+	<main class="main">
+        <!-- header -->
+        <header class="header container">
+            <a href="" class="logo">DeepSpace</a>
+            <menu class="menu">
+                <a href="#" class="nex-page" data-page="">Our work</a>
+                <a href="#">Services</a>
+                <a href="#">About us</a>
+            </menu>
+        </header>
+        <!-- header -->
+
+        <!-- content -->
+        <section class="content">
+            <div class="call-to-action container">
+                <h1>Предоставляем полный спектр услуг
+                    <br>по упаковке Вашего бизнеса</h1>
+                <h2>Сайты, landing page, логотипы, фирменный стиль</h2>
+                <div class="contacts-us">
+                    <form class="contacts-us__form" action="">
+                        <div class="wrap">
+                            <input type="text" placeholder="Ваше Имя*">
+                            <input type="text" placeholder="Телефон или email*">
+                        </div>
+                    </form>
+                    <button class="button open-contact">Contact</button>
+                </div>
+            </div>
+        </section>
+        <!-- content -->
+        
+        <!-- footer -->
+        <footer class="footer container">
+            <div class="copyright">© 2016 Студия DeepSpace</div>
+            <a href="mailto:desphub@gmail.com" class="mail">desphub@gmail.com</a>
+        </footer>
+        <!-- footer -->		
+	</main>
+
+	<!-- scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+	<script>
+		$('.open-contact').click(function () {
+			$('.contacts-us__form').toggleClass('active');
+			$('.open-contact').text('send');
+		})
+	</script>
+
+</body>
+</html>

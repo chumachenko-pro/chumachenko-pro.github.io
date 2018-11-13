@@ -1,0 +1,58 @@
+.dg-wrapper{
+	width: 638px;
+	height: 545px;
+	margin: 0 auto;
+	position: relative;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+.dg-wrapper a{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.dg-wrapper a.dg-transition{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.dg-container nav{
+	width: 58px;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	margin: 25px auto;
+}
+.dg-container nav span{
+	background-color: #c21c1c;
+	border-radius: 50%;
+	cursor:pointer;
+
+	text-align: center;
+	padding: 3px 0;
+	width: 25px;
+	height: 25px;
+	opacity: 0.7;
+	color: #fff;
+	transition: 0.3s;
+	z-index: 9999;
+}
+.dg-container nav span:hover{
+	opacity: 1;
+}
+.dg-container nav span.dg-next{
+	margin-left: 10px;
+}

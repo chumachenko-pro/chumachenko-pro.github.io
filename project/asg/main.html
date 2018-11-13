@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css" />
+
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+
+
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+	<style>
+		.page-navigatoin ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			background-color: #222;
+		}
+	
+		.page-navigatoin li a {
+			display: block;
+			padding: 15px 40px;
+			color: #bbb;
+			transition: .3s;
+		}
+	
+		.page-navigatoin li a:hover {
+			background: #bbb;
+			color: #222;
+		}
+	</style>
+	<nav class="page-navigatoin">
+		<ul>
+			<li>
+				<a href="main.html">Page 1</a>
+			</li>
+			<li>
+				<a href="index.html">Page 2</a>
+			</li>
+			<li>
+				<a href="index-2.html">Page 3</a>
+			</li>
+			<li>
+				<a href="index-3.html">Page 4</a>
+			</li>
+			<li>
+				<a href="index-4.html">Page 5</a>
+			</li>
+			<li>
+				<a href="index-5.html">Page 6</a>
+			</li>
+			<li>
+				<a href="index-6.html">Page 7</a>
+			</li>
+		</ul>
+	</nav>
+	<header class="main_header">
+		<div class="top_line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-3 col-xs-10">
+						<div class="logo_wrap">
+							<a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+						</div>
+					</div>
+
+					<div class="col-md-5 hidden-sm hidden-xs">
+						<nav class="main_mnu">
+							<ul>
+								<li><a href="">О нас</a></li>
+								<li><a href="">Услуги</a></li>
+								<li><a href="">Блог</a></li>
+								<li><a href="">Наши проекты</a></li>
+								<li><a href="">Отзывы</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- -->
+					<div class="col-xs-2 hidden-md hidden-lg">
+						<div class="h_btns">
+						 	<button class="hamburger">&#9776;</button>
+	  						<button class="cross">&#735;</button>
+  						</div>
+  					</div>		
+					<!-- -->
+					
+					<div class="col-md-3 col-sm-4 col-xs-12">
+						<div class="phone_wrap">
+							<a href="" class="phone">8 499 391 88 47</a>
+						</div>
+					</div>
+					
+					<div class="col-md-2 col-sm-3 col-xs-12">
+						<div class="callback_wrap">
+							<a href="#modal1" class="btn callback open_modal">ЗАКАЗАТЬ ЗВОНОК</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<a href="#"><li>О нас</li></a>
+				<a href="#"><li>Услуги</li></a>
+				<a href="#"><li>Блог</li></a>
+				<a href="#"><li>Наши проекты</li></a>
+				<a href="#"><li>Отзывы</li></a>
+			</ul>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="h_video">
+							<div class="rw_overflow">
+								<img src="img/hvid.png" alt="">
+								<div class="rw_play">
+									<img src="img/Play.png" alt="">
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h2>20 лет в продажах<br>и бизнесе</h2>
+					<div class="header_title">ОПЫТ И ЗНАНИЯ<br>БЕСЦЕННЫ</div>
+					<h4>Татьяна Кроткова</h4>
+					<h5 class="italic">Бизнес-консультант</h5>
+					<a href="" class="btn hwifth">Получить бесплатную консультацию</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+				<div class="ben_box">
+					<div class="bb_number">400</div>
+					<div class="bb_text">
+						<h5>страниц уникальных<br>
+документов</h5>
+						<p class="italic hidden">Организация и менеджмент продаж<br>
+						наш главный и основной интерес. <br>
+						Мы не занимаемся ничем другим! </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ben_box">
+					<div class="bb_number">15</div>
+					<div class="bb_text">
+						<h5>отраслей в которых<br>
+Вы получите знания</h5>
+						<p class="italic hidden">Организация и менеджмент продаж<br>
+						наш главный и основной интерес. <br>
+						Мы не занимаемся ничем другим! </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-12">
+				<div class="ben_box">
+					<div class="bb_number">100%</div>
+					<div class="bb_text">
+						<h5>погружение<br>
+в ваш бизнес</h5>
+						<p class="italic hidden">Организация и менеджмент продаж<br>
+						наш главный и основной интерес. <br>
+						Мы не занимаемся ничем другим! </p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="m_services">
+		<div class="container">
+			<h3>НАШИ УСЛУГИ</h3>
+			<h5 class="italic">Компания Active Sales Group реализует проекты по увеличению продаж в<br>действующем отделе продаж и создает новые отделы продаж с “нуля”</h5>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ms_box">
+					<div class="ms_img">
+						<img src="img/msi_1.png" alt="">
+					</div>
+					<div class="ms_text">
+						<div class="ms_title">Отдел продаж с нуля</div>
+						<h5>Contrary to popular belief, Lorem Ipsum
+						is not simply random text. It has roots in
+						a piece of classical Latin literature from
+						45 BC, making it over 2000 years old.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ms_box">
+					<div class="ms_img">
+						<img src="img/msi_2.png" alt="">
+					</div>
+					<div class="ms_text">
+						<div class="ms_title">Отдел продаж с нуля</div>
+						<h5>Contrary to popular belief, Lorem Ipsum
+						is not simply random text. It has roots in
+						a piece of classical Latin literature from
+						45 BC, making it over 2000 years old.</h5>
+					</div>
+				</div>
+			</div>
+ 
+			<div class="col-md-4 col-sm-6">
+				<div class="ms_box">
+					<div class="ms_img">
+						<img src="img/msi_3.png" alt="">
+					</div>
+					<div class="ms_text">
+						<div class="ms_title">Отдел продаж с нуля</div>
+						<h5>Contrary to popular belief, Lorem Ipsum
+						is not simply random text. It has roots in
+						a piece of classical Latin literature from
+						45 BC, making it over 2000 years old.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ms_box">
+					<div class="ms_img">
+						<img src="img/msi_4.png" alt="">
+					</div>
+					<div class="ms_text">
+						<div class="ms_title">Отдел продаж с нуля</div>
+						<h5>Contrary to popular belief, Lorem Ipsum
+						is not simply random text. It has roots in
+						a piece of classical Latin literature from
+						45 BC, making it over 2000 years old.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ms_box">
+					<div class="ms_img">
+						<img src="img/msi_5.png" alt="">
+					</div>
+					<div class="ms_text">
+						<div class="ms_title">Отдел продаж с нуля</div>
+						<h5>Contrary to popular belief, Lorem Ipsum
+						is not simply random text. It has roots in
+						a piece of classical Latin literature from
+						45 BC, making it over 2000 years old.</h5>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ms_box">
+					<div class="ms_img">
+						<img src="img/msi_6.png" alt="">
+					</div>
+					<div class="ms_text">
+						<div class="ms_title">Отдел продаж с нуля</div>
+						<h5>Contrary to popular belief, Lorem Ipsum
+						is not simply random text. It has roots in
+						a piece of classical Latin literature from
+						45 BC, making it over 2000 years old.</h5>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="benefit">
+		<div class="container">
+			<h3>ПОЧЕМУ ВАМ ВЫГОДНО РАБОТАТЬ С НАМИ</h3>
+			<h5 class="italic">Организация и менеджмент продаж - нащ главный и основной интерес.<br>Мы не занимаемся ничем другим! </h5>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ben_box">
+					<div class="bb_number">1</div>
+					<div class="bb_text">
+						<h5>Видим возможности<br>и сильные стороны</h5>
+						<p class="italic hidden">Организация и менеджмент продаж<br>
+						наш главный и основной интерес. <br>
+						Мы не занимаемся ничем другим! </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ben_box">
+					<div class="bb_number">3</div>
+					<div class="bb_text">
+						<h5>Трансформируем<br>подходы</h5>
+						<p class="italic hidden">Организация и менеджмент продаж<br>
+						наш главный и основной интерес. <br>
+						Мы не занимаемся ничем другим! </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6">
+				<div class="ben_box">
+					<div class="bb_number">5</div>
+					<div class="bb_text">
+						<h5>Заряжаем энергией и<br>захватываем рынок</h5>
+						<p class="italic hidden">Организация и менеджмент продаж<br>
+						наш главный и основной интерес. <br>
+						Мы не занимаемся ничем другим! </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-6">
+				<div class="ben_box bb_pos1">
+					<div class="bb_number">2</div>
+					<div class="bb_text">
+						<h5>Подбираем<br>команду</h5>
+						<p class="italic">Организация и менеджмент продаж<br>
+						наш главный и основной интерес. <br>
+						Мы не занимаемся ничем другим! </p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12">
+				<div class="ben_box bb_pos2">
+					<div class="bb_number">4</div>
+					<div class="bb_text">
+						<h5>Учим<br>проактивности</h5>
+						<p class="italic hidden">Организация и менеджмент продаж<br>
+						наш главный и основной интерес. <br>
+						Мы не занимаемся ничем другим! </p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="cases">
+		<div class="container">
+			<h3>КЕЙСЫ</h3>
+			<h5 class="italic">Мы посчитали: за 7 лет мы “жили” у наших клиентов<br>
+			у наших клиентов в течение 15 546 часов</h5>
+
+			<div class="main_cases">
+				<div class="col-md-3">
+					<div class="cas_logo">
+						<img src="img/case_logo.png" alt="">
+					</div>
+				</div>
+				
+				<div class="col-md-9">
+					<div class="cas_text">
+						<h1>КЕЙСЫ ЮНИСТРИМ БАНКА</h1>
+						<h5>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
+						1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
+						English versions from the 1914 translation by H. Rackham. Where can I get some?
+						There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+						by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of
+						Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+						generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the
+						</h5>
+					</div>
+					<a href="#" class="btn">СМОТРЕТЬ ПОЛНЫЙ КЕЙС</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="prev_case">
+						<span>Кейс “ДОЗОР”</span>
+						<h5>Услуги по мониторингу автотранспорта </h5>
+						<a href="#">СМОТРЕТЬ ПОЛНЫЙ КЕЙС</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="prev_case">
+						<span>Кейс “ДОЗОР”</span>
+						<h5>Услуги по мониторингу автотранспорта </h5>
+						<a href="#">СМОТРЕТЬ ПОЛНЫЙ КЕЙС</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-12">
+					<div class="prev_case">
+						<span>Кейс “ДОЗОР”</span>
+						<h5>Услуги по мониторингу автотранспорта </h5>
+						<a href="#">СМОТРЕТЬ ПОЛНЫЙ КЕЙС</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="main_about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-1">
+					<h3>обо мне</h3>
+						<div class="ma_avatar">
+							<img src="img/ma_avatar.png" alt="">
+							<div class="ma_name">ТАТЬЯНА<br>КРОТКОВА</div>
+						</div>
+					
+					
+						<h5 class="italic">But the majority have suffered alteration in some form, by injected humour,
+						or randomised words which don't look even slightly believable. If you are
+						going to use a passage of Lorem Ipsum, you need to be sure there isn't</h5>
+						<h5 class="italic text_red_line">necessary, making this the first true generator on the Internet. It uses a
+						dictionary of over 200 Latin words, combined with a handful of model
+						sentence structures, to generate Lorem Ipsum which looks reaso</h5>
+						<h5>There are many variations of passages of Lorem Ipsum available, but the
+						majority have suffered alteration in some form, by injected humour, or
+						randomised words which don't look even slightly believable. If you are going
+						to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+						embarrassing hidden in the middle of text. All the Lorem Ipsum generators
+						on the Internet tend to repeat predefined chunks as n</h5>
+						<a href="#" class="btn">ПОДРОБНЕЕ</a>
+					</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="main_review">
+		<div class="container">
+			<h3>Отзывы</h3>
+
+
+
+
+
+			<div class="main_review_slider owl-carousel">
+
+				<div class="mrs_item row">
+					<div class="col-md-6">
+						<div class="rev_video">
+							<div class="rw_overflow">
+								<img src="img/prew_ower.png" alt="">
+								<div class="rw_play">
+									<img src="img/Play.png" alt="">
+								</div>
+							</div>
+							<iframe src="https://www.youtube.com/embed/QarQsmmtob0?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="rev_text">
+							<h5 class="italic text_red_line">Бизнес-консультант Юниаструм Банка</h5>
+							<h5>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+							piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+							McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one
+							of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
+							through the cites of the word in classical literature, discovered the undoubtable source.
+							Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+							Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+							This book is a treatise on the theory of ethics, very popular during the Renaissance.</h5>
+						</div>
+						
+						<div class="nav_panrl">
+							<div class="nav_wrap">
+								<div class="prev_button"><img src="img/arrow.png" alt=""></div>
+								<div class="next_button"><img src="img/arrow.png" alt=""></div>
+							</div>
+
+							<div class="more_rev">
+								<a href="#" class="mr_link">ВСЕ ОТЗЫВЫ<span>156</span></a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="mrs_item row">
+					<div class="col-md-6">
+						<div class="rev_video">
+							<div class="rw_overflow">
+								<img src="img/prew_ower.png" alt="">
+								<div class="rw_play">
+									<img src="img/Play.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="rev_text">
+							<h5 class="italic text_red_line">Бизнес-консультант Юниаструм Банка</h5>
+							<h5>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+							piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+							McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one
+							of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
+							through the cites of the word in classical literature, discovered the undoubtable source.
+							Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+							Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
+							This book is a treatise on the theory of ethics, very popular during the Renaissance.</h5>
+						</div>
+						
+						<div class="nav_panrl">
+							<div class="nav_wrap">
+								<div class="prev_button"><img src="img/arrow.png" alt=""></div>
+								<div class="next_button"><img src="img/arrow.png" alt=""></div>
+							</div>
+
+							<div class="more_rev">
+								<a href="#" class="mr_link">ВСЕ ОТЗЫВЫ<span>156</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+
+		</div>
+	</section>
+
+	<section class="speech">
+		<div class="container">
+			<div class="speech_text">
+			<h3>ВЫСТУПЛЕНИЕ НА<br>АМО КОНФЕРЕНЦИИ</h3>
+			<h5 class="mb">КОНФЕРЕНЦИЯ АМО</h5>
+			<h5>
+				There are many variations of passages of Lorem Ipsum available, but the
+				majority have suffered alteration in some form, by injected humour, or
+				randomised words which don't look even slightly believable. If you are going
+				to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+				embarrassing hidden in the middle of text. All the Lorem Ipsum generators
+				on the Internet tend to repeat predefined chunks as n
+			</h5>
+			</div>
+
+			<a href="" class="sp_play"><img src="img/Play.png" alt=""></a>
+		</div>
+	</section>
+	
+	<section class="m_rewievs">
+		<div class="container">
+			<h3>ОТЗЫВЫ</h3>
+					<div class="col-md-4 col-sm-6">
+					<div class="tool_box_wrap">
+						<div class="tool_box">
+							<!--<div class="tb_img">
+								<img src="img/tb_img.png" alt="">
+							</div>-->
+							<div class="tb_category efekt">Продажи</div>
+							<div class="tb_title">Как прогнозировать продажи<br>на падающем рынке?</div>
+							<div class="tb_text"><div class="p2">В условиях «предвойны» на кризисном рынке собственник малого и среднего бизнеса работает в темноте. Будущее</div></div>
+
+							<div class="tb_when">
+								<div class="p2">
+									<span class="time">14:20</span>
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+									<span class="date">05 апреля 2017</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-6">
+					<div class="tool_box_wrap">
+						<div class="tool_box">
+							<!--<div class="tb_img">
+								<img src="img/tb_img.png" alt="">
+							</div>-->
+							<div class="tb_category efekt">Менеджмент</div>
+							<div class="tb_title">Трудности при создании<br>системы продаж сегодня: как...</div>
+							<div class="tb_text"><div class="p2">Хотите привлечь внимание сегодняшних вечно-занятых ЛПРов? Для первого общения объявите ему, что вы обязуетесь</div></div>
+
+							<div class="tb_when">
+								<div class="p2">
+									<span class="time">14:20</span>
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+									<span class="date">05 апреля 2017</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-12">
+					<div class="tool_box_wrap">
+						<div class="tool_box">
+							<!--<div class="tb_img">
+								<img src="img/tb_img.png" alt="">
+							</div>-->
+							<div class="tb_category efekt">Менеджмент</div>
+							<div class="tb_title">Нужно ли сегодня вкладывать<br>деньги бизнеса в обучение ...</div>
+							<div class="tb_text"><div class="p2">Сегодня требования к обучению менеджеров по продажам изменились. Они определяются ситуацией, которая</div></div>
+
+							<div class="tb_when">
+								<div class="p2">
+									<span class="time">14:20</span>
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+									<span class="date">05 апреля 2017</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+			<div class="clear"></div>
+			<a href="" class="btn">ПОДПИСАТЬСЯ НА БЛОГ</a>
+		</div>
+	</section>
+
+	<section class="m_clients">
+		<div class="container">
+			<h3>НАШИ КЛИЕНТЫ</h3>
+			<div class="mc_slider owl-carousel">
+				<div class="mc_item">
+					<a href="#" class="mc_logo"><img src="img/adlogo.png" alt=""></a>
+				</div>
+
+				<div class="mc_item">
+					<a href="#" class="mc_logo"><img src="img/adlogo2.png" alt=""></a>
+				</div>
+
+				<div class="mc_item">
+					<a href="#" class="mc_logo"><img src="img/adlogo3.png" alt=""></a>
+				</div>
+
+				<div class="mc_item">
+					<a href="#" class="mc_logo"><img src="img/adlogo4.png" alt=""></a>
+				</div>
+				
+
+				<div class="mc_item">
+					<a href="#" class="mc_logo"><img src="img/adlogo.png" alt=""></a>
+				</div>
+
+				<div class="mc_item">
+					<a href="#" class="mc_logo"><img src="img/adlogo2.png" alt=""></a>
+				</div>
+
+				<div class="mc_item">
+					<a href="#" class="mc_logo"><img src="img/adlogo3.png" alt=""></a>
+				</div>
+
+				<div class="mc_item">
+					<a href="#" class="mc_logo"><img src="img/adlogo4.png" alt=""></a>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="m_contacts">
+		<div class="mc_left">
+			<div class="mc_container">
+				<h3>НАШИ КОНТАКТЫ</h3>
+			</div>
+		</div>
+		<div class="mc_right">
+			<div class="mc_container">
+				<h3>НАПИСАТЬ НАМ</h3>
+			</div>
+		</div>
+	</section>
+
+	<footer class="main_footer">
+		<h5>2017 © ActiveSalesGroup. Все права защищены</h5>
+	</footer>
+
+	<div id="modal1" class="modal_div"> <!-- скрытый див с уникaльным id = modal1 -->
+	<span class="modal_close">X</span>
+        <div class="z_title">Построить Прибыльный<br>Отдел Продаж</div>
+							<div class="z_subtitle">с нуля и до результата за 90 дней</div>
+							<div class="z_img">
+								<img src="img/z_img.png" alt="">
+							</div>
+
+							<form action="" class="z_form">
+
+								<input type="text" class="putName" name="name" placeholder="Ваше имя" required>
+
+					         	<input type="tel" class="putPhone" name="phone" placeholder="Ваш телефон" id="phone" required>
+								
+								<input type="text" class="putMail" name="mail" placeholder="Email" required>
+
+					         	<input type="submit" name="submit" class="btn" value="Заказать консультацию">
+
+							</form>
+	</div>
+	<div id="overlay"></div><!-- Пoдлoжкa, oднa нa всю стрaницу -->
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+
+	<script src="libs/countdown/jquery.plugin.js"></script>
+	<script src="libs/countdown/jquery.countdown.min.js"></script>
+	<script src="libs/countdown/jquery.countdown-ru.js"></script>
+	<script src="libs/landing-nav/navigation.js"></script>
+
+	<script src="libs/salvattore/salvattore.min.js"></script>
+
+	<script src="js/common.js"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

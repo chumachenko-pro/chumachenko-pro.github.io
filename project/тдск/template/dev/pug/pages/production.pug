@@ -1,0 +1,13 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Продукция'
+	- var pageClass = 'production-page'
+
+block content
+	section.production-page-container
+		.container
+			include ../modules/breadcrumbs
+			h2 Продукция
+			//- production
+			include ../modules/production

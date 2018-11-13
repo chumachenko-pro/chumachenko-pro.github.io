@@ -1,0 +1,88 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Главная страница'
+	- var pageClass = 'index-page'
+
+block content
+
+
+	//- slogan
+	section.slogan
+		.slogan-overlay
+		.video-background
+			.video-foreground
+				iframe(src="https://www.youtube.com/embed/RfNTtSbWu0E?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=RfNTtSbWu0E&start=0&mute=1", frameborder="0", allowfullscreen)
+		.container
+			.slogan__wrap
+				h1 Инертные материалы от производителя
+
+
+	//- production
+	section.production
+		.container
+			h2 Продукция
+			include ../modules/production
+
+
+	//- main-calculator
+	section.main-calculator
+		.container
+			h2 Калькулятор
+			.main-calculator__subtitle Укажите размеры площадки и выберите тип материала:
+			include ../modules/calculator
+			
+
+	//- advantages
+	section.advantages
+		.container
+			h2 Наши преимущества
+			.advantages__greed
+				.advantages__greed__item
+					.advantages__item
+						.advantages__icon
+							img(src="static/img/general/advantages-icon-1.png", alt="")
+						.advantages__text Собственный карьер<br>в п. Кандинка
+				.advantages__greed__item
+					.advantages__item
+						.advantages__icon
+							img(src="static/img/general/advantages-icon-2.png", alt="")
+						.advantages__text Замкнутый цикл: добыча,<br>переработка, отгрузка
+				.advantages__greed__item
+					.advantages__item
+						.advantages__icon
+							img(src="static/img/general/advantages-icon-3.png", alt="")
+						.advantages__text Любые объемы
+				.advantages__greed__item
+					.advantages__item
+						.advantages__icon
+							img(src="static/img/general/advantages-icon-4.png", alt="")
+						.advantages__text Весовая платформа
+				.advantages__greed__item
+					.advantages__item
+						.advantages__icon
+							img(src="static/img/general/advantages-icon-5.png", alt="")
+						.advantages__text Стабильная работа<br>с 2010 года
+				.advantages__greed__item
+					.advantages__item
+						.advantages__icon
+							img(src="static/img/general/advantages-icon-6.png", alt="")
+						.advantages__text Доставка Томск, Северск,<br>Томская область
+				.advantages__greed__item
+					.advantages__item
+						.advantages__icon
+							img(src="static/img/general/advantages-icon-7.png", alt="")
+						.advantages__text Работаем с крупными компаниями<br>и частными клиентами
+				.advantages__greed__item
+					.advantages__item
+						.advantages__icon
+							img(src="static/img/general/advantages-icon-8.png", alt="")
+						.advantages__text Соблюдаем сроки поставки
+	
+
+	//- video
+	section.video
+		.container
+			h3 Кандинский гравий ТДСК
+			.video__wrap
+				<iframe src="https://www.youtube.com/embed/RfNTtSbWu0E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

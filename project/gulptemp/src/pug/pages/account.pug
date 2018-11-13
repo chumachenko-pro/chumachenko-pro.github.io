@@ -1,0 +1,479 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Аккаунт'
+	- var pageClass = 'account-page'
+
+block content
+	//- header
+	header.header
+		.container
+			.header-inner
+				a.header__logo Domain.ru
+				nav.header__nav
+					li.active
+						a(href="index.html") Главная
+					li
+						a(href="rules.html") Правила
+					li
+						a(href="faq.html") Вопрос-Ответ
+					li
+						a(href="") API
+					li
+						a(href="signup.html") Регистрация
+				button.header__btn
+					<i class="fas fa-bars"></i>
+	
+	//- content
+	section.content
+		.container
+			section.account
+				.admin-head
+					.admin-head__user Привет, UserLogin!
+					.admin-head__balance Баланс: 1500₽
+						button.info.open_modal(href="#modal2") +
+
+				h1.account Новый заказ
+				.newOrder
+					.newOrder
+						input.newOrder__link(type="text" placeholder="Вставьте ссылку на канал в формате https://www.youtube.com/channel/UC_wuU_V0rrVfAVraiw0SCPg ")
+						input.newOrder__quantity(type="text" placeholder="Введите кратное количество, от 100 до 30 000")
+						input.newOrder__button(type="submit" value="Заказать")
+
+				
+				.tabContHead
+					.tabContHead__title Список заказов:
+					form.tabContHead__search
+						input(type="text" placeholder="Поиск заказов по ссылке")
+						button <i class="fas fa-search"></i>
+
+
+
+				.tab
+					.tabNav.tabs2
+						.tabNav__item.active.tab2 Все
+							sup (500000)
+						.tabNav__item.tab2 Ожидают
+							sup (500)
+						.tabNav__item.tab2 В работе
+							sup (500)
+						.tabNav__item.tab2 Выполнены
+							sup (500)
+						.tabNav__item.tab2 Отменены
+							sup (0)
+						.tabNav__item.tab2 Ошибка
+							sup (0)
+					.tabContent
+						.tabContent__item
+							.tablewrapper
+								table.adminTable
+									tr.adminTable__head
+										th ID
+										th Ссылка
+										th Количество
+										th Цена
+										th Старт
+										th Дата и время
+										th Статус
+									tr
+										th 7<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").yellow Ожидает
+									tr
+										th 15517<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").green Выполнен
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").red Отменён
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").blue В работе
+							.adminPagination
+								span.adminPagination__nav
+									<i class="fas fa-arrow-left"></i>
+									span Назад
+								ul.adminPagination__list
+									li
+										a(href="") 1
+									li
+										a(href="") 2
+									li
+										a(href="") 3
+								span.adminPagination__nav 
+									span Далее
+									<i class="fas fa-arrow-right"></i>
+						.tabContent__item
+							.tablewrapper
+								table.adminTable
+									tr.adminTable__head
+										th ID
+										th Ссылка
+										th Количество
+										th Цена
+										th Старт
+										th Дата и время
+										th Статус
+									tr
+										th 7<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").yellow Ожидает
+									tr
+										th 15517<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").green Выполнен
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").red Отменён
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").blue В работе
+							.adminPagination
+								span.adminPagination__nav
+									<i class="fas fa-arrow-left"></i>
+									span Назад
+								ul.adminPagination__list
+									li
+										a(href="") 1
+									li
+										a(href="") 2
+									li
+										a(href="") 3
+								span.adminPagination__nav 
+									span Далее
+									<i class="fas fa-arrow-right"></i>
+						.tabContent__item
+							.tablewrapper
+								table.adminTable
+									tr.adminTable__head
+										th ID
+										th Ссылка
+										th Количество
+										th Цена
+										th Старт
+										th Дата и время
+										th Статус
+									tr
+										th 7<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").yellow Ожидает
+									tr
+										th 15517<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").green Выполнен
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").red Отменён
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").blue В работе
+							.adminPagination
+								span.adminPagination__nav
+									<i class="fas fa-arrow-left"></i>
+									span Назад
+								ul.adminPagination__list
+									li
+										a(href="") 1
+									li
+										a(href="") 2
+									li
+										a(href="") 3
+								span.adminPagination__nav 
+									span Далее
+									<i class="fas fa-arrow-right"></i>
+						.tabContent__item
+							.tablewrapper
+								table.adminTable
+									tr.adminTable__head
+										th ID
+										th Ссылка
+										th Количество
+										th Цена
+										th Старт
+										th Дата и время
+										th Статус
+									tr
+										th 7<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").yellow Ожидает
+									tr
+										th 15517<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").green Выполнен
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").red Отменён
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").blue В работе
+							.adminPagination
+								span.adminPagination__nav
+									<i class="fas fa-arrow-left"></i>
+									span Назад
+								ul.adminPagination__list
+									li
+										a(href="") 1
+									li
+										a(href="") 2
+									li
+										a(href="") 3
+								span.adminPagination__nav 
+									span Далее
+									<i class="fas fa-arrow-right"></i>
+						.tabContent__item
+							.tablewrapper
+								table.adminTable
+									tr.adminTable__head
+										th ID
+										th Ссылка
+										th Количество
+										th Цена
+										th Старт
+										th Дата и время
+										th Статус
+									tr
+										th 7<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").yellow Ожидает
+									tr
+										th 15517<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").green Выполнен
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").red Отменён
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").blue В работе
+							.adminPagination
+								span.adminPagination__nav
+									<i class="fas fa-arrow-left"></i>
+									span Назад
+								ul.adminPagination__list
+									li
+										a(href="") 1
+									li
+										a(href="") 2
+									li
+										a(href="") 3
+								span.adminPagination__nav 
+									span Далее
+									<i class="fas fa-arrow-right"></i>
+						.tabContent__item
+							.tablewrapper
+								table.adminTable
+									tr.adminTable__head
+										th ID
+										th Ссылка
+										th Количество
+										th Цена
+										th Старт
+										th Дата и время
+										th Статус
+									tr
+										th 7<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").yellow Ожидает
+									tr
+										th 15517<sup>api</sup>
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").green Выполнен
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").red Отменён
+									tr
+										th 15517
+										th https://www.youtube.com/cha...
+										th 1500
+										th 500р
+										th 8703
+										th 09.05.2018 в 15:33
+										th
+											a(href="").blue В работе
+							.adminPagination
+								span.adminPagination__nav
+									<i class="fas fa-arrow-left"></i>
+									span Назад
+								ul.adminPagination__list
+									li
+										a(href="") 1
+									li
+										a(href="") 2
+									li
+										a(href="") 3
+								span.adminPagination__nav 
+									span Далее
+									<i class="fas fa-arrow-right"></i>
+
+
+
+
+				
+
+
+
+				
+				
+				
+	//- footer
+	footer.footer
+		.container
+			.footer-inner
+				nav.footer__nav
+					li
+						a(href="") Главная
+					li
+						a(href="") Правила
+					li
+						a(href="") Вопрос-Ответ
+					li
+						a(href="") API
+					li
+						a(href="") Регистрация
+				.footer__copyright Все права защищены © 2018
+
+
+	//- modal
+	.modal_div.paymod#modal2
+		span.modal_close <i class="fas fa-times"></i>
+		.modal_div__title Пополнить баланс
+		form.modalForm(action="")
+			input.modalForm__input(type="text" placeholder="Введиту кратную сумму от 50 до 50000 рублей")
+			input.modalForm__button.paybtn(type="submit" value="Проболжить")
+			.modalForm__text Выберите способ оплаты
+			.modalForm__choice
+				a(href="") PAY<span>EER</span>
+
+				a(href="") Web<span>Money</span>
+
+				a(href="") Pay<span>Pal</span>
+
+
+
+	#overlay

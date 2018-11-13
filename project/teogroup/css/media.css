@@ -1,0 +1,257 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.site-screen2 .container {
+	padding-bottom: 0;
+}
+.tasks {
+	padding-top: 50px;
+}
+.graphics {
+	width: 600px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.ach-wrap {
+	flex-direction: column;
+	justify-content: flex-start;
+	-ms-align-items: flex-start;
+	align-items: flex-start;
+}
+.an-right .an-text {
+	text-align: left;
+}
+.an-left {
+	margin-bottom: 25px;
+}
+.section-subtitle br,
+.cooperation-title br,
+.mission-text br,
+.advantages .section-title br {
+	display: none;
+}
+.urban-text {
+	width: 100%;
+}
+.urban-column-wrap {
+	width: 50%;
+	margin: 50px 0 0;
+}
+.cariba .container {
+	padding-bottom: 270px;
+}
+.site-screen2 .container {
+	padding: 460px 15px 0px;
+}
+.site-screen {
+	max-width: 768px;
+}
+.graphics {
+	width: 400px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.urban-column-wrap {
+	width: 100%;
+}
+.site-screen {
+	max-width: 480px;
+}
+.cariba .container {
+	padding-bottom: 125px;
+}
+.site-screen2 .container {
+	padding: 220px 15px 0px;
+}
+.picCenter {
+	width: 450px;
+	height: 385px;
+}
+.dop-mnu_btn {
+	top: auto;
+	bottom: 0;
+	left: 50%;
+	margin-left: -100px;
+	transform: rotate(0deg);
+	padding: 5px 15px 5px 15px;
+}
+.graphics {
+	margin-top: 50px;
+	text-align: center;
+	margin-left: 0;
+}
+}
+
+
+@media only screen and (max-width : 587px) {
+	.work-list-name {
+		margin-bottom: 25px;
+	}
+	.work-list-price {
+		margin-bottom: 25px;
+	}
+	.work-item-content {
+		padding-left: 0%;
+	}
+
+	.devices-scrin-imac{
+		width: 470px;
+		height: 388px;
+	}
+	.devices-scrin-imac img {
+		width: 387px;
+	    height: 215px;
+	    left: 42px;
+	    top: 24px;
+	}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.an-left .an-numper {
+	font-size: 40px;
+}
+.advantages .section-title {
+	font-size: 38px;
+}
+.cariba .container {
+	padding-bottom: 35px;
+}
+.site-screen2 .container {
+	padding: 95px 15px 0px;
+}
+.whatdo-list {
+	font-size: 18px;
+}
+.site-screen {
+	max-width: 320px;
+}
+.devices-scrin-macbook {
+	width: 310px;
+	height: 194px;
+}
+.devices-scrin-macbook img {
+	    width: 224px;
+    height: 145px;
+        left: 43px;
+    top: 12px;
+}
+.devices-scrin-imac{
+		width: 315px;
+		height: 260px;
+	}
+	.devices-scrin-imac img {
+		width: 259px;
+	    height: 144px;
+	    left: 28px;
+	    top: 16px;
+	}
+	.picCenter {
+	width: 280px;
+	height: 270px;
+}
+.tasks {
+	padding-top: 50px;
+}
+.graphics {
+	width: 300px;
+	margin-left: 0;
+}
+.rcases-item {
+	max-width: 270px;
+}
+
+.rcases-befo {
+    bottom: -50px;
+    left: 100px;
+}
+
+.rcases-befo, .rcases-after {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.rcases-after {
+    bottom: -50px;
+    right: 100px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+.cooperation-phone br {
+	display: none;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.rcases-befo,
+.rcases-after {
+	display: flex;
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.ab-item:nth-child(5) {max-width: 340px;margin-bottom: 10px}
+.ab-item:nth-child(6) {max-width: 340px;margin: 0 35px 10px;}
+.ab-item:nth-child(7) {max-width: 340px;margin-bottom: 10px}
+
+.devices-scrin-macbook {
+	position: absolute;
+	bottom: 20px;
+	z-index: 1;
+}
+.devices-scrin-imac{
+	position: absolute;
+	left: 300px;
+	bottom: 0;
+ 	z-index: 2;
+}
+.devices-scrin-ipad{
+	position: absolute;
+    bottom: 27px;
+    left: 743px;
+    z-index: 1;
+}
+.devices-scrin-iphone{
+	position: absolute;
+    left: 970px;
+    bottom: 30px;
+}
+.x-names li:nth-child(1n) {position: relative;left: -3px;}
+.x-names li:nth-child(2n) {position: relative;left: -13px;}
+.x-names li:nth-child(3n) {position: relative;left: -22px;}
+.x-names li:nth-child(4n) {position: relative;left: -25px;}
+.x-names li:nth-child(5n) {position: relative;left: -20px;}
+.x-names li:nth-child(6n) {position: relative;left: -6px;}
+
+.dop_mnu {
+	display: flex;
+}
+}
+

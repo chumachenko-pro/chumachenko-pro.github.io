@@ -1,0 +1,56 @@
+@font-face {
+	font-family: "PFAGORASANSPRO-BLACK";
+	src: url("../fonts/PFAGORASANSPRO/PFAGORASANSPRO-BLACK.TTF");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "PFAGORASANSPRO-BOLD";
+	src: url("../fonts/PFAGORASANSPRO/PFAGORASANSPRO-BOLD.TTF");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "PFAGORASANSPRO-MEDIUM";
+	src: url("../fonts/PFAGORASANSPRO/PFAGORASANSPRO-MEDIUM.TTF");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "PFAGORASANSPRO-LIGHT"; */
+@font-face {
+	font-family: "PFAGORASANSPRO-LIGHT";
+	src: url("../fonts/PFAGORASANSPRO/PFAGORASANSPRO-LIGHT.TTF");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Tahoma';
+	src: url('Tahoma.eot');
+	src: local('Tahoma'),
+		url('Tahoma.eot?#iefix') format('embedded-opentype'),
+		url('Tahoma.woff') format('woff'),
+		url('Tahoma.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Tahoma';
+	src: url('Tahoma-Bold.eot');
+	src: local('Tahoma Bold'), local('Tahoma-Bold'),
+		url('Tahoma-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Tahoma-Bold.woff') format('woff'),
+		url('Tahoma-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "ClearSansLight";
+	src: url("../fonts/ClearSansLight/ClearSansLight.eot");
+	src: url("../fonts/ClearSansLight/ClearSansLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ClearSansLight/ClearSansLight.woff") format("woff"),
+	url("../fonts/ClearSansLight/ClearSansLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+

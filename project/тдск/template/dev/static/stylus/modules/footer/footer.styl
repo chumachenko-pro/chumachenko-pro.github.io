@@ -1,0 +1,136 @@
+// main footer styles
+footer
+	flex 0 0 auto
+	background #163044
+	padding: 75px 0px
+	.footer-greed
+		display: flex
+		justify-content space-between
+		align-items center
+		.footer-greed__item
+			width: 33%
+		.footer-greed__item--left
+			display: flex
+			justify-content: flex-start
+		.footer-greed__item--center
+			display: flex
+			justify-content: center
+		.footer-greed__item--right
+			display: flex
+			justify-content: flex-end
+
+.company-name
+	font-weight 400
+	font-size rem(26.2px)
+	color: #ffffff
+
+
+// footer navigation
+.footer-navigation
+	background #b8311b
+	padding: 15px 0px
+	.footer-navigation__wrap
+		display: flex
+		justify-content center
+
+
+// second nav
+.second-nav
+	display: flex
+.second-nav li
+	position: relative
+	padding: 0px 15px
+.second-nav a
+	font-weight 400
+	font-size rem(22px)
+	color: #ffffff
+	transition: .3s
+	&:hover
+		color: #ffc5bc
+	&:after
+		content: ""
+		position: absolute
+		right 0
+		top: calc(50% - 9.5px)
+		width 1px
+		height 19px
+		background-color #e84125
+	&:first-child
+		&:before
+			content: ""
+			position: absolute
+			left 0
+			top: calc(50% - 9.5px)
+			width 1px
+			height 19px
+			background-color #e84125
+
+.imfo-box
+	display: flex
+	align-items: center
+	a
+		margin-right: 5px
+	.linka
+		text-decoration: underline
+		display: block
+		color: #fff
+		font-size: rem(11px)
+		margin-top: -8px
+// Adaptability
+// Large Devices, Wide Screens
+@media only screen and (max-width : 1230px) {
+
+}
+// Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.second-nav a {
+		font-size 1.2rem
+	}
+}
+// Small Devices, Tablets
+@media only screen and (max-width : 768px) {
+	.footer-navigation {
+		display: none
+	}
+	footer {
+		border-top 5px solid #b8311b
+	}
+	.footer-greed {
+		flex-direction: column;
+	}
+	footer .footer-greed .footer-greed__item {
+		width: 100%
+		justify-content center
+		margin-bottom 35px
+	}
+	footer .footer-greed .footer-greed__item:last-child {
+		margin-bottom 0
+	}
+	.top-line .top-line__wrap .phone {
+		font-size 23px
+		margin-right 0
+		margin-bottom 11px    
+	}
+	.top-line .top-line__wrap .phone img {
+		size: 32px
+		margin-right 5px
+	}
+	footer .phone {
+		margin-right: 0;
+		font-size: 23px;
+	}
+	footer .phone img {
+		size: 32px
+		margin-right 5px
+	}
+}
+// Extra Small Devices, Phones
+@media only screen and (max-width : 576px) {
+	.company-name {
+		font-size rem(18px)	
+	}
+}
+ // Large Devices, Wide Screens
+@media only screen and (min-width : 1230px) {
+
+}

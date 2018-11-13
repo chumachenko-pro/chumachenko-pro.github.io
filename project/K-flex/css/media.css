@@ -1,0 +1,162 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.top-mnu {
+	display: none;
+	flex-wrap: wrap;
+}
+.news-box {
+	text-align: center;
+	flex-direction: column;
+	max-width: 325px;
+}
+.tbtre:before {
+	display: none;
+}
+.tl-content {
+	width: 100%;	
+}
+.tlc-box {
+	width: 33.3333%;
+	min-width: 210px;
+}
+.logo {
+	padding: 15px 0;
+}
+.ball-wrap {
+	justify-content: center;
+}
+.ball-item {
+	margin: 5px;
+}
+.r-title {
+	width: 100%;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.nb-wrap {
+	justify-content: center;
+}
+.prize-btn-wrap {
+	display: flex;
+	justify-content: center;
+}
+.fb-copyright {
+	margin-top: 25px;
+    width: 100%;
+}
+}
+@media only screen and (max-width : 660px) {
+.prizes-box-wrap {
+	justify-content: center;
+}
+.tlc-box {
+	width: 100%;
+}
+.tlc-box:nth-child(2n) {
+    text-align: left;
+}
+.footer-box:nth-child(2n) {
+    text-align: right;
+}
+.footer-box:nth-child(3n) {
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+.fb-copyright {
+	text-align: center;
+}
+.afwi {
+	width: 100%;
+}
+.afwi:nth-child(odd) {
+	padding-right: 0px;
+}
+.afwi:nth-child(even) {
+	padding-left: 0px;
+}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.footer-box:nth-child(1n),
+.footer-box:nth-child(2n) {
+	width: 100%;
+	text-align: center;
+}
+.footer-box:nth-child(2n){
+	margin-top: 25px;
+}
+.content-top-line {
+	flex-direction: column;
+}
+.content-top-line h2 {
+	margin-bottom: 20px;
+}
+.ball-wrap {
+	justify-content: space-between;
+}
+.ball-item {
+	margin: 5px 0;
+}
+.npb-img {
+	width: 100%;
+	float: none;
+}
+.requests-box {
+	width: 300px;
+	max-width: 450px;
+}
+.moderation-box {
+	width: 300px;
+}
+.totals {
+	width: 300px;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.mobile-mnu {
+	display: none;
+}
+.top-mnu li:nth-child(4n) {
+	width: 115%;
+}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

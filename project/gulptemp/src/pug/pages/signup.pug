@@ -1,0 +1,64 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Регистрация'
+	- var pageClass = 'singup-page'
+
+block content
+	//- header
+	header.header
+		.container
+			.header-inner
+				a.header__logo Domain.ru
+				nav.header__nav
+					li
+						a(href="index.html") Главная
+					li
+						a(href="rules.html") Правила
+					li
+						a(href="faq.html") Вопрос-Ответ
+					li
+						a(href="") API
+					li.active
+						a(href="signup.html") Регистрация
+				button.header__btn
+					<i class="fas fa-bars"></i>
+	
+	//- content
+	section.content
+		.container
+			section.signup
+				.cta-box
+					h1
+						ul.rotating-content
+							li Дешевая
+							li Быстрая
+							li Безопасная
+							li Качественная
+					h2 Накрутка подписчиков в YouTube - Рай для реселлеров!
+					.cta-box__text На нашем сайте вы можете купить подписчики для своего или чужого канала ютуба, у нас очень низкие цены среди конкурентов, всего 155 рублей за 1000 подписчиков, также у нас есть специальные предложении для реселлеров и удобный API для работы с нами!
+				form.authorization(action="")
+					h2.authorization__title Регистрация
+					input.authorization__input(type="text" placeholder="Ваш E-mail" required)
+					input.authorization__input(type="text" placeholder="Придумайте пароль" required)
+					input.authorization__input(type="text" placeholder="Повторите пароль" required)
+					input.authorization__button(type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ")
+					.authorization__text Регистрируясь на сайте, вы безоговорочно принимаете правила использования, политику конфиденциальности и соглашаетесь на обработку персональных данных.
+
+
+	//- footer
+	footer.footer
+		.container
+			.footer-inner
+				nav.footer__nav
+					li
+						a(href="") Главная
+					li
+						a(href="") Правила
+					li
+						a(href="") Вопрос-Ответ
+					li
+						a(href="") API
+					li
+						a(href="") Регистрация
+				.footer__copyright Все права защищены © 2018

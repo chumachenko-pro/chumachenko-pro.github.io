@@ -1,0 +1,500 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	/*header*/
+	.logo img {
+		width: 180px;
+	}
+	.header_phone {
+		font-size: 14px;
+	}
+	.stock_block2 p {
+		left: 20px;
+	}
+	.pb_center {
+    padding: 0;
+    border: none;
+	}
+	.goods {
+    padding: 50px 0;
+	}
+	/********* stock_block **********/
+	.stock_right h1 {
+		font-size: 70px;
+	}
+	.stock_right:before {
+		width: 300px;
+		height: 300px;
+	}
+	.stock_right p {
+		font-size: 25px;
+	}
+	.stock_right a {
+		margin-top: 70px;
+		position: relative;
+	}
+	/********* /stock_block **********/
+
+	/********* FOOTER **********/
+	.fotter_btn {
+		padding: 19.5px 55px;
+	}
+	.footer_bot h6 {
+		font-size: 21px;
+	}
+	/********* /FOOTER **********/
+
+	/*********  **********/
+	.entry_box a {
+		margin: 95px auto 0;
+	}
+	/*********  **********/
+	
+	.qwr3a .hs_ellipse.hs_ellipse3 {
+		right: 0;
+		bottom: 20px;
+	}
+	.qwr3a .hs_ellipse.hs_ellipse1 {
+		top: 0;
+		left: 0;
+	}
+	.qwr3a .hs_ellipse.hs_ellipse2 {
+		right: 424px;
+		bottom: 100px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.stock_left2 img {
+		width: ;
+	}
+	.stock_block2 p {
+		font-size: 45px;
+	}
+	.services {
+		padding: 45px 0;
+	}
+	.services h2 {
+    margin-bottom: 40px;
+	}
+	.hi_right_wrap,
+	.header_slider {
+    height: 445px;
+	}
+	.hi_left_wrap {
+		height: 425px;
+	}
+	.header_slider .owl-dots {
+    top: -16px;
+	}
+	.goods h2 {
+	margin-bottom: 50px;
+	}
+	.goods_line {
+	margin: 25px auto;
+	}
+	/********* advantages **********/
+	.advantages_box {
+		margin-bottom: 60px;
+	}
+	/********* /advantages **********/
+
+	/********* stock_block **********/
+	.stock_right h1 {
+		font-size: 55px;
+	}
+	.stock_right p {
+		font-size: 21px;
+	}
+	.stock_right:before {
+		width: 230px;
+		height: 230px;
+	}
+	.stock_right a {
+		margin-top: 35px;
+	}
+	.stock_left img {
+		bottom: 0;
+	}
+	/********* /stock_block **********/
+
+	/********* FOOTER **********/
+	.footer_left {
+		text-align: center;
+	}
+	.logo_footer {
+		margin-bottom: 10px;
+	}
+	.footer_right h5 {
+		text-align: center;
+		margin-top: 10px;
+	}
+	.fotter_btn {
+		margin-right: 5px;
+	}
+	.footer_button {
+		text-align: center;
+	}
+	.footer_bot h6 {
+		font-size: 24px;
+		margin: 10px 0;
+	}
+	.footer_bot {
+		text-align: center;
+	}
+	/********* /FOOTER **********/
+	.qwr3a .hs_ellipse.hs_ellipse2 {
+		right: 258px;
+		bottom: 100px;
+	}
+	.qwr3a .hs_ellipse.hs_ellipse1 {
+		top: 263px;
+		left: 0;
+	}
+	.qwr2a .hs_ellipse.hs_ellipse1 {
+		top: 165px;
+	}
+	.qwr2a .hs_ellipse.hs_ellipse3 {
+		right: 0;
+		bottom: 185px;
+	}
+	.qwr2a .hs_ellipse.hs_ellipse2 {
+		left: 260px;
+		bottom: 178px;
+	}
+	.hs_item {
+    	height: 445px;
+	}
+	.qwr3a .hs_ellipse.hs_ellipse1 {
+		top: 90px;
+	}
+	.qwr3a .hs_ellipse.hs_ellipse2 {
+		bottom: 190px;
+	}
+	.qwr3a .hs_ellipse.hs_ellipse3 {
+		bottom: 160px;
+	}
+	.qwr1a .hs_ellipse.hs_ellipse2 {
+		left: 260px;
+    	bottom: 235px;
+	}
+	.qwr1a .hs_ellipse.hs_ellipse3 {
+		bottom: 182px;
+    	right: 10px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.menu {
+		top: -30px;
+	}
+	.top_line {
+		margin-bottom: 45px;
+	}
+.stock_block2 .stock_left2 {
+	height: 380px;
+}
+.stock_left2 img {
+	width: 279px;
+}
+.sr_elipce {
+	margin: -115px auto 25px;
+}
+.stock_block2 p {
+    display: block;
+    top: 245px;
+    left: 0;
+    right: 0;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.stock_block2 {
+	padding-bottom: 35px;
+}
+.goods h2 {
+	margin-bottom: 25px;
+}
+.header_slider .owl-dots {
+		top: 3px;
+}
+/********* entry **********/
+	.entry_left {
+		width: 44%;
+		float: right;
+	}
+	/********* /entry **********/
+
+	/********* advantages **********/
+	.advantages_box {
+		margin-bottom: 50px;
+	}
+	/********* /advantages **********/
+
+	/********* FOOTER **********/
+	.fotter_btn {
+		display: block;
+		width: 50%;
+		margin: 10px auto;
+	}
+	.footer_bot {
+		margin: 20px 0;
+	}
+	.footer_bot h6 {
+		text-align: center;
+		font-size: 24px;
+	}
+	.soc_btn {
+		display: block;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.footer_soc {
+		text-align: center;
+	}
+	.fotter_btn {
+		padding: 19.5px 0;
+	}
+	/********* /FOOTER **********/
+
+
+	/*********  **********/
+	.entry_box a {
+		margin: 150px auto 0;
+	}
+	/*********  **********/
+	header {
+		padding-bottom: 0px;
+	}
+	.services {
+		padding: 0 0 45px;
+	}
+}
+@media only screen and (max-width : 767px) {
+
+	/********* entry **********/
+	.entry_left {
+		width: 50%;
+		float: right;
+	}
+	/********* /entry **********/
+
+	/********* stock_block **********/
+	.stock_block {
+		padding-top: 0;
+	}
+	.stock_left {
+		width: 46%;
+		margin: 0 auto;
+	}
+	.stock_right {
+		text-align: center;
+	}
+	.stock_right:before {
+		width: 355px;
+		height: 355px;
+		left: 50%;
+		top: -21%;
+		margin-left: -177.5px;
+	}
+	.stock_right h1 {
+		font-size: 40px;
+	}
+	.stock_right p {
+		font-size: 17px;
+	}
+	.stock_right a {
+		margin-top: 135px;
+		margin-bottom: 50px;
+	}
+
+	/********* /stock_block **********/
+
+	/********* slider_section_bot **********/
+	.bs_item_wrap {
+		margin: 40px auto;
+	}
+	/********* /slider_section_bot **********/
+
+	.qwr2a .hs_ellipse.hs_ellipse1,
+	.qwr3a .hs_ellipse.hs_ellipse1	{
+		top: 10px;
+	}
+	.qwr2a .hs_ellipse.hs_ellipse2,
+	.qwr3a .hs_ellipse.hs_ellipse2{
+		left: 50%;
+		margin-left: -105px;
+		bottom: 50%;
+		margin-bottom: -105px;
+	}
+
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.advantages_title h2 {
+		margin: 50px 0;
+	}
+	.hs_ellipse {
+		width: 200px;
+		height: 200px;
+	}
+	.sbh_text {
+		font-size: 25px;
+	}
+	.sr_elipce {
+		width: 280px;
+		height: 280px;
+	}
+.stock_block2 p {
+	font-size: 30px;
+	top: 205px;
+}
+.s_box1 {
+	height: 260px;
+}
+/********* entry **********/
+	.entry_box {
+		width: 250px;
+		height: 250px;
+	}
+	.entry_box  h1 {
+		font-size: 42px;
+		padding: 35px 0 0 50px;
+	}
+	.entry_box  h2 {
+		font-size: 64px;
+	}
+	.entry_box  h3 {
+		font-size: 27px;
+	}
+	/********* /entry **********/
+
+	/********* stock_block **********/
+	.stock_right:before {
+		width: 250px;
+		height: 250px;
+		top: -14%;
+		margin-left: -125.5px;
+	}
+	.stock_right h1 {
+		font-size: 29px;
+	}
+	.stock_right p {
+		font-size: 17px;
+	}
+	.stock_right a {
+		margin-top: 115px;
+		padding: 18.5px 18px;
+		font-size: 15px;
+	}
+	.stock_right {
+		width: 50%;
+		margin: 0 auto;
+	}
+	/********* /stock_block **********/
+
+	/********* slider_section_bot **********/
+	.bot_slider .owl-nav {
+		display: none;
+	}
+	/********* /slider_section_bot **********/
+
+	/********* FOOTER **********/
+	.fotter_btn {
+		width: 100%;
+	}
+	/********* /FOOTER **********/
+
+	/********* advantages **********/
+	.adv_item_2 {
+		width: 90%;
+		margin: 25px auto;
+	}
+	/********* /advantages **********/
+
+
+	/*********  **********/
+	.entry_box a {
+		margin: 100px auto 0;
+	}
+	/*********  **********/
+
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/********* entry **********/
+	.entry_box {
+		width: 200px;
+		height: 200px;
+	}
+	.entry_box  h1 {
+		font-size: 40px;
+	}
+	.entry_box  h2 {
+		font-size: 50px;
+	}
+	.entry_box  h3 {
+		font-size: 20px;
+	}
+	/********* /entry **********/
+
+	/********* stock_block **********/
+	.stock_right:before {
+		height: 225px;
+	}
+	.stock_right {
+		width: 65%;
+	}
+	.stock_left {
+		width: 60%;
+	}
+	.stock_right a {
+		margin-top: 55px;
+		padding: 18.5px 10px;
+	}
+	/********* /stock_block **********/
+
+
+	/*********  **********/
+	.entry_box a {
+		margin: 75px auto 0;
+		font-size: 13px;
+		padding: 15.5px 0;
+	}
+	/*********  **********/
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.top_mnu ul {
+    padding: 0 0 0 30px;
+}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

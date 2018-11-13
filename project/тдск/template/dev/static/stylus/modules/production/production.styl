@@ -1,0 +1,106 @@
+// greed for products
+.production-greed
+    display: flex
+    flex-flow: row wrap
+    .production-greed__item
+        display: flex
+        justify-content: center
+        flex-basis: 33%
+// products card
+.product-box
+    position relative
+    width: 312px;
+    min-height: 376px;
+    background-color #fff
+    margin-bottom 45px
+    .product-box__info
+        position: absolute
+        top: 40px
+        left: 44px
+        z-index 2
+        .product-box__title
+            position: relative
+            background #303030
+            width: 289px;
+            min-height: 75px;
+            font-weight 400
+            font-size rem(24px)
+            color: #ffffff
+            padding: 6px 14px
+            display: flex
+            flex-direction: column            
+            .product-box__list
+                display: none
+                margin-top 25px
+                li
+                    font-size 18px
+        .product-box__price
+            background #b8311b
+            width: 270px;
+            min-height: 44px;
+            font-weight 400
+            font-size rem(24px)
+            color: #ffffff
+            padding: 6px 14px
+            display: flex
+            align-items center
+            span
+                flex-wrap: 700
+            sup
+                font-size: rem(13px)
+    .product-box__img
+        absolute-center()
+        border-radius: 10px
+        overflow hidden
+        width calc(100% - 36px)
+        height calc(100% - 36px)
+        img
+            width 100%
+            height 100%
+            object-fit: cover
+// Adaptability
+// Large Devices, Wide Screens
+@media only screen and (max-width : 1230px) {
+    .production-greed .production-greed__item {
+        flex-basis: 33.33%;
+    }
+}
+// Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .production-greed .production-greed__item {
+        flex-basis: 50%;
+    }
+}
+// Small Devices, Tablets
+@media only screen and (max-width : 768px) {
+    .production-greed .production-greed__item {
+        flex-basis: 100%;
+    }
+}
+// Extra Small Devices, Phones
+@media only screen and (max-width : 576px) {
+    .product-box {
+        width 266px
+    }
+    .product-box .product-box__info .product-box__title {
+        width 235px
+    }
+    .product-box .product-box__info .product-box__title span {
+        font-size rem(20px)
+    }
+    .product-box .product-box__info .product-box__price {
+        font-size rem(20px)
+    }
+    .product-box .product-box__info .product-box__price {
+        width 223px
+        display: block
+    }
+    .product-box {
+        min-height 320px
+        margin-bottom 15px
+    }
+}
+ // Large Devices, Wide Screens
+@media only screen and (min-width : 1230px) {
+
+}

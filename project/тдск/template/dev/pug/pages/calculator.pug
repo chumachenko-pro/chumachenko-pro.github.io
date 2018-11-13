@@ -1,0 +1,14 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Калькулятор'
+	- var pageClass = 'calculator-page'
+
+block content
+	.container
+		include ../modules/breadcrumbs
+		h2 Калькулятор
+	section.calculator-content
+		.container
+			.calculator-content__title Укажите размеры площадки и выберите тип материала:
+			include ../modules/calculator

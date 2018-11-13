@@ -1,0 +1,53 @@
+form.calculator
+    //- Настройки почты
+    <input type="hidden" name="project_name" value="Site Name">
+    <input type="hidden" name="admin_email" value="desphub@gmail.com" id="#out">
+    <input type="hidden" name="form_subject" value="Form Subject">
+    //- Настройки почты
+
+    .calculator__wrap.calculator__wrap--one
+        .calculator__input-wrap
+            label.calculator__label(for="longInp") Длина
+            input.calculator__input#longInp(type="text" name="Длинна" placeholder="23 м")
+
+        .calculator__input-wrap
+            label.calculator__label(for="widthInp") Ширина
+            input.calculator__input#widthInp(type="text" name="Ширина" placeholder="23 м")
+
+        .calculator__input-wrap
+            label.calculator__label(for="heightInp") Высота
+            input.calculator__input#heightInp(type="text" name="Высота" placeholder="23 м")
+
+
+
+
+
+
+
+        .calculator__input-wrap.calculator__input-wrap--select
+            label.calculator__label(for="calculator__select") Продукция
+            <select id="calculator__select">
+                <option value="hide">Выберите продукцию</option>
+                <option value="1/1745" data-param="1745">стоимость: 1; плотность: 1745</option>
+                <option value="2" data-param="1230">стоимость: 2; плотность: 1230</option>
+                <option value="3" data-param="1476">стоимость: 3; плотность: 1276</option>
+            </select> 
+
+
+
+
+
+    .calculator__output
+        .calculator__sum Итого Вам потребуется: <span id="cubatura">0</span> м<sup>3</sup> (<span id="tonage">0</span> т.) - <span class="red"id="calcSum">0 руб.</span>
+        .calculator__total-sum Ориентировочная стоимость доставки от <span class="deliv">0</span> руб. Итого: <span class="red" id="totalSum">0 руб.</span>
+
+    .calculator__wrap.calculator__wrap--two
+        .calculator__input-wrap
+            label.calculator__label(for="nameInp") Имя
+            input.calculator__input#nameInp(type="text" name="Имя" placeholder="Ваше имя")
+
+        .calculator__input-wrap
+            label.calculator__label(for="telInp") Телефон
+            input.calculator__input#telInp(type="tel" name="Телефон" placeholder="+7 (___) ___-__-__")
+
+    button.button.button--red Заказать

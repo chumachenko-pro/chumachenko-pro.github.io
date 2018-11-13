@@ -1,0 +1,156 @@
+// .way-nav
+.way-nav
+    padding: 1px
+    display: flex
+    flex-wrap: wrap
+    padding: 12px 0px
+.way-nav li
+    position: relative
+    padding: 5px 0px
+    padding-left 15px
+    margin-right 12px
+.way-nav li:before
+    content: ""
+    position: absolute
+    left: 0
+    top: 13px
+    display: block
+    size: 4px
+    border-radius: 50%
+    background-color #515669
+    margin-right 10px
+.way-nav li:first-child:before
+    display: none
+.way-nav a
+    font-size rem(14px)
+    line-height: 1.5
+    color: #85b9f3
+    text-decoration underline
+.way-nav li.active a 
+    font-weight 400
+    color: #515669
+    text-decoration none
+// .way-nav
+
+
+
+
+
+
+.musical-about 
+    position relative
+    background url(../img/content/musical-about-bg.png)
+    background-size cover
+    background-position 50% 50%
+    z-index 0
+    padding: 0px 0px 45px
+.musical-about:before
+    content: ""
+    display: block
+    width 100%
+    height 100%
+    position: absolute
+    left: 0
+    top: 0
+    background-color rgba(255, 255, 255, 0.8)
+    z-index: -1
+.musical-about__title
+    margin-top 20px
+    margin-bottom 60px
+    font-weight 300
+    font-size rem(48px)
+    color: #223869
+.musical-about__text
+    display: block
+    font-weight 400
+    font-size rem(18px)
+    line-height rem(30px)
+    color: #242837
+    margin-bottom 60px
+.cruises
+    padding: 60px 0px 40px 
+    background #f1f2f3
+
+
+
+
+
+
+
+.cruises-box
+    margin-bottom 25px
+    box-shadow: 0px 3px 6px 0px rgba(211, 211, 211, 0.75);
+    .cruises-box__img
+        position relative
+        width 100%
+        height 190px
+        img 
+            width 100%
+            height 100%
+            object-fit: cover
+            border-radius: 4px 4px 0px 0px
+    .cruises-box__price
+        position: absolute
+        right: 25px
+        bottom: -38px
+        size 76px
+        border-radius: 50%
+        background #ea4728
+        text-align center
+        display: flex
+        justify-content center
+        align-items center
+        font-weight 400
+        font-size rem(14px)
+        line-height 1.3
+        color: #fff
+        span
+            margin-top -10px
+    .cruises-box__info
+        background-color #fff
+        padding 40px 15px 15px
+        .cruises-box__description
+            font-weight 400
+            font-size rem(14px)
+            line-height rem(22px)
+            color: #515669
+            text-transform uppercase
+            margin-bottom 15px
+    .cruises-box__time
+        display: flex
+        align-items center
+        margin-bottom 15px
+        svg 
+            font-size rem(14px)
+            color: #bcbcbc
+            margin-right 12px
+        span 
+            font-weight 400
+            font-size rem(14px)
+            color: #515669
+
+    .cruises-box__icons
+        display: flex
+        align-items center
+        margin-bottom 30px
+        svg 
+            font-size rem(14px)
+            color: #515669
+            margin-right 10px
+    .cruises-box__text
+        font-weight 400
+        font-size rem(12px)
+        line-height rem(18px)
+
+
+
+// @media only screen and (max-width : 1200px) 
+
+// @media only screen and (max-width : 992px) 
+
+// @media only screen and (max-width : 720px) 
+
+@media only screen and (max-width : 576px)
+    .way-nav li:first-child:before
+        display: block
+// @media only screen and (min-width : 1200px)

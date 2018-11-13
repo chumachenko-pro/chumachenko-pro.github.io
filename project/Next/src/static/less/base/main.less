@@ -1,0 +1,120 @@
+@import "fonts.less";
+@import "libs.less";
+@import "greed.less";
+
+// mine
+html {
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.2;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+textarea {
+  resize: none;
+}
+section {
+  position: relative;
+}
+input:hover,
+select:hover,
+button:hover {
+  outline: none;
+}
+input:active,
+select:active,
+button:active {
+  outline: none;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+footer {
+  flex: 0 0 auto;
+}
+
+
+// fonts
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #949494;
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #fff;
+}
+
+// custom title
+.customTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &:before {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 5px;
+    background-color: #93e101;
+    margin-bottom: 20px;
+  }
+}
+
+
+// modules
+@import "../modules/header.less";
+@import "../modules/footer.less";
+@import "../modules/buttons.less";
+@import "../modules/modals/modal.less";
+
+
+// pages
+@import "../page/index.less";

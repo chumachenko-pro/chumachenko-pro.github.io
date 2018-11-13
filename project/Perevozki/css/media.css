@@ -1,0 +1,226 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+.top-line__mail {
+    font-size: 16px;
+}
+.top-line__address {
+    font-size: 12px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .document {
+        margin: 0px 0px 25px;
+    }
+    .documents-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .question-content {
+        max-width: 100%;
+    }
+    .question-content h3 {
+        text-align: center;
+    }
+    .question-content__sub {
+        text-align: center;
+    }
+    .question-form {
+        margin: 0 auto;
+    }
+    .right-arrow:after,
+    .bown-arrow:after,
+    .left-arrow:after {
+        display: none;
+    }
+    .work-stage {
+        margin-bottom: 25px;
+    }
+    .mobile-mnu .center-wrap,
+    footer .center-wrap {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .mobile-mnu .phone-wrap,
+    footer .phone-wrap {
+        display: flex;
+        align-items: center;
+    }
+    .bottom-line {
+        flex-direction: column;
+        align-items: center;
+         text-align: center;
+         padding-bottom: 15px;
+    }
+    .bottom-line a {
+        margin-bottom: 10px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .top-line__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .phone-wrap {
+        align-items: center;
+    }
+    .header-content {
+        padding: 50px 0px;
+    }
+    .header-content h1 {
+        font-size: 54px;
+        margin-bottom: 30px;
+    }
+    .header-content h2 {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .discount-form {
+        flex-direction: column;
+        padding: 25px 15px;
+    }
+    .discount-form span  {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .advantage {
+        justify-content: center;
+    }
+    .right-arrow:after,
+    .bown-arrow:after,
+    .left-arrow:after {
+        display: none;
+    }
+    .how-work .button {
+        padding: 11px 60px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    section {
+        padding: 50px 0px;
+    }
+    .header-content h1 {
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+    .header-content h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+    h3 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    .discount-form {
+        padding: 25px 15px;
+    }
+    .advantage {
+        margin-bottom: 30px;
+    }
+    .autopark {
+        padding: 50px 0px 40px;
+    }
+    .auto {
+        flex-direction: column;
+        height: 502px;
+    }
+    .auto__img {
+        width: 100%;
+        height: 50%;
+    }
+    .auto__img img {
+        border-radius: 5px 5px 0px 0px;
+    }
+    .auto__text {
+        width: 100%;
+        height: 50%;
+    }
+    .document {
+        width: 100%;
+    }
+    .partner {
+        margin-bottom: 25px;
+    }
+    .form-sub {
+        font-size: 18px;
+    }
+    .top-line {
+        padding: 20px 0px;
+    }
+    .top-line__logo {
+        margin-bottom: 0;
+    }
+    .how-work .button {
+        padding: 11px 25px;
+    }
+    .owl-carousel .owl-nav {
+        display: none;
+    }
+    .question-content {
+        padding: 50px 0px;
+    }
+    .question-content__sub {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .advantage {
+        justify-content: flex-start;
+    }
+    .advantage br {
+        display: none;
+    }
+    .advantage__text {
+        max-width: 165px;
+    }
+    .bottom-line a {
+        font-size: 10px;
+    }
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
